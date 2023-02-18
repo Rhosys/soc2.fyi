@@ -1,0 +1,51 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+
+// Bootstrap theme-color variables: https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+// $primary: #039639;
+// $secondary: #eaf5ff; // Buttons colors
+// $dark: #272c30;
+// $night: #78848B;
+// $horizon: #F1F4F5;
+// $light: #272c30; // d-panel color
+// $gray: #eaf5ff; // text color
+// $info: #404448; // body background-color (copy this to the index.html background color spot as well
+// $border: #596067; // border color
+// $embossed: #A9D2E9; // inside panel color - "don't pay attention to this element"
+// $highlight: #013815; // links and highlights
+
+$primary: #3E6077;
+
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");

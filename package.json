@@ -1,0 +1,81 @@
+{
+  "name": "soc2.fyi-website",
+  "version": "0.0.0",
+  "description": "The soc2.fyi website",
+  "author": "Rhosys Developers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rhosys/soc2.fyi.git"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "SOC",
+    "SOC2",
+    "SOC2 Type I",
+    "ISO 27001",
+    "ISO 12k",
+    "SOC2 Type II",
+    "Compliance",
+    "Attestation"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "mode": "production",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "3.0.0-5",
+    "@popperjs/core": "^2.11.6",
+    "@suadelabs/vue3-multiselect": "^1.0.2",
+    "bootstrap": "^5.1.3",
+    "luxon": "^2.0.2",
+    "short-uuid": "^4.2.0",
+    "vue": "^3.0.5",
+    "vue-fontawesome": "^0.0.2",
+    "vue-multiselect": "^2.1.6",
+    "vue3-clipboard": "^1.0.0"
+  },
+  "scripts": {
+    "build": "vite build",
+    "start": "vite --port=8080",
+    "serve": "vite preview --port=8080",
+    "lint": "eslint --ext .js src make.js",
+    "setup": "node make.js setup",
+    "test": "babel src -d lib && mocha -r esm tests/*.test.js"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+    "@vitejs/plugin-vue": "^1.3.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "aws-architect": "^6.7.55",
+    "aws-sdk": "^2.1130.0",
+    "cfn-response": "^1.0.1",
+    "ci-build-tools": "^1.0.13",
+    "commander": "^4.0.1",
+    "esbuild": "^0.17.8",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-cimpress-atsquad": "1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4",
+    "eslint-plugin-vue": "^7.17.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
+    "js-yaml": "^4.1.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-polyfill-node": "^0.12.0",
+    "sass": "^1.38.2",
+    "vite": "^2.9.13"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

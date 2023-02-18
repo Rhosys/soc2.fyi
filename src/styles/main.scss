@@ -1,0 +1,25 @@
+@import "bootstrap";
+@import "colors.module.scss";
+
+// @import "node_modules/bootstrap/scss/functions";
+// @import "node_modules/bootstrap/scss/variables";
+// @import "node_modules/bootstrap/scss/mixins";
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+// Overrides
+
+@include media-breakpoint-down(md) {
+  .row > * {
+    max-width: 100%;
+    padding-right: unset;
+    padding-left: unset;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
