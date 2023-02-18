@@ -57,10 +57,10 @@ commander
   try {
     const awsArchitect = await new AwsArchitect(packageMetadata, {}, {});
     const template = require('./template/cloudformationTemplate').getTemplate();
-    const isMainBranch = process.env.CI_COMMIT_REF_SLUG === 'main';
+    const isMainBranch = process.env.GITHUB_REF_NAME === 'main';
     if (isMainBranch) {
       const stackConfiguration = {
-        changeSetName: `${process.env.CI_COMMIT_REF_SLUG}-${process.env.CI_PIPELINE_ID || '1'}`,
+        changeSetName: `${process.env.GITHUB_REF_NAME}-${process.env.GITHUB_RUN_NUMBER || '1'}`,
         stackName: packageMetadata.name,
         automaticallyProtectStack: true
       };
