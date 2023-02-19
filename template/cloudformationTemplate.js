@@ -51,25 +51,9 @@ module.exports = {
             HostedZoneId: { 'Fn::Sub': '${HostedZone}' },
             // https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain
             Name: { 'Fn::Sub': 'www.soc2.fyi' },
-            Type: 'A',
-            AliasTarget: {
-              DNSName: 'soc2.fyi',
-              HostedZoneId: { 'Fn::Sub': '${HostedZone}' }
-            }
-          }
-        },
-
-        GitHubSubdomainRoutingIpv6: {
-          Type: 'AWS::Route53::RecordSet',
-          Properties: {
-            HostedZoneId: { 'Fn::Sub': '${HostedZone}' },
-            // https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain
-            Name: { 'Fn::Sub': 'www.soc2.fyi' },
-            Type: 'AAAA',
-            AliasTarget: {
-              DNSName: 'soc2.fyi',
-              HostedZoneId: { 'Fn::Sub': '${HostedZone}' }
-            }
+            Type: 'CNAME',
+            TTL: '3600',
+            ResourceRecords: ['rhosys.github.io']
           }
         }
       }
