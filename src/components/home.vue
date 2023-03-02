@@ -36,25 +36,33 @@
         <div class="d-flex row">
           <div class="col-12 col-lg-6 mb-4 mb-lg-0">
             <div class="h-100 p-4 p-md-5 text-white bg-dark" style="border-radius: 0.5rem;">
-              <h2>The 3 Phases</h2>
-              SOC 2 Is all about securing your infrastructure practices. You might hear things like
-              <strong>Security, Availability, Processing Integrity, Confidentiality, and Privacy</strong>. What does that mean?
+              <h2>The FYI</h2>
+              You already did the hard work of securing your technology, so getting the attestation proving it should be easy. But it still isn't.
               <br><br>
               <div class="d-flex align-items-center">
                 <i class="fa-solid fa-arrows-left-right-to-line fa-2x me-4" />
-                <div>Figure out where you are at versus where you should be. This is known as the Gap Analysis.</div>
+                <div>
+                  <h3>Gap Analysis</h3>
+                  <div>Figure out where you are at versus where you should be. And then you can use this to know what automation to run.</div>
+                </div>
               </div>
               
               <br>
               <div class="d-flex align-items-center">
                 <i class="fa-solid fa-gears fa-2x me-4" />
-                <div>Update your policies and infrastructure to fill in these gaps.</div>
+                <div>
+                  <h3>Security Automation</h3>
+                  <div>Update your policies and infrastructure to fill in these gaps. Use the automation to ensure your technical policies are being followed.</div>
+                </div>
               </div>
               <br>
 
               <div class="d-flex align-items-center">
                 <i class="fa-solid fa-pencil fa-2x me-4" />
-                <div>Ask an auditor to sign off on your policies and infrastructure automation.</div>
+                <div>
+                  <h3>Attestation</h3>
+                  <div>Ask an auditor to sign off on your policies and infrastructure automation by giving you a badge and a report.</div>
+                </div>
               </div>
               <br>
               <div class="d-flex justify-content-center">
