@@ -91,6 +91,237 @@
       </div>
     </div>
 
+    <br id="auditors">
+    <div class="w-100">
+      <div class="m-0 p-4 p-md-5 bg-dark text-light">
+        <h2 class="pb-2 border-bottom">Auditors</h2>
+        
+        <div class="table-responsive-md">
+          <table class="auditors table-dark table-striped table align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Company</th>
+                <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Total Cost</div><span>(per year)</span></div></th>
+                <th scope="col"><div class="d-flex justify-content-center"><div>Audit</div></div></th>
+                <th scope="col"><div class="d-flex justify-content-center"><div>Audit Cost</div></div></th>
+                <th scope="col"><div class="d-flex justify-content-center"><div>Automation Platform</div></div></th>
+                <th scope="col"><div class="d-flex justify-content-center"><div>Automation Platform Cost</div></div></th>
+                <th scope="col"><div>Note</div></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th scope="row"><a href="https://secureframe.com/">Drata</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">$15k</div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
+                      <i class="fa-solid fa-xmark fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
+                      <i class="fa-solid fa-xmark fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">$15k</div>
+                </td>
+                <td>The audit requires a third party and fee</td>
+              </tr>
+
+              <tr>
+                <th scope="row"><a href="https://www.prescientassurance.com/">Prescient Assurance</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">$8k</div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">$8k</div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
+                      <i class="fa-solid fa-xmark fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
+                      <i class="fa-solid fa-xmark fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>Must pay for third party platform</td>
+              </tr>
+              
+              <tr>
+                <th scope="row"><a href="https://secureframe.com/">Secureframe</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">$14k</div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">$6.5k</div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">$7.5k</div>
+                </td>
+                <td>Requires third party auditor</td>
+              </tr>
+
+              <tr>
+                <th scope="row"><a href="https://thoropass.com/">Thoropass (Laika)</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">$12k</div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                      <i class="fa-regular fa-circle fa-stack-2x" />
+                      <i class="fa-solid fa-check fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">$5k</div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                      <i class="fa-regular fa-circle fa-stack-2x" />
+                      <i class="fa-solid fa-check fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">$7.5k</div>
+                </td>
+                <td scope="row">Audit done in house</td>
+              </tr>
+              
+              <tr>
+                <th scope="row"><a href="https://www.trustcloud.ai/">TrustCloud (Kintent)</a></th>
+                <td>
+                  <div class="d-flex justify-content-center text-success">Free</div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
+                      <i class="fa-solid fa-xmark fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
+                      <i class="fa-solid fa-xmark fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center text-success">Free</div>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+
+              <tr>
+                <th scope="row"><a href="https://sprinto.com/ignite/">Sprinto Ignite</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">$5k</div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">$5k</div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center text-success">Free</div>
+                </td>
+                <td class="text-danger">Requires 3 year contract</td>
+              </tr>
+
+              <tr>
+                <th scope="row"><a href="https://www.vanta.com/">Vanta</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">$15k</div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
+                      <i class="fa-solid fa-xmark fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
+                      <i class="fa-solid fa-xmark fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">$15k</div>
+                </td>
+                <td>The audit requires a third party and fee</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
 
     <div id="footer" class="w-100">
       <div class="m-0 p-4 p-md-5 bg-primary text-light">
@@ -176,5 +407,9 @@ a {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   min-width: 300px;
+}
+
+table.auditors th a {
+  text-decoration: none;
 }
 </style>
