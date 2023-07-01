@@ -102,14 +102,40 @@
               <tr>
                 <th scope="col">Company</th>
                 <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Total Cost</div><span>(per year)</span></div></th>
-                <th scope="col"><div class="d-flex justify-content-center"><div>Audit</div></div></th>
-                <th scope="col"><div class="d-flex justify-content-center"><div>Audit Cost</div></div></th>
-                <th scope="col"><div class="d-flex justify-content-center"><div>Automation Platform</div></div></th>
-                <th scope="col"><div class="d-flex justify-content-center"><div>Automation Platform Cost</div></div></th>
+                <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Audit</div><span>(licensed audit firm)</span></div></th>
+                <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Audit Cost</div></div></th>
+                <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Automation</div><span>Platform</span></div></th>
+                <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Automation</div><span>Platform Cost</span></div></th>
                 <th scope="col"><div>Note</div></th>
               </tr>
             </thead>
             <tbody>
+
+              <tr>
+                <th scope="row"><a href="https://www.a-lign.com/">A-LIGN (A-SCEND)</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">€26.8k</div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">€21k</div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">€5.8k</div>
+                </td>
+                <td class="text-danger">Very unresponsive (multiple months with no responses</td>
+              </tr>
 
               <tr>
                 <th scope="row"><a href="https://secureframe.com/">Drata</a></th>
@@ -139,7 +165,7 @@
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
-                <td>The audit requires a third party and fee</td>
+                <td><span class="text-danger">No Audit</span>, the audit requires a third party and fee</td>
               </tr>
 
               <tr>
@@ -170,7 +196,7 @@
                     </span>
                   </div>
                 </td>
-                <td>Must pay for third party platform</td>
+                <td><span class="text-danger">No automation offered</span></td>
               </tr>
               
               <tr>
@@ -196,7 +222,7 @@
                 <td>
                   <div class="d-flex justify-content-center">$7.5k</div>
                 </td>
-                <td>Requires third party auditor</td>
+                <td>Requires third party auditor (or more expensive in house audit)</td>
               </tr>
 
               <tr>
@@ -314,7 +340,7 @@
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
-                <td>The audit requires a third party and fee</td>
+                <td><span class="text-danger">No Audit</span>, the audit requires a third party and fee</td>
               </tr>
             </tbody>
           </table>
