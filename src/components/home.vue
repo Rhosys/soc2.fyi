@@ -198,6 +198,45 @@
                 </td>
                 <td><span class="text-danger">No automation offered</span></td>
               </tr>
+
+              <tr>
+                <th scope="row"><a href="https://scytale.ai/soc-2/">Scytale</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td class="text-danger"></td>
+              </tr>
               
               <tr>
                 <th scope="row"><a href="https://secureframe.com/">Secureframe</a></th>
