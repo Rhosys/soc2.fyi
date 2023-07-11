@@ -134,7 +134,7 @@
                 <td>
                   <div class="d-flex justify-content-center">€5.8k</div>
                 </td>
-                <td class="text-danger">Very unresponsive (multiple months with no responses</td>
+                <td class="text-danger">Very unresponsive (multiple months with no response)</td>
               </tr>
 
               <tr>
