@@ -1,3 +1,4 @@
+<!-- eslint-disable max-len -->
 <template>
   <div>
     <home-navbar />
@@ -235,7 +236,7 @@
                     </span>
                   </div>
                 </td>
-                <td class="text-danger"></td>
+                <td class="text-danger">&nbsp;</td>
               </tr>
               
               <tr>
@@ -388,39 +389,103 @@
       </div>
     </div>
 
-    <div id="footer" class="w-100">
-      <div class="m-0 p-4 p-md-5 bg-primary text-light">
-        <div class="g-4 my-2 row">
-          <div class="d-flex justify-content-around">
-            <div class="d-flex flex-column">
-              <h5>SOC 2.FYI</h5>
-              <small>Making companies more secure</small>
-              <small>© Rhosys AG 2017-2023</small>
-              <div><a class="networking-link" href="https://rhosys.ch" target="_blank">About Us</a></div>
-              <div><a class="networking-link" href="https://rhosys.ch" target="_blank">Contact Us</a></div>
-            </div>
+    <div class="container">
+      <div class="align-items-lg-stretch mt-4">
+        <div class="mb-4">
+          <div class="h-100 p-4 p-md-5 bg-dark text-light" style="border-radius: 0.5rem;">
+            <h2>What's the SOC 2 Process?</h2>
+            <p>
+              Earning a SOC 2 requires a Company to undergo a third-party examination by a Certified Public Accountant (CPA). The CPA is required to follow a set of AICPA standards to perform the audit and issue the report. Most companies follow a logical process to earning their SOC 2:
+            </p>
+            <p>
+              <h3>Step 1:</h3>
+              <div>Readiness examination: An exercise where your Company finds out the current status of the organization as it relates to SOC 2 controls. Organizations use readiness examinations to prepare for their SOC 2 assessment and learn what gaps they must resolve before earning their SOC 2.</div>
+            </p>
+            <p>
+              <h3>Step 2:</h3>
+              Earn a SOC 2 Type 1 - While it is not required for an organization to earn a SOC 2 Type 1 before a SOC 2 Type 2, the logical next step on the SOC 2 journey is to complete a SOC 2 Type 1 examination. The path from readiness to SOC 2 Type 1 is all dependent on how fast the organization can remediate gaps identified in the readiness assessment.
+            </p>
+            <p>
+              <h3>Step 3:</h3>
+              
+              Earn your SOC 2 Type 2 - After a specified period of time (anywhere from 3-12 months) organizations earn their first SOC 2 Type 2. Typically the Type 2 review period begins the day after the date of the Type 1 review period. Step 4: Renew your SOC 2 Type 2 every 12 months. A SOC 2 Type 2 looks back in time and every year you'll need to undergo a Type 2 examination to keep your SOC 2 current.</p>
+            <p>
+              <h3>Step 4:</h3>
+              Renew your SOC 2 Type 2 every 12 months. A SOC 2 Type 2 looks back in time and every year you'll need to undergo a Type 2 examination to keep your SOC 2 current.
+            </p>
 
-            <div class="d-flex">
-              <div class="d-flex flex-column me-5">
-                <h5>References</h5>
-                <small><a class="networking-link" href="#">Home</a></small>
-                <small><a class="networking-link" href="#guide">Guide</a></small>
-                <small><a class="networking-link" href="#auditors">Auditors</a></small>
-              </div>
-              <div class="d-flex flex-column">
-                <h5>Contribute</h5>
-                <small><a class="networking-link" @click="() => openGithub()">GitHub</a></small>
-                <small><a class="networking-link" @click="() => openGithub()">Contribute</a></small>
-                <small><a class="networking-link" @click="() => openGithub(true)">Suggest an improvement</a></small>
-              </div>
-            </div>
+            <div class="d-flex justify-content-center"><small>Source:  <a href="https://sansorg.egnyte.com/dl/x9796IIIVP">SANS SOC2 Cheatsheet</a></small></div>
           </div>
-
         </div>
       </div>
     </div>
 
-    <!-- Testimonials: https://docs.google.com/document/d/1-tPEjvbxgoP0sOS7P_TFKyibh_mkp0jpYmM3xW50_rE/edit#heading=h.z4vfzgar6saq -->
+    <br id="guide">
+    <div class="w-100">
+      <div class="m-0 p-4 p-md-5 bg-dark text-light">
+        <h2 class="pb-2 border-bottom">Pass the SOC 2 Type II Audit</h2>
+        <div>The system description must be presented in accordance with the AICPA’s description criteria (DC 200). Each of the description criteria (DC) are described below:</div>
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-cubes fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>DC1: Types of services provided</h2>
+              <p>Describe what services the service organization provides as it relates to the system in scope.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-seedling fa-2x fa-fw" />
+            </div>
+            <div><h2>DC2: Principal service commitments and system requirements</h2><p>This section lets the reader know what commitments and system requirements the service organization is making, and which documents the reader can find these commitments in (e.g. MSA, SLAs, Privacy Policy, etc.). This helps give the reader context as to what trust services categories are in-scope and why.</p></div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-code-branch fa-2x fa-fw" />
+            </div>
+            <div><h2>DC3: Components of the system</h2><p>The components described here include the infrastructure, software, people, procedures, and data that support and make up the system. For many Cloud Service Providers (CSP), the infrastructure section will include their hosting provider (such as Amazon Web Services). The software section should list the software and applications that support delivering the service in scope. The people section should include an overview of the departments or key personnel that support the system and what they do. Procedures should state what procedures are and their purpose. Data should discuss what the data is that the system processes (what is your customer data), as well as any other data that directly supports the system.</p></div>
+          </div>
+        </div>
+
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-shield-halved fa-2x fa-fw" />
+            </div>
+            <div><h2>DC4: System incidents</h2>
+              <p>Describe any security incidents that rose to the level where your company failed to either meet criteria, your commitments to customers, or your system requirements.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-diagram-next fa-2x fa-fw" />
+            </div>
+            <div><h2>DC5: Applicable trust services criteria and related controls</h2><p>Describe the criteria that are in-scope so that the reader understands the criteria the service organization is being measured against. The service organization will also discuss in detail the control environment and describe the controls that support it. This is a narrative section that is essentially a lighter version of the information security policy.</p></div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-graduation-cap fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>DC6: Complementary user entity controls (CUECs)</h2>
+              <p>CUECs are the controls that the service organization’s customers need to have in place in order for the system and control environment to be complete and achieve its objectives. For example, maybe the customers need to have their own logical access controls in place so that only authorized users access the service, otherwise, unauthorized access may cause you to fail to meet your security commitments.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="flex-shrink-0 me-3">
+              <i class="mt-1 fa-regular fa-object-ungroup fa-2x fa-fw" />
+            </div>
+            <div><h2>DC7: Complementary subservice organization controls (CSOCs)</h2><p>The service organization will discuss the subservice organizations that support the system and control environment. Subservice organizations are vendors that you cannot meet your criteria, commitments, or system requirements without. For most CSPs, that is going to be the cloud hosting provider (AWS, GCP, Azure, etc.)</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </div>
 </template>
