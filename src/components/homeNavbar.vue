@@ -9,10 +9,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto me-4 mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#guide">Guide</a>
+              <a class="nav-link" aria-current="page" href="#auditors">Auditors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#auditors">Auditors</a>
+              <a class="nav-link" aria-current="page" href="#pen-tests">Pen Tests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#process">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#guide">Guide</a>
             </li>
           </ul>
           <div class="d-flex">

@@ -201,6 +201,45 @@
               </tr>
 
               <tr>
+                <th scope="row"><a href="https://risk3sixty.com/">risk3sixty</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td><div class="d-flex justify-content-center">
+                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
+                    <i class="fa-regular fa-circle fa-stack-2x" />
+                    <i class="fa-solid fa-check fa-stack-1x" />
+                  </span>
+                </div></td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td class="text-danger">&nbsp;</td>
+              </tr>
+
+              <tr>
                 <th scope="row"><a href="https://scytale.ai/soc-2/">Scytale</a></th>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -386,9 +425,63 @@
           </table>
         </div>
 
+        <br id="pen-tests">
+
+        <h2 class="pb-2 border-bottom">Pen Testers</h2>
+        
+        <div class="table-responsive-md">
+          <table class="auditors table-dark table-striped table align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Company</th>
+                <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Total Cost</div><span>(per test)</span></div></th>
+                <th scope="col"><div>Note</div></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th scope="row"><a href="https://www.cobalt.io/">Cobalt</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td class="text-danger">&nbsp;</td>
+              </tr>
+
+              <tr>
+                <th scope="row"><a href="https://www.rapid7.com/">Rapid7</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td class="text-danger">&nbsp;</td>
+              </tr>
+
+              <tr>
+                <th scope="row"><a href="https://kobalt.io/">Kobalt</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
+                      <i class="fa-solid fa-circle-question fa-stack-1x" />
+                    </span>
+                  </div>
+                </td>
+                <td class="text-danger">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
+    <br id="process">
     <div class="container">
       <div class="align-items-lg-stretch mt-4">
         <div class="mb-4">
