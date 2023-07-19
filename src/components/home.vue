@@ -139,7 +139,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://secureframe.com/">Drata</a></th>
+                <th scope="row"><a href="https://drata.com/">Drata</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
