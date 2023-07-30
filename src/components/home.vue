@@ -117,21 +117,11 @@
                 <td>
                   <div class="d-flex justify-content-center">€26.8k</div>
                 </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <success />
                 <td>
                   <div class="d-flex justify-content-center">€21k</div>
                 </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <success />
                 <td>
                   <div class="d-flex justify-content-center">€5.8k</div>
                 </td>
@@ -139,30 +129,37 @@
               </tr>
 
               <tr>
+                <th scope="row"><a href="https://akitra.com/">Akitra</a></th>
+                <warning />
+                <warning />
+                <warning />
+                <warning />
+                <warning />
+                <td class="text-danger" />
+              </tr>
+
+              <tr>
+                <th scope="row"><a href="https://www.anecdotes.ai/">anecdotes</a></th>
+                <td>
+                  <div class="d-flex justify-content-center">$50k</div>
+                </td>
+                <danger />
+                <danger />
+                <success />
+                <td>
+                  <div class="d-flex justify-content-center">$50k</div>
+                </td>
+                <td><span class="text-danger">No Audit</span>, the audit requires a third party and fee</td>
+              </tr>
+
+              <tr>
                 <th scope="row"><a href="https://drata.com/">Drata</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
-                      <i class="fa-solid fa-xmark fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
-                      <i class="fa-solid fa-xmark fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+              <danger />
+                <danger />
+                <success />
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
@@ -174,107 +171,32 @@
                 <td>
                   <div class="d-flex justify-content-center">$8k</div>
                 </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <success />
                 <td>
                   <div class="d-flex justify-content-center">$8k</div>
                 </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
-                      <i class="fa-solid fa-xmark fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
-                      <i class="fa-solid fa-xmark fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
+                <danger />
+                <danger />
                 <td><span class="text-danger">No automation offered</span></td>
               </tr>
 
               <tr>
                 <th scope="row"><a href="https://risk3sixty.com/">risk3sixty</a></th>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
+                <warning />
+                <warning />
+                <warning />
+                <success />
+                <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
 
               <tr>
                 <th scope="row"><a href="https://scytale.ai/soc-2/">Scytale</a></th>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
+                <warning />
+                <warning />
+                <warning />
+                <success />
+                <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
               
@@ -283,21 +205,11 @@
                 <td>
                   <div class="d-flex justify-content-center">$14k</div>
                 </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <success />
                 <td>
                   <div class="d-flex justify-content-center">$6.5k</div>
                 </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <success />
                 <td>
                   <div class="d-flex justify-content-center">$7.5k</div>
                 </td>
@@ -339,26 +251,9 @@
                 <td>
                   <div class="d-flex justify-content-center text-success">Free</div>
                 </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
-                      <i class="fa-solid fa-xmark fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
-                      <i class="fa-solid fa-xmark fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <danger />
+                <danger />
+                <success />
                 <td>
                   <div class="d-flex justify-content-center text-success">Free</div>
                 </td>
@@ -370,21 +265,11 @@
                 <td>
                   <div class="d-flex justify-content-center">$5k</div>
                 </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <success />
                 <td>
                   <div class="d-flex justify-content-center">$5k</div>
                 </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <success />
                 <td>
                   <div class="d-flex justify-content-center text-success">Free</div>
                 </td>
@@ -396,26 +281,9 @@
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
-                      <i class="fa-solid fa-xmark fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-danger">
-                      <i class="fa-solid fa-xmark fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
-                <td><div class="d-flex justify-content-center">
-                  <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-success">
-                    <i class="fa-regular fa-circle fa-stack-2x" />
-                    <i class="fa-solid fa-check fa-stack-1x" />
-                  </span>
-                </div></td>
+                <danger />
+                <danger />
+                <success />
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
@@ -442,37 +310,19 @@
 
               <tr>
                 <th scope="row"><a href="https://www.cobalt.io/">Cobalt</a></th>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
+                <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
 
               <tr>
                 <th scope="row"><a href="https://www.rapid7.com/">Rapid7</a></th>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
+                <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
 
               <tr>
                 <th scope="row"><a href="https://kobalt.io/">Kobalt</a></th>
-                <td>
-                  <div class="d-flex justify-content-center">
-                    <span class="fa-stack fa-1x d-flex align-items-center justify-content-center text-warning">
-                      <i class="fa-solid fa-circle-question fa-stack-1x" />
-                    </span>
-                  </div>
-                </td>
+                <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
             </tbody>
@@ -587,6 +437,9 @@
 import homeNavbar from './homeNavbar.vue';
 import aicpaLogo from './aicpaLogo.png';
 import logger from '../logger';
+import Danger from './danger.vue';
+import Warning from './warning.vue';
+import Success from './success.vue';
 
 const openGithub = gotoIssuePage => {
   const path = gotoIssuePage ? 'issues' : 'pulls';
