@@ -367,7 +367,7 @@
     <div class="w-100">
       <div class="m-0 p-4 p-md-5 bg-dark text-light">
         <h2 class="pb-2 border-bottom">Pass the SOC 2 Type II Audit</h2>
-        <div>The system description must be presented in accordance with the AICPA’s description criteria (DC 200). Each of the description criteria (DC) are described below:</div>
+        <div>The system description must be presented in accordance with the AICPA's description criteria (DC 200). Each of the description criteria (DC) are described below:</div>
         <div class="row g-4 my-2 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
             <div class="flex-shrink-0 me-3">
@@ -413,7 +413,7 @@
             </div>
             <div>
               <h2>DC6: Complementary user entity controls (CUECs)</h2>
-              <p>CUECs are the controls that the service organization’s customers need to have in place in order for the system and control environment to be complete and achieve its objectives. For example, maybe the customers need to have their own logical access controls in place so that only authorized users access the service, otherwise, unauthorized access may cause you to fail to meet your security commitments.</p>
+              <p>CUECs are the controls that the service organization's customers need to have in place in order for the system and control environment to be complete and achieve its objectives. For example, maybe the customers need to have their own logical access controls in place so that only authorized users access the service, otherwise, unauthorized access may cause you to fail to meet your security commitments.</p>
             </div>
           </div>
         </div>
@@ -427,6 +427,62 @@
           </div>
         </div>
 
+      </div>
+    </div>
+
+    <div class="w-100">
+      <div class="m-0 p-4 p-4 p-md-5 bg-dark text-light">
+        <h2 class="pb-2 border-bottom">External References</h2>
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
+          <div class="col d-flex align-items-start">
+            <div class="col d-flex align-items-start">
+              <div class="d-none d-md-flex flex-shrink-0 me-3">
+                <i class="mt-1 fa-solid fa-layer-group fa-2x fa-fw" />
+              </div>
+              <div>
+                <h2>Tailscale's Security Policies</h2>
+                <p><a href="https://github.com/tailscale/security-policies#tailscale-security-policies">Tailscale's public SOC2 Policies on GitHub</a>
+                  <br>Tailscale has several security policies in place to properly identify, respond to, and mitigate potential security risks. All employees, vendors and contractors working with Tailscale must follow these policies in order to best protect Tailscale's and its customers' data.
+
+                  They've published these publicly for transparency, so that you can see where they are in terms of security maturity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="w-100">
+      <div class="m-0 p-4 p-md-5 bg-primary text-light">
+        <div class="g-4 my-2 row">
+          <div class="d-flex justify-content-around">
+            <div class="d-flex flex-column">
+              <h5>SOC 2.FYI</h5>
+              <small>Making companies more secure</small>
+              <small>© Rhosys AG 2018 - 2023</small>
+              <div><a class="networking-link" href="https://rhosys.ch" target="_blank">About Us</a></div>
+              <div><a class="networking-link" href="https://rhosys.ch" target="_blank">Contact Us</a></div>
+            </div>
+
+            <div class="d-flex">
+              <div class="d-flex flex-column me-5">
+                <h5>References</h5>
+                <small><a class="networking-link" href="#">Home</a></small>
+                <small><a class="networking-link" href="#guide">Guide</a></small>
+                <small><a class="networking-link" href="#process">Process</a></small>
+                <small><a class="networking-link" href="#auditors">Auditors</a></small>
+              </div>
+              <div class="d-flex flex-column">
+                <h5>Contribute</h5>
+                <small><a class="networking-link" @click="() => openGithub()">GitHub</a></small>
+                <small><a class="networking-link" @click="() => openGithub()">Contribute</a></small>
+                <small><a class="networking-link" @click="() => openGithub(true)">Suggest an improvement</a></small>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
