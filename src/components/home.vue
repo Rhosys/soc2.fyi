@@ -113,7 +113,7 @@
             <tbody>
 
               <tr>
-                <th scope="row"><a href="https://www.a-lign.com/">A-LIGN (A-SCEND)</a></th>
+                <th scope="row"><a target="_blank" href="https://www.a-lign.com/">A-LIGN (A-SCEND)</a></th>
                 <td>
                   <div class="d-flex justify-content-center">€26.8k</div>
                 </td>
@@ -129,7 +129,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://akitra.com/">Akitra</a></th>
+                <th scope="row"><a target="_blank" href="https://akitra.com/">Akitra</a></th>
                 <warning />
                 <warning />
                 <warning />
@@ -139,7 +139,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://www.anecdotes.ai/">anecdotes</a></th>
+                <th scope="row"><a target="_blank" href="https://www.anecdotes.ai/">anecdotes</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$50k</div>
                 </td>
@@ -153,7 +153,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://drata.com/">Drata</a></th>
+                <th scope="row"><a target="_blank" href="https://drata.com/">Drata</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
@@ -167,7 +167,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://www.prescientassurance.com/">Prescient Assurance</a></th>
+                <th scope="row"><a target="_blank" href="https://www.prescientassurance.com/">Prescient Assurance</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$8k</div>
                 </td>
@@ -181,7 +181,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://risk3sixty.com/">risk3sixty</a></th>
+                <th scope="row"><a target="_blank" href="https://risk3sixty.com/">risk3sixty</a></th>
                 <warning />
                 <warning />
                 <warning />
@@ -191,7 +191,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://scytale.ai/soc-2/">Scytale</a></th>
+                <th scope="row"><a target="_blank" href="https://scytale.ai/soc-2/">Scytale</a></th>
                 <warning />
                 <warning />
                 <warning />
@@ -201,7 +201,7 @@
               </tr>
               
               <tr>
-                <th scope="row"><a href="https://secureframe.com/">Secureframe</a></th>
+                <th scope="row"><a target="_blank" href="https://secureframe.com/">Secureframe</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$14k</div>
                 </td>
@@ -217,7 +217,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://thoropass.com/">Thoropass (Laika)</a></th>
+                <th scope="row"><a target="_blank" href="https://thoropass.com/">Thoropass (Laika)</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$12k</div>
                 </td>
@@ -247,7 +247,7 @@
               </tr>
               
               <tr>
-                <th scope="row"><a href="https://www.trustcloud.ai/">TrustCloud (Kintent)</a></th>
+                <th scope="row"><a target="_blank" href="https://www.trustcloud.ai/">TrustCloud (Kintent)</a></th>
                 <td>
                   <div class="d-flex justify-content-center text-success">Free</div>
                 </td>
@@ -261,7 +261,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://sprinto.com/ignite/">Sprinto Ignite</a></th>
+                <th scope="row"><a target="_blank" href="https://sprinto.com/ignite/">Sprinto Ignite</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$5k</div>
                 </td>
@@ -277,7 +277,7 @@
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://www.vanta.com/">Vanta</a></th>
+                <th scope="row"><a target="_blank" href="https://www.vanta.com/">Vanta</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
                 </td>
@@ -309,19 +309,19 @@
             <tbody>
 
               <tr>
-                <th scope="row"><a href="https://www.cobalt.io/">Cobalt</a></th>
+                <th scope="row"><a target="_blank" href="https://www.cobalt.io/">Cobalt</a></th>
                 <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://www.rapid7.com/">Rapid7</a></th>
+                <th scope="row"><a target="_blank" href="https://www.rapid7.com/">Rapid7</a></th>
                 <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
 
               <tr>
-                <th scope="row"><a href="https://kobalt.io/">Kobalt</a></th>
+                <th scope="row"><a target="_blank" href="https://kobalt.io/">Kobalt</a></th>
                 <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
@@ -357,7 +357,7 @@
               Renew your SOC 2 Type 2 every 12 months. A SOC 2 Type 2 looks back in time and every year you'll need to undergo a Type 2 examination to keep your SOC 2 current.
             </p>
 
-            <div class="d-flex justify-content-center"><small>Source:  <a href="https://sansorg.egnyte.com/dl/x9796IIIVP">SANS SOC2 Cheatsheet</a></small></div>
+            <div class="d-flex justify-content-center"><small>Source:  <a target="_blank" href="https://sansorg.egnyte.com/dl/x9796IIIVP">SANS SOC2 Cheatsheet</a></small></div>
           </div>
         </div>
       </div>
@@ -433,20 +433,56 @@
     <div class="w-100">
       <div class="m-0 p-4 p-4 p-md-5 bg-dark text-light">
         <h2 class="pb-2 border-bottom">External References</h2>
-        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
-          <div class="col d-flex align-items-start">
-            <div class="col d-flex align-items-start">
-              <div class="d-none d-md-flex flex-shrink-0 me-3">
-                <i class="mt-1 fa-solid fa-layer-group fa-2x fa-fw" />
-              </div>
-              <div>
-                <h2>Tailscale's Security Policies</h2>
-                <p><a href="https://github.com/tailscale/security-policies#tailscale-security-policies">Tailscale's public SOC2 Policies on GitHub</a>
-                  <br>Tailscale has several security policies in place to properly identify, respond to, and mitigate potential security risks. All employees, vendors and contractors working with Tailscale must follow these policies in order to best protect Tailscale's and its customers' data.
 
-                  They've published these publicly for transparency, so that you can see where they are in terms of security maturity.
-                </p>
-              </div>
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
+          
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-layer-group fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Tailscale's Security Policies</h2>
+              <p><a target="_blank" href="https://github.com/tailscale/security-policies#tailscale-security-policies">Tailscale's public SOC2 Policies on GitHub</a>
+                <br>Tailscale has several security policies in place to properly identify, respond to, and mitigate potential security risks. All employees, vendors and contractors working with Tailscale must follow these policies in order to best protect Tailscale's and its customers' data.
+                <br><br>
+
+                They've published these publicly for transparency, so that you can see where they are in terms of security maturity.
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-wand-sparkles fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Comply SOC2 Automation Tool</h2>
+              <p><a target="_blank" href="https://github.com/strongdm/comply/blob/master/README.md">Comply open source automation</a>
+                <br>
+                <ul>
+                  <li><strong>Policy Generator</strong>: markdown-powered document pipeline for publishing auditor-friendly policy documents</li>
+                  <li><strong>Ticketing Integration</strong>: automate compliance throughout the year via your existing ticketing system</li>
+                  <li><strong>SOC2 Templates</strong>: open source policy and procedure templates suitable for satisfying a SOC2 audit</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
+          
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-regular fa-copy fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>JupiterOne's Policy Builder</h2>
+              <p><a target="_blank" href="https://github.com/JupiterOne/security-policy-templates#security-policy-templates">Standup-alone polices or integrated policy builder</a>
+                <br>A set of foundational but comprehensive policies, standards and procedures designed for cloud-native technology organizations. The policy package covers the requirements and controls for most compliance frameworks and best practices, in a lightweight approach.
+                <br><br>
+
+                They can be used as stand-alone documents. But the structure is designed to be best suited for use with the <a href="https://github.com/JupiterOne/security-policy-builder" target="_blank">jupiter-policy-builder CLI</a> and the policies app on the <a href="https://www.jupiterone.com/" target="_blank">JupiterOne platform</a>.
+              </p>
             </div>
           </div>
         </div>
