@@ -485,6 +485,21 @@
               </p>
             </div>
           </div>
+
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-lock fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Minimum Viable Secure Product</h2>
+              <p><a target="_blank" href="https://mvsp.dev/mvsp.en/">List of the minimal controls</a>
+                <br>Minimum Viable Secure Product is a minimalistic security checklist for B2B software and business process outsourcing suppliers.
+                <br><br>
+
+                They recommend that all companies building B2B software or otherwise handling sensitive information under its broadest definition implement at least the following controls, and are strongly encouraged to go well beyond them in their security programs.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
