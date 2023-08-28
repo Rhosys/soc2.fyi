@@ -191,6 +191,16 @@
               </tr>
 
               <tr>
+                <th scope="row"><a target="_blank" href="https://www.scrut.io/">Scrut</a></th>
+                <warning />
+                <danger />
+                <danger />
+                <success />
+                <warning />
+                <td class="text-danger">&nbsp;</td>
+              </tr>
+
+              <tr>
                 <th scope="row"><a target="_blank" href="https://scytale.ai/soc-2/">Scytale</a></th>
                 <warning />
                 <warning />
@@ -199,7 +209,7 @@
                 <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
-              
+
               <tr>
                 <th scope="row"><a target="_blank" href="https://secureframe.com/">Secureframe</a></th>
                 <td>
