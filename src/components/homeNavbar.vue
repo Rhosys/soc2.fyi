@@ -20,6 +20,9 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#guide">Guide</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#tools">Tools</a>
+            </li>
           </ul>
           <div class="d-flex">
             <div class="btn-group d-flex">

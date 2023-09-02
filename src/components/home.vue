@@ -514,6 +514,28 @@
       </div>
     </div>
 
+    <div id="tools" class="w-100">
+      <div class="m-0 p-4 p-4 p-md-5 bg-dark text-light">
+        <h2 class="pb-2 border-bottom">Tools</h2>
+
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
+          
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-brands fa-aws fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Create emergency access roles in AWS</h2>
+              <p><a target="_blank" href="https://github.com/awslabs/aws-break-glass-role#aws-break-glass-role">AWS Break Glass emergency role configuration</a>
+                <br><br>It is recommended to restrict access to the AWS account that hosts your production environment. In these cases it may be necessary to provision a user or role with elevated permissions to be used only in emergency cases. This type of role is typically called a "Break Glass Role" and is usually used in On Call situations or other circumstances when quick mitigating action is needed.
+                <br><br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="footer" class="w-100">
       <div class="m-0 p-4 p-md-5 bg-primary text-light">
         <div class="g-4 my-2 row">
