@@ -37,7 +37,8 @@
     "vue": "^3.2.47",
     "vue-fontawesome": "^0.0.2",
     "vue-multiselect": "^2.1.6",
-    "vue3-clipboard": "^1.0.0"
+    "vue3-clipboard": "^1.0.0",
+    "vue3-easy-data-table": "^1.5.47"
   },
   "scripts": {
     "build": "vite build",
