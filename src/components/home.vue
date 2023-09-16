@@ -74,8 +74,10 @@
           <div class="col-12 col-lg-6">
             <div class="h-100 p-4 p-md-5 bg-light border" style="border-radius: 0.5rem;">
               <h2>So what is SOC 2 really?</h2>
-              <p>SOC 2 is all about that attestation from an auditor. The SOC 2 audit has become a commodity so any licensed auditor can get you the two pieces you care about:
+              <p>SOC 2 is a <strong>marketing and sales tool</strong> that allows you to put a rubber stamp on your website. SOC 2 implies <strong class="text-danger">nothing about security</strong>. The SOC 2 audit is a commodity so any licensed auditor can get you the three pieces you care about:
                 <ul>
+                  <br>
+                  <li><strong>Policies</strong>: You write your own policies. And then ask the auditor to validate that you are following them.</li>
                   <br>
                   <li><strong>A compliance report</strong>: What you provide to your customers to prove you completed the audit.</li>
                   <br>
@@ -290,6 +292,7 @@
                 <th scope="row"><a target="_blank" href="https://www.vanta.com/">Vanta</a></th>
                 <td>
                   <div class="d-flex justify-content-center">$15k</div>
+
                 </td>
                 <danger />
                 <danger />
@@ -306,6 +309,8 @@
         <br id="pen-tests">
 
         <h2 class="pb-2 border-bottom">Pen Testers</h2>
+
+        Pen testing is not required for many certifications. So generally can be avoided unless you want some additional assurances. The prices below are aligned for a medium sized application service running for a single product.
         
         <div class="table-responsive-md">
           <table class="auditors table-dark table-striped table align-middle">
@@ -313,6 +318,8 @@
               <tr>
                 <th scope="col">Company</th>
                 <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Total Cost</div><span>(per test)</span></div></th>
+                <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Infrastructure Pen Tests</div></div></th>
+                <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Application Pen Tests</div></div></th>
                 <th scope="col"><div>Note</div></th>
               </tr>
             </thead>
@@ -321,18 +328,31 @@
               <tr>
                 <th scope="row"><a target="_blank" href="https://www.cobalt.io/">Cobalt</a></th>
                 <warning />
+                <warning />
+                <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
 
               <tr>
                 <th scope="row"><a target="_blank" href="https://www.rapid7.com/">Rapid7</a></th>
                 <warning />
+                <warning />
+                <warning />
                 <td class="text-danger">&nbsp;</td>
               </tr>
 
               <tr>
-                <th scope="row"><a target="_blank" href="https://kobalt.io/">Kobalt</a></th>
-                <warning />
+                <th scope="row"><a target="_blank" href="https://kobalt.io/pentest/">Kobalt</a></th>
+                <!-- <td class="d-flex justify-content-center">$7.5k</td> -->
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <span class="d-flex align-items-center justify-content-center">
+                      $7.5k
+                    </span>
+                  </div>
+                </td>
+                <danger />
+                <success />
                 <td class="text-danger">&nbsp;</td>
               </tr>
             </tbody>
@@ -351,20 +371,23 @@
               Earning a SOC 2 requires a Company to undergo a third-party examination by a Certified Public Accountant (CPA). The CPA is required to follow a set of AICPA standards to perform the audit and issue the report. Most companies follow a logical process to earning their SOC 2:
             </p>
             <p>
-              <h3>Step 1:</h3>
-              <div>Readiness examination: An exercise where your Company finds out the current status of the organization as it relates to SOC 2 controls. Organizations use readiness examinations to prepare for their SOC 2 assessment and learn what gaps they must resolve before earning their SOC 2.</div>
+              <h3>[Step 0] Do I need a SOC 2?</h3>
+              <div>Since this is a marketing tool, the default is <strong>You don't need a SOC 2 certification</strong>. If you start losing deals because your customers are asking for one, then you can take the next step. Do not attempt SOC 2 before you have customers asking for it. It is a waste of time, money, and most importantly can slow your development process down. If you already have good security hygiene, getting a rubber stamp provides no additional value.</div>
             </p>
             <p>
-              <h3>Step 2:</h3>
-              Earn a SOC 2 Type 1 - While it is not required for an organization to earn a SOC 2 Type 1 before a SOC 2 Type 2, the logical next step on the SOC 2 journey is to complete a SOC 2 Type 1 examination. The path from readiness to SOC 2 Type 1 is all dependent on how fast the organization can remediate gaps identified in the readiness assessment.
+              <h3>[Step 1] Readiness examination</h3>
+              <div>An exercise where your Company finds out the current status of the organization as it relates to SOC 2 controls. Organizations use readiness examinations to prepare for their SOC 2 assessment and learn what gaps they must resolve before earning their SOC 2. Once you have completed this mini-internal audit, ask yourself, do I still need to get a SOC 2 rubber stamp?</div>
             </p>
             <p>
-              <h3>Step 3:</h3>
-              
-              Earn your SOC 2 Type 2 - After a specified period of time (anywhere from 3-12 months) organizations earn their first SOC 2 Type 2. Typically the Type 2 review period begins the day after the date of the Type 1 review period. Step 4: Renew your SOC 2 Type 2 every 12 months. A SOC 2 Type 2 looks back in time and every year you'll need to undergo a Type 2 examination to keep your SOC 2 current.</p>
+              <h3>[Step 2] Type I</h3>
+              Type I means you defined some policies. Companies with a Type I, means they have decided what processes they want to follow. However it doesn't even mean they are following them. This of the Type I as a set of security policy commandments. Having this list is can be a good start if you are looking for a way to improve your security posture. The Type I can be driving force in your organization.
+            </p>
             <p>
-              <h3>Step 4:</h3>
-              Renew your SOC 2 Type 2 every 12 months. A SOC 2 Type 2 looks back in time and every year you'll need to undergo a Type 2 examination to keep your SOC 2 current.
+              <h3>[Step 3] Type II</h3>
+              Type II is the proof you are following the policies and controls outlined in your Type I. After a specified period of time (anywhere from 3-12 months) organizations earn their first SOC 2 Type II. Typically the Type II review period begins the day after the date of the Type I review period.</p>
+            <p>
+              <h3>[Step 4] Review</h3>
+              Your SOC 2 will essentially expire after 12 months. So if you want to keep it active, you are committing to paying for it on a recurring basis. And a huge part of that is reviewing your policies and every year you'll need to undergo a Type 2 examination to keep your SOC 2 current.
             </p>
 
             <div class="d-flex justify-content-center"><small>Source:  <a target="_blank" href="https://sansorg.egnyte.com/dl/x9796IIIVP">SANS SOC2 Cheatsheet</a></small></div>
