@@ -102,25 +102,31 @@
       <div class="align-items-lg-stretch mt-4">
         <div class="mb-4">
           <div class="h-100 p-4 p-md-5 bg-dark text-light" style="border-radius: 0.5rem;">
-            <h2>What's the SOC 2 Process?</h2>
+            <h2>The SOC 2 Process</h2>
             <p>
               Earning a SOC 2 requires a Company to undergo a third-party examination by a Certified Public Accountant (CPA). The CPA is required to follow a set of AICPA standards to perform the audit and issue the report. Most companies follow a logical process to earning their SOC 2:
             </p>
+            <br>
             <p>
               <h3>[Step 0] Do I need a SOC 2?</h3>
               <div>Since this is a marketing tool, the default is <strong>You don't need a SOC 2 certification</strong>. If you start losing deals because your customers are asking for one, then you can take the next step. Do not attempt SOC 2 before you have customers asking for it. It is a waste of time, money, and most importantly can slow your development process down. If you already have good security hygiene, getting a rubber stamp provides no additional value.</div>
             </p>
+            <br>
             <p>
               <h3>[Step 1] Readiness examination</h3>
               <div>An exercise where your Company finds out the current status of the organization as it relates to SOC 2 controls. Organizations use readiness examinations to prepare for their SOC 2 assessment and learn what gaps they must resolve before earning their SOC 2. Once you have completed this mini-internal audit, ask yourself, do I still need to get a SOC 2 rubber stamp?</div>
             </p>
+            <br>
             <p>
               <h3>[Step 2] Type I</h3>
               Type I means you defined some policies. Companies with a Type I, means they have decided what processes they want to follow. However it doesn't even mean they are following them. This of the Type I as a set of security policy commandments. Having this list is can be a good start if you are looking for a way to improve your security posture. The Type I can be driving force in your organization.
             </p>
+            <br>
             <p>
               <h3>[Step 3] Type II</h3>
-              Type II is the proof you are following the policies and controls outlined in your Type I. After a specified period of time (anywhere from 3-12 months) organizations earn their first SOC 2 Type II. Typically the Type II review period begins the day after the date of the Type I review period.</p>
+              Type II is the proof you are following the policies and controls outlined in your Type I. After a specified period of time (anywhere from 3-12 months) organizations earn their first SOC 2 Type II. Typically the Type II review period begins the day after the date of the Type I review period.
+            </p>
+            <br>
             <p>
               <h3>[Step 4] Review</h3>
               Your SOC 2 will essentially expire after 12 months. So if you want to keep it active, you are committing to paying for it on a recurring basis. And a huge part of that is reviewing your policies and every year you'll need to undergo a Type 2 examination to keep your SOC 2 current.
@@ -343,7 +349,9 @@ const openGithub = gotoIssuePage => {
   window.open(`https://github.com/Rhosys/soc2.fyi/${path}`, '_blank');
 };
 
-logger.track({ title: 'PageHit' });
+if (!window.location.href.match('localhost')) {
+  logger.track({ title: 'PageHit' });
+}
 
 </script>
 

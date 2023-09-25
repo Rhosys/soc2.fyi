@@ -92,6 +92,14 @@
             </tr>
 
             <tr>
+              <th scope="row"><a target="_blank" href="https://www.doyensec.com/">Doyensec</a></th>
+              <td><warning /></td>
+              <td><success /></td>
+              <td><success /></td>
+              <td class="text-danger">&nbsp;</td>
+            </tr>
+
+            <tr>
               <th scope="row"><a target="_blank" href="https://www.rapid7.com/">Rapid7</a></th>
               <td><warning /></td>
               <td><warning /></td>
