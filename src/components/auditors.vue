@@ -3,7 +3,7 @@
   <div class="w-100">
     <div class="m-0 p-4 p-md-5 bg-dark text-light">
       <h2 class="pb-2 border-bottom">Auditors</h2>
-      
+
       <div class="table-responsive-md">
         <EasyDataTable id="auditorTable"
           :hide-footer="true"
@@ -94,6 +94,19 @@
             <tr>
               <th scope="row"><a target="_blank" href="https://www.doyensec.com/">Doyensec</a></th>
               <td><warning /></td>
+              <td><success /></td>
+              <td><success /></td>
+              <td class="text-danger">&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th scope="row"><a target="_blank" href="https://glitchsecure.com/">GlitchSecure</a></th>
+              <td>
+                <div class="d-flex justify-content-center">
+                  <span class="d-flex align-items-center justify-content-center">
+                    $10k
+                  </span>
+                </div></td>
               <td><success /></td>
               <td><success /></td>
               <td class="text-danger">&nbsp;</td>
