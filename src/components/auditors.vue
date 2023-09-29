@@ -18,7 +18,7 @@
             <span style="font-size: 16px">{{ header.text }}</span>
           </template>
           <template #item-name="item">
-            <a :id="item.name" target="_blank" :href="item.link">{{ item.name }}</a>
+            <a :id="item.id || item.name" target="_blank" :href="item.link">{{ item.name }}</a>
           </template>
           <template #item-totalCost="item">
             <div v-if="item.totalCost === null"><warning /></div>
@@ -69,7 +69,7 @@
       <h2 class="pb-2 border-bottom">Pen Testers</h2>
 
       Pen testing is not required for many certifications. So generally can be avoided unless you want some additional assurances. The prices below are aligned for a medium sized application service running for a single product.
-      
+      <br><br>
       <div class="table-responsive-md">
         <table class="auditors table-dark table-striped table align-middle">
           <thead>
@@ -100,14 +100,6 @@
             </tr>
 
             <tr>
-              <th scope="row"><a target="_blank" href="https://www.rapid7.com/">Rapid7</a></th>
-              <td><warning /></td>
-              <td><warning /></td>
-              <td><warning /></td>
-              <td class="text-danger">&nbsp;</td>
-            </tr>
-
-            <tr>
               <th scope="row"><a target="_blank" href="https://kobalt.io/pentest/">Kobalt</a></th>
               <!-- <td class="d-flex justify-content-center">$7.5k</td> -->
               <td>
@@ -119,6 +111,72 @@
               </td>
               <td><danger /></td>
               <td><success /></td>
+              <td class="text-danger">&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th scope="row"><a target="_blank" href="https://www.rapid7.com/">Rapid7</a></th>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td class="text-danger">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <br id="pen-tests">
+
+      <h2 class="pb-2 border-bottom">Security Consultants</h2>
+
+      Most of the reports from the above providers are pretty easy to read, but you get stuck and need help reviewing them or you need a consultant to help you implement the controls to allow you to pass the audit, one of these might help.
+      <br><br>
+      <div class="table-responsive-md">
+        <table class="auditors table-dark table-striped table align-middle">
+          <thead>
+            <tr>
+              <th scope="col">Company</th>
+              <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Pricing</div></div></th>
+              <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>SOC 2 Report Review</div></div></th>
+              <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Infra implementation assistance</div></div></th>
+              <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Application architecture reviews</div></div></th>
+              <th scope="col"><div>Note</div></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><a target="_blank" href="https://kobalt.io">Kobalt</a></th>
+              <td><warning /></td>
+              <td><success /></td>
+              <td><danger /></td>
+              <td><danger /></td>
+              <td>Works only with <a href="#" @click="navigateTo('vanta')">Vanta</a></td>
+            </tr>
+
+            <tr>
+              <th scope="row"><a target="_blank" href="https://www.latacora.com/">Latacora</a></th>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td><success /></td>
+              <td><success /></td>
+              <td class="text-danger">&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th scope="row"><a target="_blank" href="https://rhymetec.com/vciso/">Rhymetic</a></th>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td class="text-danger">&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th scope="row"><a target="_blank" href="https://www.violetx.com/">Violetx</a></th>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td><warning /></td>
               <td class="text-danger">&nbsp;</td>
             </tr>
           </tbody>
@@ -228,6 +286,15 @@ const companies = [
     automationPlatformCost: '$7.5k',
     note: 'Requires third party auditor (or more expensive in house audit)' },
 
+  { link: 'https://sprinto.com/ignite/',
+    name: 'Sprinto Ignite',
+    totalCost: '$5k',
+    licensed: true,
+    auditCost: '$5k',
+    hasAutomationPlatform: true,
+    automationPlatformCost: true,
+    note: 'Requires 3 year contract' },
+
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
     totalCost: '$12k',
@@ -246,16 +313,8 @@ const companies = [
     automationPlatformCost: true,
     note: '' },
 
-  { link: 'https://sprinto.com/ignite/',
-    name: 'Sprinto Ignite',
-    totalCost: '$5k',
-    licensed: true,
-    auditCost: '$5k',
-    hasAutomationPlatform: true,
-    automationPlatformCost: true,
-    note: 'Requires 3 year contract' },
-
   { link: 'https://www.vanta.com/',
+    id: 'vanta',
     name: 'Vanta',
     totalCost: '$15k',
     licensed: false,
@@ -276,6 +335,20 @@ const showRow = clickedElement => {
   if (companies.find(c => c.name === companyId)?.callout) {
     target.children[0].click();
   }
+};
+
+const navigateTo = target => {
+  if (!target) {
+    window.scrollTo(0, -window.scrollY);
+    return;
+  }
+  const element = document.getElementById(target);
+  window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 200);
+  setTimeout(() => {
+    if (Math.abs(element.getBoundingClientRect().top - 60) > 10) {
+      window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 200);
+    }
+  }, 10);
 };
 
 </script>

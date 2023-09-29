@@ -36,45 +36,48 @@
       <div class="container-fluid mb-4 w-100">
         <div class="d-flex row">
           <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-            <div class="h-100 p-4 p-md-5 text-white bg-dark" style="border-radius: 0.5rem;">
-              <h2>The FYI</h2>
-              You already did the hard work of securing your technology, so getting the attestation proving it should be easy. But it still isn't.
-              <br><br>
-              <div class="d-flex align-items-center">
-                <i class="fa-solid fa-arrows-left-right-to-line fa-2x me-4" />
-                <div>
-                  <h3>Gap Analysis</h3>
-                  <div>Figure out where you are at versus where you should be. And then you can use this to know what automation to run.</div>
-                </div>
+            <div class="h-100 p-4 p-md-5 text-white bg-dark d-flex flex-column" style="border-radius: 0.5rem;">
+              <div>
+                <h2>The FYI</h2>
+                You already did the hard work of securing your technology, so getting the attestation proving it should be easy. But it still isn't.
               </div>
-              
-              <br>
-              <div class="d-flex align-items-center">
-                <i class="fa-solid fa-gears fa-2x me-4" />
-                <div>
-                  <h3>Security Automation</h3>
-                  <div>Update your policies and infrastructure to fill in these gaps. Use the automation to ensure your technical policies are being followed.</div>
+              <div class="d-flex flex-column justify-content-around flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <i class="fa-solid fa-arrows-left-right-to-line fa-2x me-4" />
+                  <div>
+                    <h3>Gap Analysis</h3>
+                    <div>Figure out where you are at versus where you should be. And then you can use this to know what automation to run.</div>
+                  </div>
                 </div>
-              </div>
-              <br>
+                
+                <br>
+                <div class="d-flex align-items-center">
+                  <i class="fa-solid fa-gears fa-2x me-4" />
+                  <div>
+                    <h3>Security Automation</h3>
+                    <div>Update your policies and infrastructure to fill in these gaps. Use the automation to ensure your technical policies are being followed.</div>
+                  </div>
+                </div>
+                <br>
 
-              <div class="d-flex align-items-center">
-                <i class="fa-solid fa-pencil fa-2x me-4" />
-                <div>
-                  <h3>Attestation</h3>
-                  <div>Ask an auditor to sign off on your policies and infrastructure automation by giving you a badge and a report.</div>
+                <div class="d-flex align-items-center">
+                  <i class="fa-solid fa-pencil fa-2x me-4" />
+                  <div>
+                    <h3>Attestation</h3>
+                    <div>Ask an auditor to sign off on your policies and infrastructure automation by giving you a badge and a report.</div>
+                  </div>
                 </div>
-              </div>
-              <br>
-              <div class="d-flex justify-content-center">
-                <h4>That's it, pretty simple right?</h4>
+                <br>
+                <div class="d-flex justify-content-center align-items-center">
+                  <h4>That's it, pretty simple right?</h4>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-6">
             <div class="h-100 p-4 p-md-5 bg-light border" style="border-radius: 0.5rem;">
               <h2>So what is SOC 2 really?</h2>
-              <p>SOC 2 is a <strong>marketing and sales tool</strong> that allows you to put a rubber stamp on your website. SOC 2 implies <strong class="text-danger">nothing about security</strong>. The SOC 2 audit is a commodity so any licensed auditor can get you the three pieces you care about:
+              <p>SOC 2 is a <strong>marketing and sales tool</strong> that allows you to put a rubber stamp on your website. SOC 2 implies <strong class="text-danger">nothing about security</strong>. It only shows what you write:
                 <ul>
                   <br>
                   <li><strong>Policies</strong>: You write your own policies. And then ask the auditor to validate that you are following them.</li>
@@ -83,6 +86,8 @@
                   <br>
                   <li><strong>An attestation icon and url</strong>: They will provide you a link to put on your website. This proves they did the audit.</li>
                 </ul>
+
+                Since the policies are up to you, the SOC 2 audit is a commodity so any licensed auditor works the same.
               </p>
 
               <div>If you've already implemented the best practices found below then you are ready to get your audit.</div>
