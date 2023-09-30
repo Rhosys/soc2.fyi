@@ -9,6 +9,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto me-4 mb-2 mb-md-0">
             <li class="nav-item">
+              <a class="nav-link" aria-current="page" @click.prevent="navigateTo('automation-platforms')">Platforms</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" aria-current="page" @click.prevent="navigateTo('auditors')">Auditors</a>
             </li>
             <li class="nav-item">

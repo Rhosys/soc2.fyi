@@ -1,12 +1,18 @@
 <!-- eslint-disable max-len -->
 <template>
-  <div class="w-100">
-    <div class="m-0 p-4 p-md-5 bg-dark text-light">
+  <div class="m-0 px-4 px-md-5 py-4 bg-dark text-light">
+    <div>
+      <br id="auditors">
       <h2 class="pb-2 border-bottom">Auditors</h2>
+
+      These are the auditors, they are the only ones that grant you the SOC 2 certification, they may or may not require that you use an <a href="#" @click.prevent="navigateTo('automation-platforms')">Automation Platform</a> to complete your audit.
+
+      <br><br>
 
       <div class="table-responsive-md">
         <EasyDataTable id="auditorTable"
           :hide-footer="true"
+          no-hover
           table-class-name="customize-table"
           header-text-direction="center"
           body-text-direction="center"
@@ -45,6 +51,7 @@
           <template #item-automationPlatformCost="item">
             <div v-if="item.automationPlatformCost === null"><warning /></div>
             <div v-else-if="item.automationPlatformCost === true"><span class="text-success">Free</span></div>
+            <div v-else-if="item.automationPlatformCost"><span>{{ item.automationPlatformCost }}</span></div>
             <div v-else><danger /></div>
           </template>
           <template #item-note="item">
@@ -163,7 +170,7 @@
               <td><success /></td>
               <td><danger /></td>
               <td><danger /></td>
-              <td>Works only with <a href="#" @click="navigateTo('vanta')">Vanta</a></td>
+              <td>Works only with <a href="#" @click.prevent="navigateTo('vanta')">Vanta</a></td>
             </tr>
 
             <tr>
@@ -212,7 +219,6 @@ import { ref } from 'vue';
 const headers = [
   { text: 'Company', value: 'name' },
   { text: 'Total Cost (per year)', value: 'totalCost' },
-  { text: 'Audit (licensed audit firm)', value: 'licensed' },
   { text: 'Audit Cost', value: 'auditCost' },
   { text: 'Automation Platform', value: 'hasAutomationPlatform' },
   { text: 'Automation Platform Cost', value: 'automationPlatformCost' },
@@ -220,89 +226,18 @@ const headers = [
 ];
 
 const companies = [
-  { link: 'https://www.a-lign.com/',
-    name: 'A-LIGN (A-SCEND)',
-    totalCost: '€26.8k',
-    licensed: true,
-    auditCost: '€21k',
-    hasAutomationPlatform: true,
-    automationPlatformCost: '€5.8k',
-    note: '<span class="text-danger">Very unresponsive (multiple months with no response)</span>' },
-  { link: 'https://akitra.com/',
-    name: 'Akitra',
-    totalCost: null,
-    licensed: null,
-    auditCost: null,
-    hasAutomationPlatform: null,
-    automationPlatformCost: null,
-    note: '' },
-  { link: 'https://www.anecdotes.ai/',
-    name: 'anecdotes',
-    totalCost: '$50k',
-    licensed: false,
-    auditCost: false,
-    hasAutomationPlatform: true,
-    automationPlatformCost: '$50k',
-    note: '<span class="text-danger">No Audit</span>, the audit requires a third party and fee' },
-
-  { link: 'https://drata.com/',
-    name: 'Drata',
-    totalCost: '$15k',
-    licensed: false,
-    auditCost: false,
-    hasAutomationPlatform: true,
-    automationPlatformCost: '$15k',
-    note: '<span class="text-danger">No Audit</span>, the audit requires a third party and fee' },
-
   { link: 'https://www.prescientassurance.com/',
     name: 'Prescient Assurance',
     totalCost: '$8k',
-    licensed: true,
     auditCost: '$8k',
     hasAutomationPlatform: false,
     automationPlatformCost: false,
-    note: 'No automation offered' },
-
-  { link: 'https://risk3sixty.com/',
-    name: 'risk3sixty',
-    totalCost: null,
-    licensed: null,
-    auditCost: null,
-    hasAutomationPlatform: true,
-    automationPlatformCost: null,
     note: '' },
-
-  { link: 'https://www.scrut.io/',
-    name: 'Scrut',
-    totalCost: null,
-    licensed: false,
-    auditCost: false,
-    hasAutomationPlatform: true,
-    automationPlatformCost: null,
-    note: '' },
-
-  { link: 'https://scytale.ai/soc-2/',
-    name: 'Scytale',
-    totalCost: null,
-    licensed: null,
-    auditCost: null,
-    hasAutomationPlatform: true,
-    automationPlatformCost: null,
-    note: '' },
-
-  { link: 'https://secureframe.com/',
-    name: 'Secureframe',
-    totalCost: '$14k',
-    licensed: true,
-    auditCost: '$6.5k',
-    hasAutomationPlatform: true,
-    automationPlatformCost: '$7.5k',
-    note: 'Requires third party auditor (or more expensive in house audit)' },
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
     totalCost: '$5k',
-    licensed: true,
+    includesPlatform: true,
     auditCost: '$5k',
     hasAutomationPlatform: true,
     automationPlatformCost: true,
@@ -311,34 +246,11 @@ const companies = [
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
     totalCost: '$12k',
-    licensed: true,
+    includesPlatform: true,
     auditCost: '$5k',
     hasAutomationPlatform: true,
     automationPlatformCost: '$7.5k',
-    note: 'Audit done in house' },
-
-  { link: 'https://www.trustcloud.ai/',
-    name: 'TrustCloud (Kintent)',
-    totalCost: true,
-    licensed: false,
-    auditCost: false,
-    hasAutomationPlatform: true,
-    automationPlatformCost: true,
-    note: '' },
-
-  { link: 'https://www.vanta.com/',
-    id: 'vanta',
-    name: 'Vanta',
-    totalCost: '$15k',
-    licensed: false,
-    auditCost: false,
-    hasAutomationPlatform: true,
-    automationPlatformCost: '$15k',
-    note: '<span class="text-danger">No Audit</span>, the audit requires a third party and fee',
-    callout: `
-      <span>Standardize pricing through third party auditors:</span>
-      <ul><li>Type I Pricing: $7k</li><li>Type II Pricing: $10k</li>`
-  }
+    note: 'Also includes automation platform' }
 ];
 const items = ref(companies);
 
@@ -407,7 +319,6 @@ table.auditors th a {
   }
 
   :deep(tr) {
-    cursor: pointer;
     .expand-icon {
       opacity: 0;
     }

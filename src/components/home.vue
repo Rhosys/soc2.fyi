@@ -98,7 +98,8 @@
       </div>
     </div>
 
-    <br id="auditors">
+    <platforms />
+
     <auditors />
 
     <br id="process">
@@ -324,6 +325,7 @@
                 <small><a class="networking-link" href="#guide">Guide</a></small>
                 <small><a class="networking-link" href="#process">Process</a></small>
                 <small><a class="networking-link" href="#auditors">Auditors</a></small>
+                <small><a class="networking-link" href="#automation-platforms">Automation Platforms</a></small>
               </div>
               <div class="d-flex flex-column">
                 <h5>Contribute</h5>
@@ -347,6 +349,7 @@ import homeNavbar from './homeNavbar.vue';
 import aicpaLogo from './aicpaLogo.png';
 import logger from '../logger';
 import Auditors from './auditors.vue';
+import Platforms from './platforms.vue';
 
 const openGithub = gotoIssuePage => {
   const path = gotoIssuePage ? 'issues' : 'pulls';
