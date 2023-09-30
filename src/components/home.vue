@@ -77,12 +77,11 @@
           <div class="col-12 col-lg-6">
             <div class="h-100 p-4 p-md-5 bg-light border" style="border-radius: 0.5rem;">
               <h2>So what is SOC 2 really?</h2>
-              <p>SOC 2 is a <strong>marketing and sales tool</strong> that allows you to put a rubber stamp on your website. SOC 2 implies <strong class="text-danger">nothing about security</strong>. It only shows what you write:
+              <p>SOC 2 is a <strong>marketing and sales tool</strong> that allows you to put a rubber stamp on your website. SOC 2 implies <strong class="text-danger">nothing about security</strong>. Done correctly, there can be value in it for you. But please don't mistake having a SOC 2 badge for being secure. Plainly, it is only:
                 <ul>
+                  <li><strong>Policies</strong>: You have written your own policies. And then ask the auditor to validate that you are following them.</li>
                   <br>
-                  <li><strong>Policies</strong>: You write your own policies. And then ask the auditor to validate that you are following them.</li>
-                  <br>
-                  <li><strong>A compliance report</strong>: What you provide to your customers to prove you completed the audit.</li>
+                  <li><strong>A compliance report</strong>: To provide to your customers to prove you completed the audit.</li>
                   <br>
                   <li><strong>An attestation icon and url</strong>: They will provide you a link to put on your website. This proves they did the audit.</li>
                 </ul>
@@ -91,7 +90,7 @@
               </p>
 
               <div>If you've already implemented the best practices found below then you are ready to get your audit.</div>
-              <div class="mt-3">There's no need to shell out a lot of money, but don't be surprised if the first few companies you talk to quote you a very very high price.</div>
+              <div class="mt-3">There's no need to shell out a lot of money, but don't be surprised if the first few companies you talk to quote you a very high price.</div>
               <div class="mt-3">Appropriately priced auditors are out there, and you can use this site to find the one that works for you.</div>
             </div>
           </div>
