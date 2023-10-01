@@ -53,8 +53,22 @@
             <div v-else-if="item.automationPlatformCost === true"><span class="text-success">Free</span></div>
             <div v-else><danger /></div>
           </template>
+          <template #item-integrationCount="item">
+            <div v-if="item.integrationCount === null"><warning /></div>
+            <div v-else-if="item.integrationCount >= 1000"><span class="text-success">Many</span></div>
+            <div v-else-if="item.integrationCount >= 100"><span class="text-warning">Some</span></div>
+            <div v-else-if="item.integrationCount >= 10"><span class="text-danger">Few</span></div>
+            <div v-else><danger /></div>
+          </template>
+          <template #item-pitch="item">
+            <div v-if="item.pitch">
+              <!-- eslint-disable-next-line vue/no-v-html -->
+              <span v-html="item.note" />
+            </div>
+            <div v-else>-</div>
+          </template>
           <template #item-note="item">
-            <div style="text-align: left; width: 100%; justify-content: start">
+            <div style="text-align: left; width: 100%; max-width: 300px; justify-content: start">
               <!-- eslint-disable-next-line vue/no-v-html -->
               <span v-html="item.note" />
             </div>
@@ -89,6 +103,8 @@ const headers = [
   { text: 'Automation Platform Cost (per year)', value: 'totalCost' },
   { text: 'Also Performs Audit', value: 'licensed' },
   { text: 'Additional Audit Cost', value: 'auditCost' },
+  { text: 'Total integrations', value: 'integrationCount' },
+  { text: 'Pitch', value: 'pitch' },
   { text: 'Note', value: 'note' }
 ];
 
@@ -98,21 +114,20 @@ const companies = [
     totalCost: '€5.8k',
     licensed: true,
     auditCost: '+ €21k',
-    hasAutomationPlatform: true,
+    integrationCount: null,
     note: '<span class="text-danger">Very unresponsive (multiple months with no response)</span>' },
   { link: 'https://akitra.com/',
     name: 'Akitra',
     totalCost: null,
     licensed: null,
     auditCost: null,
-    hasAutomationPlatform: null,
+    integrationCount: null,
     note: '' },
   { link: 'https://www.anecdotes.ai/',
     name: 'anecdotes',
     totalCost: '$50k',
     licensed: false,
     auditCost: false,
-    hasAutomationPlatform: true,
     note: '' },
 
   { link: 'https://drata.com/',
@@ -120,8 +135,8 @@ const companies = [
     totalCost: '$15k',
     licensed: false,
     auditCost: false,
-    hasAutomationPlatform: true,
-    note: '' },
+    integrationCount: 100,
+    note: 'Forward focused on being agile.' },
 
   {
     link: 'https://realciso.io/',
@@ -129,7 +144,7 @@ const companies = [
     totalCost: '$30k',
     licensed: false,
     auditCost: false,
-    hasAutomationPlatform: true,
+    integrationCount: 10,
     note: 'Only works with <a href="https://www.bonadio.com/">Bonadio CPA</a>.'
   },
 
@@ -139,7 +154,7 @@ const companies = [
     totalCost: null,
     licensed: null,
     auditCost: null,
-    hasAutomationPlatform: true,
+    integrationCount: null,
     note: '' },
 
   { link: 'https://www.scrut.io/',
@@ -147,7 +162,7 @@ const companies = [
     totalCost: null,
     licensed: false,
     auditCost: false,
-    hasAutomationPlatform: true,
+    integrationCount: null,
     note: '' },
 
   { link: 'https://scytale.ai/soc-2/',
@@ -155,7 +170,7 @@ const companies = [
     totalCost: null,
     licensed: null,
     auditCost: null,
-    hasAutomationPlatform: true,
+    integrationCount: null,
     note: '' },
 
   { link: 'https://secureframe.com/',
@@ -163,23 +178,24 @@ const companies = [
     totalCost: '$7.5k',
     licensed: true,
     auditCost: '+ $6.5k',
-    hasAutomationPlatform: true,
-    note: 'Provides an in house audit or works with third party auditors' },
+    integrationCount: 100,
+    pitch: 'Audit defense',
+    note: 'Provides an in house audit or works with third party auditors. Includes automated answers to vendor questionnaires.' },
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
     totalCost: '$5k',
     licensed: true,
     auditCost: true,
-    hasAutomationPlatform: true,
-    note: 'Requires 3 year contract' },
+    integrationCount: 100,
+    note: 'Requires 3 year contract, frequently requires manual actions.' },
 
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
     totalCost: '$7k',
     licensed: true,
     auditCost: '+ $5k',
-    hasAutomationPlatform: true,
+    integrationCount: null,
     note: 'Audit only done in house.' },
 
   { link: 'https://www.trustcloud.ai/',
@@ -187,8 +203,27 @@ const companies = [
     totalCost: true,
     licensed: false,
     auditCost: false,
-    hasAutomationPlatform: true,
-    note: '' },
+    integrationCount: 10,
+    pitch: 'Has been Free for low usage!',
+    note: 'Poor UX. <span class="text-danger">No OAuth</span>.' },
+
+  { link: 'https://trustero.com/',
+    name: 'Trustero',
+    totalCost: null,
+    licensed: null,
+    auditCost: null,
+    integrationCount: 10,
+    pitch: 'Customer Support + Audit Readiness',
+    note: 'Can we difficult to work with.' },
+  
+  { link: 'https://tugboatlogic.com/',
+    name: 'Tugboat (onetrust)',
+    totalCost: null,
+    licensed: null,
+    auditCost: null,
+    integrationCount: false,
+    pitch: 'Flexible',
+    note: 'Verify limited platform' },
 
   { link: 'https://www.vanta.com/',
     id: 'vanta',
@@ -196,8 +231,9 @@ const companies = [
     totalCost: '$15k',
     licensed: 'PARTNERS',
     auditCost: '+ $10k',
-    hasAutomationPlatform: true,
-    note: 'Has list of Audit Partners, and always charges a fixed price.',
+    integrationCount: 1000,
+    pitch: 'Integrations',
+    note: 'Has list of Audit Partners, and always charges a fixed price. However generally considered expensive.',
     callout: `
       <span>Standardize pricing through third party auditors:</span>
       <ul><li>Type I Pricing: $7k</li><li>Type II Pricing: $10k</li>`
