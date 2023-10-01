@@ -9,6 +9,14 @@
 
       <br><br>
 
+      For platforms that also perform the audit, you must pay both the automation <strong class="text-info">platform cost</strong> and the <strong class="text-info">audit cost</strong>. In some cases, you might be able to mix and match, and other cases it will be a packaged deal depending on the provider.
+      <br><br>
+
+      <small class="text-warning">
+        Cost pricing amounts are per year.
+      </small>
+      <br><br>
+
       <div class="table-responsive-md">
         <EasyDataTable id="platformsTable"
           :hide-footer="true"
@@ -26,10 +34,16 @@
             <a :id="item.id || item.name" target="_blank" :href="item.link">{{ item.name }}</a>
           </template>
           <template #item-totalCost="item">
-            <div v-if="item.totalCost === null"><warning /></div>
-            <div v-else-if="item.totalCost === false"><danger /></div>
-            <div v-else-if="item.totalCost === true"><span class="text-success">Free</span></div>
-            <div v-else>{{ item.totalCost }}</div>
+            <div v-if="typeof item.automationPlatformCost === 'string'">
+              {{ calculateTotalCost(item) }}
+            </div>
+            <div v-else><warning /></div>
+          </template>
+          <template #item-automationPlatformCost="item">
+            <div v-if="item.automationPlatformCost === null"><warning /></div>
+            <div v-else-if="item.automationPlatformCost === false"><danger /></div>
+            <div v-else-if="item.automationPlatformCost === true"><span class="text-success">Free</span></div>
+            <div v-else>{{ item.automationPlatformCost }}</div>
           </template>
           <template #item-licensed="item">
             <div v-if="item.licensed === null"><warning /></div>
@@ -48,11 +62,6 @@
             <div v-else-if="item.hasAutomationPlatform === false"><danger /></div>
             <div v-else><success /></div>
           </template>
-          <template #item-automationPlatformCost="item">
-            <div v-if="item.automationPlatformCost === null"><warning /></div>
-            <div v-else-if="item.automationPlatformCost === true"><span class="text-success">Free</span></div>
-            <div v-else><danger /></div>
-          </template>
           <template #item-integrationCount="item">
             <div v-if="item.integrationCount === null"><warning /></div>
             <div v-else-if="item.integrationCount >= 1000"><span class="text-success">Many</span></div>
@@ -61,9 +70,9 @@
             <div v-else><danger /></div>
           </template>
           <template #item-pitch="item">
-            <div v-if="item.pitch">
+            <div v-if="item.pitch" style="width: 100%; max-width: 300px;">
               <!-- eslint-disable-next-line vue/no-v-html -->
-              <span v-html="item.note" />
+              <span v-html="item.pitch" />
             </div>
             <div v-else>-</div>
           </template>
@@ -100,7 +109,8 @@ import { ref } from 'vue';
 
 const headers = [
   { text: 'Company', value: 'name' },
-  { text: 'Automation Platform Cost (per year)', value: 'totalCost' },
+  { text: 'Total Cost (per year)', value: 'totalCost' },
+  { text: 'Automation Platform Cost', value: 'automationPlatformCost' },
   { text: 'Also Performs Audit', value: 'licensed' },
   { text: 'Additional Audit Cost', value: 'auditCost' },
   { text: 'Total integrations', value: 'integrationCount' },
@@ -111,28 +121,28 @@ const headers = [
 const companies = [
   { link: 'https://www.a-lign.com/',
     name: 'A-LIGN (A-SCEND)',
-    totalCost: '€5.8k',
+    automationPlatformCost: '€5.8k',
     licensed: true,
     auditCost: '+ €21k',
     integrationCount: null,
     note: '<span class="text-danger">Very unresponsive (multiple months with no response)</span>' },
   { link: 'https://akitra.com/',
     name: 'Akitra',
-    totalCost: null,
+    automationPlatformCost: null,
     licensed: null,
     auditCost: null,
     integrationCount: null,
     note: '' },
   { link: 'https://www.anecdotes.ai/',
     name: 'anecdotes',
-    totalCost: '$50k',
+    automationPlatformCost: '$50k',
     licensed: false,
     auditCost: false,
     note: '' },
 
   { link: 'https://drata.com/',
     name: 'Drata',
-    totalCost: '$15k',
+    automationPlatformCost: '$15k',
     licensed: false,
     auditCost: false,
     integrationCount: 100,
@@ -141,9 +151,9 @@ const companies = [
   {
     link: 'https://realciso.io/',
     name: 'RealCISO',
-    totalCost: '$30k',
-    licensed: false,
-    auditCost: false,
+    automationPlatformCost: '$6k',
+    licensed: 'PARTNERS',
+    auditCost: '+ $24k',
     integrationCount: 10,
     note: 'Only works with <a href="https://www.bonadio.com/">Bonadio CPA</a>.'
   },
@@ -151,7 +161,7 @@ const companies = [
   {
     link: 'https://risk3sixty.com/',
     name: 'risk3sixty',
-    totalCost: null,
+    automationPlatformCost: null,
     licensed: null,
     auditCost: null,
     integrationCount: null,
@@ -159,7 +169,7 @@ const companies = [
 
   { link: 'https://www.scrut.io/',
     name: 'Scrut',
-    totalCost: null,
+    automationPlatformCost: null,
     licensed: false,
     auditCost: false,
     integrationCount: null,
@@ -167,7 +177,7 @@ const companies = [
 
   { link: 'https://scytale.ai/soc-2/',
     name: 'Scytale',
-    totalCost: null,
+    automationPlatformCost: null,
     licensed: null,
     auditCost: null,
     integrationCount: null,
@@ -175,7 +185,7 @@ const companies = [
 
   { link: 'https://secureframe.com/',
     name: 'Secureframe',
-    totalCost: '$7.5k',
+    automationPlatformCost: '$7.5k',
     licensed: true,
     auditCost: '+ $6.5k',
     integrationCount: 100,
@@ -184,7 +194,7 @@ const companies = [
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
-    totalCost: '$5k',
+    automationPlatformCost: '$5k',
     licensed: true,
     auditCost: true,
     integrationCount: 100,
@@ -192,7 +202,7 @@ const companies = [
 
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
-    totalCost: '$7k',
+    automationPlatformCost: '$7k',
     licensed: true,
     auditCost: '+ $5k',
     integrationCount: null,
@@ -200,7 +210,7 @@ const companies = [
 
   { link: 'https://www.trustcloud.ai/',
     name: 'TrustCloud (Kintent)',
-    totalCost: true,
+    automationPlatformCost: true,
     licensed: false,
     auditCost: false,
     integrationCount: 10,
@@ -209,7 +219,7 @@ const companies = [
 
   { link: 'https://trustero.com/',
     name: 'Trustero',
-    totalCost: null,
+    automationPlatformCost: null,
     licensed: null,
     auditCost: null,
     integrationCount: 10,
@@ -218,7 +228,7 @@ const companies = [
   
   { link: 'https://tugboatlogic.com/',
     name: 'Tugboat (onetrust)',
-    totalCost: null,
+    automationPlatformCost: null,
     licensed: null,
     auditCost: null,
     integrationCount: false,
@@ -228,7 +238,7 @@ const companies = [
   { link: 'https://www.vanta.com/',
     id: 'vanta',
     name: 'Vanta',
-    totalCost: '$15k',
+    automationPlatformCost: '$15k',
     licensed: 'PARTNERS',
     auditCost: '+ $10k',
     integrationCount: 1000,
@@ -240,6 +250,23 @@ const companies = [
   }
 ];
 const items = ref(companies);
+
+const calculateTotalCost = company => {
+  const symbol = company.automationPlatformCost[0];
+  
+  const automationCost = Number(company.automationPlatformCost.replace(/[^\d.]/gi, ''));
+  
+  if (!company.auditCost) {
+    return `${company.automationPlatformCost} + Audit`;
+  }
+
+  if (company.auditCost === true) {
+    return `${symbol}${automationCost}k`;
+  }
+
+  const auditCost = Number(company.auditCost.replace(/[^\d.]/gi, ''));
+  return `~ ${symbol}${automationCost + auditCost}k`;
+};
 
 const showRow = clickedElement => {
   const target = clickedElement.target.closest('tr');

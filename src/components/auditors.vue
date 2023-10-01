@@ -254,9 +254,7 @@ import { ref } from 'vue';
 const headers = [
   { text: 'Company', value: 'name' },
   { text: 'Total Cost (per year)', value: 'totalCost' },
-  { text: 'Audit Cost', value: 'auditCost' },
-  { text: 'Automation Platform', value: 'hasAutomationPlatform' },
-  { text: 'Automation Platform Cost', value: 'automationPlatformCost' },
+  { text: 'Automation Platform (included in price)', value: 'hasAutomationPlatform' },
   { text: 'Note', value: 'note' }
 ];
 
@@ -264,27 +262,21 @@ const companies = [
   { link: 'https://www.prescientassurance.com/',
     name: 'Prescient Assurance',
     totalCost: '$8k',
-    auditCost: '$8k',
     hasAutomationPlatform: false,
-    automationPlatformCost: false,
     note: '' },
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
     totalCost: '$5k',
     includesPlatform: true,
-    auditCost: '$5k',
     hasAutomationPlatform: true,
-    automationPlatformCost: true,
     note: 'Requires 3 year contract' },
 
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
     totalCost: '$12k',
     includesPlatform: true,
-    auditCost: '$5k',
     hasAutomationPlatform: true,
-    automationPlatformCost: '+ $7k',
     note: 'Also includes <a href="#automation-platforms">automation platform</a>' }
 ];
 const items = ref(companies);
