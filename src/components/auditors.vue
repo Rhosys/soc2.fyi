@@ -284,7 +284,7 @@ const companies = [
     includesPlatform: true,
     auditCost: '$5k',
     hasAutomationPlatform: true,
-    automationPlatformCost: '+ $7.5k',
+    automationPlatformCost: '+ $7k',
     note: 'Also includes <a href="#automation-platforms">automation platform</a>' }
 ];
 const items = ref(companies);
