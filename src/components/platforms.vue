@@ -34,6 +34,7 @@
           <template #item-licensed="item">
             <div v-if="item.licensed === null"><warning /></div>
             <div v-else-if="item.licensed === false"><danger /></div>
+            <div v-else-if="item.licensed === 'PARTNERS'"><small class="text-success">Contracted Partners</small></div>
             <div v-else><success /></div>
           </template>
           <template #item-auditCost="item">
@@ -85,22 +86,19 @@ import { ref } from 'vue';
 
 const headers = [
   { text: 'Company', value: 'name' },
-  { text: 'Total Cost (per year)', value: 'totalCost' },
-  { text: 'Audit (licensed audit firm)', value: 'licensed' },
-  { text: 'Audit Cost', value: 'auditCost' },
-  { text: 'Automation Platform', value: 'hasAutomationPlatform' },
-  { text: 'Automation Platform Cost', value: 'automationPlatformCost' },
+  { text: 'Automation Platform Cost (per year)', value: 'totalCost' },
+  { text: 'Also Performs Audit', value: 'licensed' },
+  { text: 'Additional Audit Cost', value: 'auditCost' },
   { text: 'Note', value: 'note' }
 ];
 
 const companies = [
   { link: 'https://www.a-lign.com/',
     name: 'A-LIGN (A-SCEND)',
-    totalCost: '€26.8k',
+    totalCost: '€5.8k',
     licensed: true,
-    auditCost: '€21k',
+    auditCost: '+ €21k',
     hasAutomationPlatform: true,
-    automationPlatformCost: '€5.8k',
     note: '<span class="text-danger">Very unresponsive (multiple months with no response)</span>' },
   { link: 'https://akitra.com/',
     name: 'Akitra',
@@ -108,7 +106,6 @@ const companies = [
     licensed: null,
     auditCost: null,
     hasAutomationPlatform: null,
-    automationPlatformCost: null,
     note: '' },
   { link: 'https://www.anecdotes.ai/',
     name: 'anecdotes',
@@ -116,8 +113,7 @@ const companies = [
     licensed: false,
     auditCost: false,
     hasAutomationPlatform: true,
-    automationPlatformCost: '$50k',
-    note: '<span class="text-danger">No Audit</span>, the audit requires a third party and fee' },
+    note: '' },
 
   { link: 'https://drata.com/',
     name: 'Drata',
@@ -125,16 +121,25 @@ const companies = [
     licensed: false,
     auditCost: false,
     hasAutomationPlatform: true,
-    automationPlatformCost: '$15k',
-    note: '<span class="text-danger">No Audit</span>, the audit requires a third party and fee' },
+    note: '' },
 
-  { link: 'https://risk3sixty.com/',
+  {
+    link: 'https://realciso.io/',
+    name: 'RealCISO',
+    totalCost: '$30k',
+    licensed: false,
+    auditCost: false,
+    hasAutomationPlatform: true,
+    note: 'Only works with <a href="https://www.bonadio.com/">Bonadio CPA</a>.'
+  },
+
+  {
+    link: 'https://risk3sixty.com/',
     name: 'risk3sixty',
     totalCost: null,
     licensed: null,
     auditCost: null,
     hasAutomationPlatform: true,
-    automationPlatformCost: null,
     note: '' },
 
   { link: 'https://www.scrut.io/',
@@ -143,7 +148,6 @@ const companies = [
     licensed: false,
     auditCost: false,
     hasAutomationPlatform: true,
-    automationPlatformCost: null,
     note: '' },
 
   { link: 'https://scytale.ai/soc-2/',
@@ -152,35 +156,31 @@ const companies = [
     licensed: null,
     auditCost: null,
     hasAutomationPlatform: true,
-    automationPlatformCost: null,
     note: '' },
 
   { link: 'https://secureframe.com/',
     name: 'Secureframe',
-    totalCost: '$14k',
+    totalCost: '$7.5k',
     licensed: true,
-    auditCost: '$6.5k',
+    auditCost: '+ $6.5k',
     hasAutomationPlatform: true,
-    automationPlatformCost: '$7.5k',
-    note: 'Requires third party auditor (or more expensive in house audit)' },
+    note: 'Provides an in house audit or works with third party auditors' },
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
     totalCost: '$5k',
     licensed: true,
-    auditCost: '$5k',
+    auditCost: true,
     hasAutomationPlatform: true,
-    automationPlatformCost: true,
     note: 'Requires 3 year contract' },
 
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
-    totalCost: '$12k',
+    totalCost: '$7k',
     licensed: true,
-    auditCost: '$5k',
+    auditCost: '+ $5k',
     hasAutomationPlatform: true,
-    automationPlatformCost: '$7.5k',
-    note: 'Audit done in house' },
+    note: 'Audit only done in house.' },
 
   { link: 'https://www.trustcloud.ai/',
     name: 'TrustCloud (Kintent)',
@@ -188,18 +188,16 @@ const companies = [
     licensed: false,
     auditCost: false,
     hasAutomationPlatform: true,
-    automationPlatformCost: true,
     note: '' },
 
   { link: 'https://www.vanta.com/',
     id: 'vanta',
     name: 'Vanta',
     totalCost: '$15k',
-    licensed: false,
-    auditCost: false,
+    licensed: 'PARTNERS',
+    auditCost: '+ $10k',
     hasAutomationPlatform: true,
-    automationPlatformCost: '$15k',
-    note: '<span class="text-danger">No Audit</span>, the audit requires a third party and fee',
+    note: 'Has list of Audit Partners, and always charges a fixed price.',
     callout: `
       <span>Standardize pricing through third party auditors:</span>
       <ul><li>Type I Pricing: $7k</li><li>Type II Pricing: $10k</li>`

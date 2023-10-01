@@ -77,21 +77,19 @@
           <div class="col-12 col-lg-6">
             <div class="h-100 p-4 p-md-5 bg-light border" style="border-radius: 0.5rem;">
               <h2>So what is SOC 2 really?</h2>
-              <p>SOC 2 is a <strong>marketing and sales tool</strong> that allows you to put a rubber stamp on your website. SOC 2 implies <strong class="text-danger">nothing about security</strong>. Done correctly, there can be value in it for you. But please don't mistake having a SOC 2 badge for being secure. Plainly, it is only:
+              <p>SOC 2 is a <strong>marketing and sales tool</strong> that allows you to put a rubber stamp on your website. SOC 2 implies <strong class="text-danger">nothing about security</strong>. Done correctly, there can be value in it for you. But please don't mistake having a SOC 2 badge for being secure.
+                <br><br>At completion you will have:
                 <ul>
-                  <li><strong>Policies</strong>: You have written your own policies. And then ask the auditor to validate that you are following them.</li>
+                  <li><strong>Policy set</strong>: You have written your own policies. And then you ask the auditor to validate that you are following them.</li>
                   <br>
-                  <li><strong>A compliance report</strong>: To provide to your customers to prove you completed the audit.</li>
+                  <li><strong>A compliance report</strong>: To receive a report to provide your customers, this includes all the details of your policies for anything in scope.</li>
                   <br>
-                  <li><strong>An attestation icon and url</strong>: They will provide you a link to put on your website. This proves they did the audit.</li>
+                  <li><strong>An attestation icon and url</strong>: Additionally you'll get a link to put on your website. This proves they did the audit.</li>
                 </ul>
-
-                Since the policies are up to you, the SOC 2 audit is a commodity so any licensed auditor works the same.
               </p>
 
-              <div>If you've already implemented the best practices found below then you are ready to get your audit.</div>
-              <div class="mt-3">There's no need to shell out a lot of money, but don't be surprised if the first few companies you talk to quote you a very high price.</div>
-              <div class="mt-3">Appropriately priced auditors are out there, and you can use this site to find the one that works for you.</div>
+              <div class="mt-3">You define your policies. You determine what is in scope or not. What you include will be audited and then appear in your report.</div>
+              <div class="mt-3">Since the policies are up to you, the SOC 2 audit is a commodity so any licensed auditor works the same.</div>
             </div>
           </div>
         </div>

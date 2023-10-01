@@ -5,7 +5,8 @@
       <br id="auditors">
       <h2 class="pb-2 border-bottom">Auditors</h2>
 
-      These are the auditors, they are the only ones that grant you the SOC 2 certification, they may or may not require that you use an <a href="#" @click.prevent="navigateTo('automation-platforms')">Automation Platform</a> to complete your audit.
+      There are many auditors, this is only a short list because of their usage of one of the <a href="#" @click.prevent="navigateTo('automation-platforms')">Automation Platforms</a>.
+      Auditors are the only ones that grant you the SOC 2 certification, they may or may not require that you use an Automation Platform to complete your audit.
 
       <br><br>
 
@@ -249,8 +250,8 @@ const companies = [
     includesPlatform: true,
     auditCost: '$5k',
     hasAutomationPlatform: true,
-    automationPlatformCost: '$7.5k',
-    note: 'Also includes automation platform' }
+    automationPlatformCost: '+ $7.5k',
+    note: 'Also includes <a href="#automation-platforms">automation platform</a>' }
 ];
 const items = ref(companies);
 
