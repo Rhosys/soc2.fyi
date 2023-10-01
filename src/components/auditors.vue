@@ -84,6 +84,7 @@
             <tr>
               <th scope="col">Company</th>
               <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Total Cost</div><span>(per test)</span></div></th>
+              <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Supported Testing Methodologies</div></div></th>
               <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Infrastructure Pen Tests</div></div></th>
               <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Application Pen Tests</div></div></th>
               <th scope="col"><div>Note</div></th>
@@ -94,17 +95,26 @@
             <tr>
               <th scope="row"><a target="_blank" href="https://www.cobalt.io/">Cobalt</a></th>
               <td><warning /></td>
+              <td>
+                <div class="d-flex justify-content-center align-items-center">
+                  <small class="d-flex justify-content-center flex-column">
+                    <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                    <span><i class="fa-solid fa-check text-success" /> OSSTMM</span>
+                  </small>
+                </div>
+              </td>
               <td><warning /></td>
               <td><warning /></td>
-              <td class="text-danger">&nbsp;</td>
+              <td class="text-success">Free retests within 6 months</td>
             </tr>
 
             <tr>
               <th scope="row"><a target="_blank" href="https://www.doyensec.com/">Doyensec</a></th>
               <td><warning /></td>
+              <td><warning /></td>
               <td><success /></td>
               <td><success /></td>
-              <td class="text-danger">&nbsp;</td>
+              <td class="text-danger">No retesting</td>
             </tr>
 
             <tr>
@@ -114,10 +124,18 @@
                   <span class="d-flex align-items-center justify-content-center">
                     $10k
                   </span>
-                </div></td>
+                </div>
+              </td>
+              <td>
+                <div class="d-flex justify-content-center align-items-center">
+                  <small class="d-flex justify-content-center flex-column">
+                    <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                  </small>
+                </div>
+              </td>
               <td><success /></td>
               <td><success /></td>
-              <td class="text-danger">&nbsp;</td>
+              <td class="text-success">Free retests within 12 months</td>
             </tr>
 
             <tr>
@@ -130,17 +148,33 @@
                   </span>
                 </div>
               </td>
+              <td>
+                <div class="d-flex justify-content-center align-items-center">
+                  <small class="d-flex justify-content-center flex-column">
+                    <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                  </small>
+                </div>
+              </td>
               <td><danger /></td>
               <td><success /></td>
-              <td class="text-danger">&nbsp;</td>
+              <td class="text-warning">Retests cost 20% of total spend</td>
             </tr>
 
             <tr>
               <th scope="row"><a target="_blank" href="https://www.rapid7.com/">Rapid7</a></th>
               <td><warning /></td>
+              <td>
+                <div class="d-flex justify-content-center align-items-center">
+                  <small class="d-flex justify-content-center flex-column">
+                    <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                    <span><i class="fa-solid fa-check text-success" /> OSSTMM</span>
+                    <span><i class="fa-solid fa-check text-success" /> PTES</span>
+                  </small>
+                </div>
+              </td>
               <td><warning /></td>
               <td><warning /></td>
-              <td class="text-danger">&nbsp;</td>
+              <td class="text-danger">No retesting</td>
             </tr>
           </tbody>
         </table>
