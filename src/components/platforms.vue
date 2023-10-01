@@ -69,13 +69,6 @@
             <div v-else-if="item.integrationCount >= 10"><span class="text-danger">Few</span></div>
             <div v-else><danger /></div>
           </template>
-          <template #item-pitch="item">
-            <div v-if="item.pitch" style="width: 100%; max-width: 300px;">
-              <!-- eslint-disable-next-line vue/no-v-html -->
-              <span v-html="item.pitch" />
-            </div>
-            <div v-else>-</div>
-          </template>
           <template #item-note="item">
             <div style="text-align: left; width: 100%; max-width: 300px; justify-content: start">
               <!-- eslint-disable-next-line vue/no-v-html -->
@@ -114,7 +107,6 @@ const headers = [
   { text: 'Also Performs Audit', value: 'licensed' },
   { text: 'Additional Audit Cost', value: 'auditCost' },
   { text: 'Total integrations', value: 'integrationCount' },
-  { text: 'Pitch', value: 'pitch' },
   { text: 'Note', value: 'note' }
 ];
 
@@ -189,7 +181,6 @@ const companies = [
     licensed: true,
     auditCost: '+ $6.5k',
     integrationCount: 100,
-    pitch: 'Audit defense',
     note: 'Provides an in house audit or works with third party auditors. Includes automated answers to vendor questionnaires.' },
 
   { link: 'https://sprinto.com/ignite/',
@@ -214,7 +205,6 @@ const companies = [
     licensed: false,
     auditCost: false,
     integrationCount: 10,
-    pitch: 'Has been Free for low usage!',
     note: 'Poor UX. <span class="text-danger">No OAuth</span>.' },
 
   { link: 'https://trustero.com/',
@@ -223,7 +213,6 @@ const companies = [
     licensed: null,
     auditCost: null,
     integrationCount: 10,
-    pitch: 'Customer Support + Audit Readiness',
     note: 'Can we difficult to work with.' },
   
   { link: 'https://tugboatlogic.com/',
@@ -232,7 +221,6 @@ const companies = [
     licensed: null,
     auditCost: null,
     integrationCount: false,
-    pitch: 'Flexible',
     note: 'Verify limited platform' },
 
   { link: 'https://www.vanta.com/',
@@ -242,7 +230,6 @@ const companies = [
     licensed: 'PARTNERS',
     auditCost: '+ $10k',
     integrationCount: 1000,
-    pitch: 'Integrations',
     note: 'Has list of Audit Partners, and always charges a fixed price. However generally considered expensive.',
     callout: `
       <span>Standardize pricing through third party auditors:</span>
