@@ -191,7 +191,6 @@
           <thead>
             <tr>
               <th scope="col">Company</th>
-              <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Pricing</div></div></th>
               <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>SOC 2 Report Review</div></div></th>
               <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Infra implementation assistance</div></div></th>
               <th scope="col"><div class="d-flex justify-content-center align-items-center flex-column"><div>Application architecture reviews</div></div></th>
@@ -201,7 +200,6 @@
           <tbody>
             <tr>
               <th scope="row"><a target="_blank" href="https://kobalt.io">Kobalt</a></th>
-              <td><warning /></td>
               <td><success /></td>
               <td><danger /></td>
               <td><danger /></td>
@@ -210,7 +208,6 @@
 
             <tr>
               <th scope="row"><a target="_blank" href="https://www.latacora.com/">Latacora</a></th>
-              <td><warning /></td>
               <td><warning /></td>
               <td><success /></td>
               <td><success /></td>
@@ -222,13 +219,11 @@
               <td><warning /></td>
               <td><warning /></td>
               <td><warning /></td>
-              <td><warning /></td>
               <td class="text-danger">&nbsp;</td>
             </tr>
 
             <tr>
               <th scope="row"><a target="_blank" href="https://www.violetx.com/">Violetx</a></th>
-              <td><warning /></td>
               <td><warning /></td>
               <td><warning /></td>
               <td><warning /></td>
