@@ -13,6 +13,11 @@ This is the GitHub repository for the soc2.fyi website. The website is available
 
 SOC2.fyi makes it easy to understand how to achieve the SOC2 attestation and how much it will cost you.
 
+The SOC 2 TL;DR is:
+> SOC2 is more like, Say something, do something, then prove that you always do what you say unless you say that you should be doing something else, then prove that you did that instead. Unless all of that is out of scope, then ignore.
+>
+> Then later have someone sign a piece of paper that says you did that.
+
 ## Contribution
 
 To make a correction to the site either file an issue, or create a pull request:
