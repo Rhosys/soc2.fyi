@@ -186,6 +186,14 @@
 
       Most of the reports from the above providers are pretty easy to read, but you get stuck and need help reviewing them or you need a consultant to help you implement the controls to allow you to pass the audit, one of these might help.
       <br><br>
+
+      <ul>
+        <li><span class="text-info">Infrastructure security</span> - Includes Cloud Provider auditing automation, third party tool integration, environment setup, and SAST, DAST best practices.</li>
+        <li><span class="text-info">Application architecture</span> - Includes setting up OIDC, authorization, secrets management, mTLS, service meshes, ZeroTrust application access.</li>
+      </ul>
+
+      <br><br>
+
       <div class="table-responsive-md">
         <table class="auditors table-dark table-striped table align-middle">
           <thead>
@@ -219,6 +227,14 @@
               <td><warning /></td>
               <td><warning /></td>
               <td><warning /></td>
+              <td class="text-danger">&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th scope="row"><a target="_blank" href="https://sidechannel.com/">SideChannel</a></th>
+              <td><success /></td>
+              <td><success /></td>
+              <td><success /></td>
               <td class="text-danger">&nbsp;</td>
             </tr>
 
