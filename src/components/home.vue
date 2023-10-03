@@ -11,7 +11,7 @@
               <img :src="aicpaLogo" style="border-radius: 100%" height="250">
             </div>
             <div class="mt-4">
-              <h1 class="display-5 fw-bold">The SOC2 Guide</h1>
+              <h1 class="display-5 fw-bold">The SOC 2 Guide</h1>
               <h4 class="">Quickly figure out what you need and how much it will cost.</h4>
             </div>
           </div>
@@ -135,7 +135,7 @@
               Your SOC 2 will essentially expire after 12 months. So if you want to keep it active, you are committing to paying for it on a recurring basis. And a huge part of that is reviewing your policies and every year you'll need to undergo a Type 2 examination to keep your SOC 2 current.
             </p>
 
-            <div class="d-flex justify-content-center"><small>Source:  <a target="_blank" href="https://sansorg.egnyte.com/dl/x9796IIIVP">SANS SOC2 Cheatsheet</a></small></div>
+            <div class="d-flex justify-content-center"><small>Source:  <a target="_blank" href="https://sansorg.egnyte.com/dl/x9796IIIVP">SANS SOC 2 Cheatsheet</a></small></div>
           </div>
         </div>
       </div>
@@ -220,7 +220,7 @@
             </div>
             <div>
               <h2>Tailscale's Security Policies</h2>
-              <p><a target="_blank" href="https://github.com/tailscale/security-policies#tailscale-security-policies">Tailscale's public SOC2 Policies on GitHub</a>
+              <p><a target="_blank" href="https://github.com/tailscale/security-policies#tailscale-security-policies">Tailscale's public SOC 2 Policies on GitHub</a>
                 <br>Tailscale has several security policies in place to properly identify, respond to, and mitigate potential security risks. All employees, vendors and contractors working with Tailscale must follow these policies in order to best protect Tailscale's and its customers' data.
                 <br><br>
 
@@ -234,13 +234,13 @@
               <i class="mt-1 fa-solid fa-wand-sparkles fa-2x fa-fw" />
             </div>
             <div>
-              <h2>Comply SOC2 Automation Tool</h2>
+              <h2>Comply SOC 2 Automation Tool</h2>
               <p><a target="_blank" href="https://github.com/strongdm/comply/blob/master/README.md">Comply open source automation</a>
                 <br>
                 <ul>
                   <li><strong>Policy Generator</strong>: markdown-powered document pipeline for publishing auditor-friendly policy documents</li>
                   <li><strong>Ticketing Integration</strong>: automate compliance throughout the year via your existing ticketing system</li>
-                  <li><strong>SOC2 Templates</strong>: open source policy and procedure templates suitable for satisfying a SOC2 audit</li>
+                  <li><strong>SOC 2 Templates</strong>: open source policy and procedure templates suitable for satisfying a SOC 2 audit</li>
                 </ul>
               </p>
             </div>
