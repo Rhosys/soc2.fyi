@@ -9,22 +9,22 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto me-4 mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" @click.prevent="navigateTo('automation-platforms')">Platforms</a>
+              <a class="nav-link" aria-current="page" href="#automation-platforms" @click="navigateTo('automation-platforms')">Platforms</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" @click.prevent="navigateTo('auditors')">Auditors</a>
+              <a class="nav-link" aria-current="page" href="#auditors" @click="navigateTo('auditors')">Auditors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" @click.prevent="navigateTo('pen-tests')">Pen Tests</a>
+              <a class="nav-link" aria-current="page" href="#pen-tests" @click="navigateTo('pen-tests')">Pen Tests</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" @click.prevent="navigateTo('process')">Process</a>
+              <a class="nav-link" aria-current="page" href="#process" @click="navigateTo('process')">Process</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" @click.prevent="navigateTo('guide')">Guide</a>
+              <a class="nav-link" aria-current="page" href="#guide" @click="navigateTo('guide')">Guide</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" @click.prevent="navigateTo('tools')">Tools</a>
+              <a class="nav-link" aria-current="page" href="#tools" @click="navigateTo('tools')">Tools</a>
             </li>
           </ul>
           <div class="d-flex">
