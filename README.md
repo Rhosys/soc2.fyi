@@ -1,9 +1,12 @@
 # SOC 2 Compliance Website Repo
 
+This is an open source project managed by the [Authress Engineering team](https://authress.io).
+
 <p align="center">
+    <a href="https://authress.io" alt="Authress Engineering">
+      <img src="https://img.shields.io/static/v1?label=Authress+Engineering&message=SOC2&color=%23FBAF0B&logo=androidauto&logoColor=%23FBAF0B"></a>
     <a href="https://soc2.fyi" alt="SOC 2 Guide">
-        <img src="https://img.shields.io/badge/SOC2%20Guide-blue">
-    </a>
+        <img src="https://img.shields.io/badge/SOC2%20Guide-blue"></a>
 </p>
 
 
