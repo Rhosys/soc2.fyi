@@ -2,11 +2,13 @@
   <div>
     <home />
 
-    <aside class="contact-group">
-      <div class="contact-button">
-        <a href="#"><i class="fa-solid fa-up-long" /></a>
-      </div>
-    </aside>
+    <a href="#">
+      <aside class="contact-group">
+        <div class="contact-button">
+          <i class="fa-solid fa-up-long" />
+        </div>
+      </aside>
+    </a>
   </div>
 </template>
 
