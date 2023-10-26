@@ -64,7 +64,7 @@ module.exports = {
             Name: { 'Fn::Sub': 'soc2.fyi' },
             Type: 'TXT',
             TTL: '3600',
-            ResourceRecords: ['google-site-verification=uFygdQDpstHR5j5TBQ3DE0FZZW9wRRrkLxJ97pWkzh8']
+            ResourceRecords: ['"google-site-verification=uFygdQDpstHR5j5TBQ3DE0FZZW9wRRrkLxJ97pWkzh8"']
           }
         }
       }
