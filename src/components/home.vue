@@ -16,7 +16,35 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-end flex-wrap">
+        <div class="d-flex justify-content-between flex-wrap mt-4">
+          <div class="p-4 justify-content-center bg-primary callout-section" style="border-radius: 0.5rem;">
+            <p>Guide Sections:
+              <ul class="ms-auto me-4 mb-2 mb-md-0">
+                <li>
+                  <a class="guide-section-link" aria-current="page" href="#automation-platforms" @click="navigateTo('automation-platforms')">Platforms</a>
+                </li>
+                <li>
+                  <a class="guide-section-link" aria-current="page" href="#auditors" @click="navigateTo('auditors')">Auditors</a>
+                </li>
+                <li>
+                  <a class="guide-section-link" aria-current="page" href="#pen-tests" @click="navigateTo('pen-tests')">Pen Tests</a>
+                </li>
+                <li>
+                  <a class="guide-section-link" aria-current="page" href="#process" @click="navigateTo('process')">Process</a>
+                </li>
+                <li>
+                  <a class="guide-section-link" aria-current="page" href="#guide" @click="navigateTo('guide')">Guide</a>
+                </li>
+                <li>
+                  <a class="guide-section-link" aria-current="page" href="#reading" @click="navigateTo('reading')">Suggested Reading</a>
+                </li>
+                <li>
+                  <a class="guide-section-link" aria-current="page" href="#tools" @click="navigateTo('tools')">Tools</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+
           <div class="p-4 justify-content-end bg-secondary callout-section" style="border-radius: 0.5rem">
             <p>This is a completely open source quick guide, that focuses on comparing the available options.
               <br><br>
@@ -208,6 +236,7 @@
       </div>
     </div>
 
+    <br id="reading">
     <div class="w-100">
       <div class="m-0 p-4 p-4 p-md-5 bg-dark text-light">
         <h2 class="pb-2 border-bottom">External References</h2>
@@ -279,6 +308,39 @@
             </div>
           </div>
         </div>
+
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
+          
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-building-shield fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Practical guidance for companies</h2>
+              <p><a target="_blank" href="https://www.npsa.gov.uk/secure-innovation/company-guidance">NPSA UK Secure Innovation</a>
+                <br>Competition to succeed in emerging technology can be intense. This guidance outlines cost-effective measures that you can take from day one to better protect your ideas, reputation and future success.
+                <br><br>
+
+                This can even become the basis of your SOC 2. These are real threats, which suggest threat models which could apply. If they do apply, it can really help to target policies to deal with specifically these.
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-user-shield fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>A Guide to personal security</h2>
+              <p><a target="_blank" href="https://democrats.org/wp-content/uploads/2022/03/Device-and-Account-Security-Checklist.pdf">US DNC Security Checklist</a>
+                <br>They strongly recommend anyone who works in politics, campaigns, or really anyone who has a device or an account on the internet, take these steps to secure them.
+                <br><br>
+
+                A guide that is broken down into easy to follow steps for personal security. While it is directed at those in a specific industry there is really good starter advice here, that can get you far. (Don't listen to the advice about LastPass though, the approved list of Password Managers should be BitWarden, 1Password, Chrome Password Manager, and Apple Keychain.)
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -326,7 +388,7 @@
             <div class="d-flex flex-column">
               <h5>SOC 2.FYI</h5>
               <small>Making companies more secure</small>
-              <small>© Rhosys AG 2018 - 2023</small>
+              <small>© Rhosys AG 2018 - {{ thisYear }}</small>
               <div><a class="networking-link" href="https://rhosys.ch" target="_blank">About Us</a></div>
               <div><a class="networking-link" href="https://rhosys.ch" target="_blank">Contact Us</a></div>
             </div>
@@ -363,6 +425,7 @@ import aicpaLogo from './aicpaLogo.png';
 import logger from '../logger';
 import Auditors from './auditors.vue';
 import Platforms from './platforms.vue';
+import { DateTime } from 'luxon';
 
 const openGithub = gotoIssuePage => {
   const path = gotoIssuePage ? 'issues' : 'pulls';
@@ -373,6 +436,22 @@ if (!window.location.href.match('localhost')) {
   logger.track({ title: 'PageHit' });
 }
 
+const navigateTo = target => {
+  if (!target) {
+    window.scrollTo(0, -window.scrollY);
+    return;
+  }
+  const element = document.getElementById(target);
+  window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 60);
+  setTimeout(() => {
+    if (Math.abs(element.getBoundingClientRect().top - 60) > 10) {
+      window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 60);
+    }
+  }, 10);
+};
+
+const thisYear = DateTime.utc().year;
+
 </script>
 
 <style lang="scss" scoped>
@@ -380,6 +459,14 @@ if (!window.location.href.match('localhost')) {
 
 a {
   color: #2e6da4;
+}
+
+.guide-section-link {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .networking-link {
@@ -392,9 +479,9 @@ a {
 }
 
 .callout-section {
-  margin-top: 1rem;
+  margin: 1rem auto 0;
   @include media-breakpoint-up(xl) {
-    max-width: 50%;
+    max-width: 49%;
   }
 }
 

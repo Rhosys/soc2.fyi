@@ -24,6 +24,9 @@
               <a class="nav-link" aria-current="page" href="#guide" @click="navigateTo('guide')">Guide</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#reading" @click="navigateTo('reading')">Suggested Reading</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#tools" @click="navigateTo('tools')">Tools</a>
             </li>
           </ul>
