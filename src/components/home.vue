@@ -332,7 +332,7 @@
             </div>
             <div>
               <h2>A Guide to personal security</h2>
-              <p><a target="_blank" href="https://github.com/Rhosys/soc2.fyi/blob/main/src/Device-and-Account-Security-Checklist.pdf">US DNC Security Checklist</a>
+              <p><a target="_blank" href="https://soc2.fyi/images/icons/documents/Device-and-Account-Security-Checklist.pdf">US DNC Security Checklist</a>
                 <br>They strongly recommend anyone who works in politics, campaigns, or really anyone who has a device or an account on the internet, take these steps to secure them.
                 <br><br>
 
