@@ -176,6 +176,15 @@
               <td><warning /></td>
               <td class="text-danger">No retesting</td>
             </tr>
+
+            <tr>
+              <th scope="row"><a target="_blank" href="https://www.syslogicinc.com/services-application-security">SysLogic</a></th>
+              <td><warning /></td>
+              <td><warning /></td>
+              <td><success /></td>
+              <td><success /></td>
+              <td class="text-danger">No retesting</td>
+            </tr>
           </tbody>
         </table>
       </div>
