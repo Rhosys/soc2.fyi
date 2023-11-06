@@ -378,6 +378,34 @@
             </div>
           </div>
         </div>
+
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
+          
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-brands fa-searchengin fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>NodeZero</h2>
+              <p><a target="_blank" href="https://www.horizon3.ai/nodezero/">Open Source PenTesting Platform</a>
+                <br><br>The NodeZeroTM platform empowers your organization to reduce your security risk by autonomously finding exploitable weaknesses in your network, giving you detailed guidance about how to prioritize and fix them, and helping you immediately verify that your fixes are effective.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-wand-sparkles fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Prowler - Perform best practice assessments</h2>
+              <p><a target="_blank" href="https://docs.prowler.cloud">Open source documentation & guide</a>
+                <br><br>Prowler is an Open Source security tool to perform AWS, GCP and Azure security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness.
+                
+                <br><br>It contains support for hundreds of controls covering CIS, NIST 800, NIST CSF, CISA, RBI, FedRAMP, PCI-DSS, GDPR, HIPAA, FFIEC, SOC2, GXP, and many more.
+              </p>
+            </div>
+          </div> -->
+        </div>
       </div>
     </div>
 
