@@ -450,7 +450,7 @@
 
 import homeNavbar from './homeNavbar.vue';
 import aicpaLogo from './aicpaLogo.png';
-import logger from '../logger';
+// import logger from '../logger';
 import Auditors from './auditors.vue';
 import Platforms from './platforms.vue';
 import { DateTime } from 'luxon';
@@ -461,7 +461,7 @@ const openGithub = gotoIssuePage => {
 };
 
 if (!window.location.href.match('localhost')) {
-  logger.track({ title: 'PageHit' });
+  // logger.track({ title: 'PageHit' });
 }
 
 const navigateTo = target => {
