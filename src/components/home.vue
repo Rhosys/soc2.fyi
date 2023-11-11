@@ -461,7 +461,7 @@ const openGithub = gotoIssuePage => {
 };
 
 if (!window.location.href.match('localhost')) {
-  logger.track({ title: 'PageHit' });
+  logger.log({ title: 'PageHit' });
 }
 
 const navigateTo = target => {
