@@ -2,7 +2,7 @@
   <div style="margin-bottom: 4rem;">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark border-bottom">
       <div class="container-fluid">
-        <a class="navbar-brand pointer" @click.prevent="navigateTo()">SOC2.fyi</a>
+        <a class="navbar-brand pointer" @click.prevent="navigateTo()">The SOC2 FYI</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" />
         </button>
