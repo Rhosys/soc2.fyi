@@ -140,7 +140,7 @@
             <br>
             <p>
               <h3>[Step 0] Do I need a SOC 2?</h3>
-              <div>Since this is a marketing tool, the default is <strong>You don't need a SOC 2 certification</strong>. If you start losing deals because your customers are asking for one, then you can take the next step. Do not attempt SOC 2 before you have customers asking for it. It is a waste of time, money, and most importantly can slow your development process down. If you already have good security hygiene, getting a rubber stamp provides no additional value.</div>
+              <div>Since SOC 2 is a marketing tool, the default is <strong>You don't need a SOC 2 certification</strong>. If you start losing deals because your customers are asking for one, then you can take the next step. Do not attempt SOC 2 before you have customers asking for it. It is a waste of time, money, and most importantly can slow your development process down. If you already have good security hygiene, getting a rubber stamp provides no additional value. If you don't have a great handle on infrastructure security practices. Check out the <a href="https://mvsp.dev/mvsp.en/" target="_blank" rel="noopener">Minimum Viable Secure Product</a>.</div>
             </p>
             <br>
             <p>
@@ -295,7 +295,7 @@
 
           <div class="col d-flex align-items-start">
             <div class="d-none d-md-flex flex-shrink-0 me-3">
-              <i class="mt-1 fa-solid fa-lock fa-2x fa-fw" />
+              <i class="mt-1 fa-solid fa-play-circle fa-2x fa-fw" />
             </div>
             <div>
               <h2>Minimum Viable Secure Product</h2>
@@ -341,6 +341,26 @@
             </div>
           </div>
         </div>
+
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
+          
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-lock fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Authress: Authentication & Authorization</h2>
+              <p><a target="_blank" href="https://authress.io">User Management and Access Control</a>
+                <br>Quick start complete application security, by adding Authress to your stack.
+                <br><br>
+
+                Authress is the only complete authentication solution for B2B, so it helps gets your application security most of the way towards compliance. If you're looking for an alternative list of solutions, the <a target="_blank" href="https://authress.io/knowledge-base/articles/auth-situation-report">Auth Situation Report</a> contains many more.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
 
@@ -392,19 +412,17 @@
               </p>
             </div>
           </div>
-          <!-- <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-start">
             <div class="d-none d-md-flex flex-shrink-0 me-3">
-              <i class="mt-1 fa-solid fa-wand-sparkles fa-2x fa-fw" />
+              <i class="mt-1 fa-solid fa-minimize fa-2x fa-fw" />
             </div>
             <div>
-              <h2>Prowler - Perform best practice assessments</h2>
-              <p><a target="_blank" href="https://docs.prowler.cloud">Open source documentation & guide</a>
-                <br><br>Prowler is an Open Source security tool to perform AWS, GCP and Azure security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness.
-                
-                <br><br>It contains support for hundreds of controls covering CIS, NIST 800, NIST CSF, CISA, RBI, FedRAMP, PCI-DSS, GDPR, HIPAA, FFIEC, SOC2, GXP, and many more.
+              <h2>Auth: Situation Report</h2>
+              <p><a target="_blank" href="https://authress.io/knowledge-base/articles/auth-situation-report">All you need to know before adding auth to your project</a>
+                <br><br>If you’re someone who builds software, no matter if you’re on the backend or frontend or even on the product side, sooner or later you have to concern yourself with securing the thing. Or you realize that data privacy laws are very real and you must have a strategy for user data sharing. So you want to implement some sort of authentication. More likely, you’re looking for a solution, open-source or otherwise, that will solve this problem for you. And here comes confusion. This report has some of the answers.
               </p>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
