@@ -3,7 +3,7 @@
   <div class="m-0 px-4 px-md-5 py-4 bg-dark text-light">
     <br id="automation-platforms">
     <div>
-      <h2 class="pb-2 border-bottom">Automation Platforms</h2>
+      <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('automation-platforms')">Automation Platforms</h2>
 
       These are <strong class="text-info">Not Required</strong>, but your auditor may require that you use one. The collection of evidence for following policies can be challenging. Many auditors require you to manually upload screen shots that prove you are following your policies. These platforms exist to automatically collect evidence from your cloud providers and integrated third party tools.
 
@@ -93,6 +93,8 @@
 <script setup>
 import EasyDataTable from 'vue3-easy-data-table';
 import 'vue3-easy-data-table/dist/style.css';
+
+import { navigateTo } from './utilities';
 
 import Danger from './danger.vue';
 import Warning from './warning.vue';
@@ -261,20 +263,6 @@ const showRow = clickedElement => {
   if (companies.find(c => c.id === companyId)?.callout) {
     target.children[0].click();
   }
-};
-
-const navigateTo = target => {
-  if (!target) {
-    window.scrollTo(0, -window.scrollY);
-    return;
-  }
-  const element = document.getElementById(target);
-  window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 200);
-  setTimeout(() => {
-    if (Math.abs(element.getBoundingClientRect().top - 60) > 10) {
-      window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 200);
-    }
-  }, 10);
 };
 
 </script>

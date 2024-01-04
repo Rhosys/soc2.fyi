@@ -42,22 +42,10 @@
 </template>
 
 <script setup>
+import { navigateTo } from './utilities';
 
 const openGithub = () => { window.open('https://github.com/Rhosys/soc2.fyi#soc-2-compliance-website', '_blank'); };
 
-const navigateTo = target => {
-  if (!target) {
-    window.scrollTo(0, -window.scrollY);
-    return;
-  }
-  const element = document.getElementById(target);
-  window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 60);
-  setTimeout(() => {
-    if (Math.abs(element.getBoundingClientRect().top - 60) > 10) {
-      window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 60);
-    }
-  }, 10);
-};
 </script>
 
 <style lang="scss" scoped>

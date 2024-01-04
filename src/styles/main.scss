@@ -26,3 +26,14 @@ html, body {
 :root {
   --bs-link-color: #2e6da4;
 }
+
+.header-link {
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1px;
+  }
+  &:hover::after {
+    content: ' #';
+  }
+}

@@ -2,7 +2,7 @@
     <div>
         <br id="pen-tests">
 
-    <h2 class="pb-2 border-bottom">Pen Testers</h2>
+    <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('pen-tests')">Pen Testers</h2>
 
     Pen testing is not required for many certifications. So generally can be avoided unless you want some additional assurances.
     The prices below are aligned for a medium sized application service running for a single product.
@@ -182,7 +182,10 @@
 </template>
 
 <script setup>
+import { navigateTo } from './utilities';
+
 import Danger from './danger.vue';
 import Warning from './warning.vue';
 import Success from './success.vue';
+
 </script>

@@ -3,7 +3,7 @@
   <div class="m-0 px-4 px-md-5 py-4 bg-dark text-light">
     <div>
       <br id="auditors">
-      <h2 class="pb-2 border-bottom">Auditors</h2>
+      <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('auditors')">Auditors</h2>
 
       There are many auditors, this is only a short list because of their usage of one of the <a href="#" @click.prevent="navigateTo('automation-platforms')">Automation Platforms</a>.
       Auditors are the only ones that grant you the SOC 2 certification, they may or may not require that you use an Automation Platform to complete your audit.
@@ -76,7 +76,7 @@
 
       <br id="consultants">
 
-      <h2 class="pb-2 border-bottom">Security Consultants</h2>
+      <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('consultants')">Security Consultants</h2>
 
       Most of the reports from the above providers are pretty easy to read, but you get stuck and need help reviewing them or you need a consultant to help you implement the controls to allow you to pass the audit, one of these might help.
       <br><br>
@@ -150,6 +150,8 @@
 import EasyDataTable from 'vue3-easy-data-table';
 import 'vue3-easy-data-table/dist/style.css';
 
+import { navigateTo } from './utilities';
+
 import Danger from './danger.vue';
 import Warning from './warning.vue';
 import Success from './success.vue';
@@ -193,20 +195,6 @@ const showRow = clickedElement => {
   if (companies.find(c => c.name === companyId)?.callout) {
     target.children[0].click();
   }
-};
-
-const navigateTo = target => {
-  if (!target) {
-    window.scrollTo(0, -window.scrollY);
-    return;
-  }
-  const element = document.getElementById(target);
-  window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 200);
-  setTimeout(() => {
-    if (Math.abs(element.getBoundingClientRect().top - 60) > 10) {
-      window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 200);
-    }
-  }, 10);
 };
 
 </script>

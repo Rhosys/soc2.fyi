@@ -172,7 +172,7 @@
     <br id="guide">
     <div class="w-100">
       <div class="m-0 p-4 p-md-5 bg-dark text-light">
-        <h2 class="pb-2 border-bottom">Pass the SOC 2 Type II Audit</h2>
+        <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('guide')">Pass the SOC 2 Type II Audit</h2>
         <div>The system description must be presented in accordance with the AICPA's description criteria (DC 200). Each of the description criteria (DC) are described below:</div>
         <div class="row g-4 my-2 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
@@ -239,7 +239,7 @@
     <br id="reading">
     <div class="w-100">
       <div class="m-0 p-4 p-4 p-md-5 bg-dark text-light">
-        <h2 class="pb-2 border-bottom">External References</h2>
+        <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('reading')">External References</h2>
 
         <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
           
@@ -366,7 +366,7 @@
 
     <div id="tools" class="w-100">
       <div class="m-0 p-4 p-4 p-md-5 bg-dark text-light">
-        <h2 class="pb-2 border-bottom">Tools</h2>
+        <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('tools')">Tools</h2>
 
         <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
           
@@ -465,13 +465,15 @@
 </template>
 
 <script setup>
+import { DateTime } from 'luxon';
 
 import homeNavbar from './homeNavbar.vue';
 import aicpaLogo from './aicpaLogo.png';
 import logger from '../logger';
 import Auditors from './auditors.vue';
 import Platforms from './platforms.vue';
-import { DateTime } from 'luxon';
+
+import { navigateTo } from './utilities';
 
 const openGithub = gotoIssuePage => {
   const path = gotoIssuePage ? 'issues' : 'pulls';
@@ -481,20 +483,6 @@ const openGithub = gotoIssuePage => {
 if (!window.location.href.match('localhost')) {
   logger.log({ title: 'PageHit' });
 }
-
-const navigateTo = target => {
-  if (!target) {
-    window.scrollTo(0, -window.scrollY);
-    return;
-  }
-  const element = document.getElementById(target);
-  window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 60);
-  setTimeout(() => {
-    if (Math.abs(element.getBoundingClientRect().top - 60) > 10) {
-      window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 60);
-    }
-  }, 10);
-};
 
 const thisYear = DateTime.utc().year;
 
