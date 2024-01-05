@@ -332,7 +332,7 @@
             </div>
             <div>
               <h2>A Guide to personal security</h2>
-              <p><a target="_blank" href="https://soc2.fyi/images/icons/documents/Device-and-Account-Security-Checklist.pdf">US DNC Security Checklist</a>
+              <p><a target="_blank" href="https://soc2.fyi/documents/Device-and-Account-Security-Checklist.pdf">US DNC Security Checklist</a>
                 <br>They strongly recommend anyone who works in politics, campaigns, or really anyone who has a device or an account on the internet, take these steps to secure them.
                 <br><br>
 
@@ -473,12 +473,7 @@ import logger from '../logger';
 import Auditors from './auditors.vue';
 import Platforms from './platforms.vue';
 
-import { navigateTo } from './utilities';
-
-const openGithub = gotoIssuePage => {
-  const path = gotoIssuePage ? 'issues' : 'pulls';
-  window.open(`https://github.com/Rhosys/soc2.fyi/${path}`, '_blank');
-};
+import { navigateTo, openGithub } from './utilities';
 
 if (!window.location.href.match('localhost')) {
   logger.log({ title: 'PageHit' });

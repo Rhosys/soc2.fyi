@@ -4,7 +4,8 @@
 
     <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('pen-tests')">Pen Testers</h2>
 
-    Pen testing is not required for many certifications. So generally can be avoided unless you want some additional assurances.
+    Pen testing is not required for many certifications. So can be avoided unless you are interested in security not compliance. An important step, if you are considering or are required to have a pen test completed--is knowing what you should be asking for in a <strong>Request for Information</strong> from your potential pen tester. Some helpful guidance straight directly from one company is available <a href="https://soc2.fyi/documents/Rhino-Security-Labs_6-questions-ask-every-pentest-company.pdf" target="_blank" rel="noopener">in this white paper</a>.
+    <br><br>
     The prices below are aligned for a medium sized application service running for a single product.
     <br><br>
     <div class="table-responsive-md">
@@ -48,8 +49,8 @@
             <td><warning /></td>
             <td><danger /></td>
             <td><danger /></td>
-            <td><warning /></td>
-            <td>&nbsp;</td>
+            <td><success /></td>
+            <td>Technically savvy and Responsive.</td>
           </tr>
 
           <tr>
@@ -135,6 +136,15 @@
             <td><danger /></td>
             <td><danger /></td>
             <td class="text-danger">No retesting, not recommended</td>
+          </tr>
+
+          <tr>
+            <th scope="row"><a target="_blank" href="https://rhinosecuritylabs.com/">Rhino Security Labs</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td class="text-success">Technically excellent, thorough</td>
           </tr>
 
           <tr>
