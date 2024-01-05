@@ -1,5 +1,4 @@
 export function navigateTo(htmlElementId) {
-  console.log('****');
   if (!htmlElementId) {
     window.scrollTo(0, -window.scrollY);
     return;
@@ -13,4 +12,9 @@ export function navigateTo(htmlElementId) {
   }, 10);
 
   window.history.replaceState(null, null, `#${htmlElementId}`);
+}
+
+export function openGithub(gotoIssuePage) {
+  const path = gotoIssuePage ? 'issues' : 'pulls';
+  window.open(`https://github.com/Rhosys/soc2.fyi/${path}`, '_blank');
 }
