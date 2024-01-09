@@ -41,7 +41,12 @@
             </td>
             <td><warning /></td>
             <td><warning /></td>
-            <td class="text-success">Free retests within 6 months</td>
+            <td>
+              <ul style="padding-left: 1rem">
+                <li><span class="text-success">Free retests within 6 months</span></li>
+                <li><span class="text-danger">Toxic marketing strategies</span></li>
+              </ul>
+            </td>
           </tr>
 
           <tr>
