@@ -178,7 +178,7 @@ const companies = [
     totalCost: '$5k',
     includesPlatform: true,
     hasAutomationPlatform: true,
-    note: 'Requires 3 year contract' },
+    note: 'Requires 3 year contract, <span class="text-danger">Aggressive Marketing</span>.' },
 
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',

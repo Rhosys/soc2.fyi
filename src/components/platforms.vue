@@ -191,7 +191,7 @@ const companies = [
     licensed: true,
     auditCost: true,
     integrationCount: 100,
-    note: 'Requires 3 year contract, frequently requires manual actions.' },
+    note: '<span class="text-danger">Requires 3 year contract, frequently requires manual actions. Aggressive Marketing</span>' },
 
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
