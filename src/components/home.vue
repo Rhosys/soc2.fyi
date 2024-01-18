@@ -242,6 +242,39 @@
         <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('reading')">External References</h2>
 
         <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-comments-dollar fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Buying Security by <a href="https://tldrsec.com/" target="_blank">TL;DR Sec</a></h2>
+
+              <p><a target="_blank" href="https://tldrsec.com/p/guides-buying-security">Buying Security</a>
+                <br>A fantastic guide synthesized from almost two hundred resources, as well as a survey of over a hundred security professionals.
+                <br><br>
+
+                Breaks down the types of security consulting, motivations behinds assessments, potential vendors, as well as how to scope and prepare for your assessment.
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <div class="d-none d-md-flex flex-shrink-0 me-3">
+              <i class="mt-1 fa-solid fa-building-shield fa-2x fa-fw" />
+            </div>
+            <div>
+              <h2>Practical guidance for companies</h2>
+              <p><a target="_blank" href="https://www.npsa.gov.uk/secure-innovation/company-guidance">NPSA UK Secure Innovation</a>
+                <br>Competition to succeed in emerging technology can be intense. This guidance outlines cost-effective measures that you can take from day one to better protect your ideas, reputation and future success.
+                <br><br>
+
+                This can even become the basis of your SOC 2. These are real threats, which suggest threat models which could apply. If they do apply, it can really help to target policies to deal with specifically these.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
           
           <div class="col d-flex align-items-start">
             <div class="d-none d-md-flex flex-shrink-0 me-3">
@@ -310,22 +343,6 @@
         </div>
 
         <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
-          
-          <div class="col d-flex align-items-start">
-            <div class="d-none d-md-flex flex-shrink-0 me-3">
-              <i class="mt-1 fa-solid fa-building-shield fa-2x fa-fw" />
-            </div>
-            <div>
-              <h2>Practical guidance for companies</h2>
-              <p><a target="_blank" href="https://www.npsa.gov.uk/secure-innovation/company-guidance">NPSA UK Secure Innovation</a>
-                <br>Competition to succeed in emerging technology can be intense. This guidance outlines cost-effective measures that you can take from day one to better protect your ideas, reputation and future success.
-                <br><br>
-
-                This can even become the basis of your SOC 2. These are real threats, which suggest threat models which could apply. If they do apply, it can really help to target policies to deal with specifically these.
-              </p>
-            </div>
-          </div>
-
           <div class="col d-flex align-items-start">
             <div class="d-none d-md-flex flex-shrink-0 me-3">
               <i class="mt-1 fa-solid fa-user-shield fa-2x fa-fw" />
@@ -340,10 +357,7 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="row g-4 my-2 row-cols-1 row-cols-lg-2">
-          
           <div class="col d-flex align-items-start">
             <div class="d-none d-md-flex flex-shrink-0 me-3">
               <i class="mt-1 fa-solid fa-lock fa-2x fa-fw" />
@@ -358,7 +372,6 @@
               </p>
             </div>
           </div>
-
         </div>
 
       </div>

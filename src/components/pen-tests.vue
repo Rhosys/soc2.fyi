@@ -5,6 +5,10 @@
     <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('pen-tests')">Pen Testers</h2>
 
     Pen testing is not required for many certifications. So can be avoided unless you are interested in security not compliance. An important step, if you are considering or are required to have a pen test completed--is knowing what you should be asking for in a <strong>Request for Information</strong> from your potential pen tester. Some helpful guidance straight directly from one company is available <a href="https://soc2.fyi/documents/Rhino-Security-Labs_6-questions-ask-every-pentest-company.pdf" target="_blank" rel="noopener">in this white paper</a>.
+
+    <br><br>
+    Not all Security vendors offer the same services, some of them only offer vulnerabliity scans while others offer manual exploratory testing.
+    <br>To understand more about what you may need, please review the <a href="https://tldrsec.com/p/guides-buying-security" target="_blank">Buying Security Guide</a> by <a href="https://tldrsec.com/" target="_blank">TL;DR Sec</a>.
     <br><br>
     The prices below are aligned for a medium sized application service running for a single product.
     <br><br>
@@ -90,7 +94,7 @@
             <td><warning /></td>
             <td><success /></td>
             <td><success /></td>
-            <td class="text-danger">No retesting</td>
+            <td class="text-danger">Retests are additional cost.</td>
           </tr>
 
           <tr>
@@ -119,7 +123,7 @@
             <td>
               <div class="d-flex justify-content-center">
                 <span class="d-flex align-items-center justify-content-center">
-                  $7.5k
+                  $32.5k
                 </span>
               </div>
             </td>
@@ -166,7 +170,12 @@
             </td>
             <td><danger /></td>
             <td><danger /></td>
-            <td class="text-danger">No retesting, not recommended</td>
+            <td class="text-danger">
+              <ul>
+                <li>Not recommended</li>
+                <li>Retests are additional cost.</li>
+              </ul>
+            </td>
           </tr>
 
           <tr>
@@ -184,7 +193,11 @@
             <td><warning /></td>
             <td><success /></td>
             <td><success /></td>
-            <td class="text-danger">No retesting</td>
+            <td class="text-danger">
+              <ul>
+                <li>Retests are additional cost.</li>
+              </ul>
+            </td>
           </tr>
 
           <tr>
