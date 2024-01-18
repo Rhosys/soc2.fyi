@@ -187,7 +187,7 @@ const companies = [
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
-    automationPlatformCost: '$5k',
+    automationPlatformCost: '$6k',
     licensed: true,
     auditCost: true,
     integrationCount: 100,

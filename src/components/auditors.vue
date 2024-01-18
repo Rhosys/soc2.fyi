@@ -175,7 +175,7 @@ const companies = [
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
-    totalCost: '$5k',
+    totalCost: '$6k',
     includesPlatform: true,
     hasAutomationPlatform: true,
     note: 'Requires 3 year contract, <span class="text-danger">Aggressive Marketing</span>.' },
