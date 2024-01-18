@@ -31,9 +31,9 @@
                 </span>
               </div>
             </td>
-            <td><warning /></td>
-            <td><warning /></td>
-            <td><warning /></td>
+            <td><danger /></td>
+            <td><danger /></td>
+            <td><success /></td>
             <td>
               <ul style="padding-left: 1rem">
                 <li><span class="">Boutique pen testing shop</span></li>
