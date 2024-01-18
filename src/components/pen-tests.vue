@@ -23,6 +23,25 @@
         <tbody>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://bsk-security.com/">BSK Security</a></th>
+            <td>
+              <div class="d-flex justify-content-center">
+                <span class="d-flex align-items-center justify-content-center">
+                  $4.5k+
+                </span>
+              </div>
+            </td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td>
+              <ul style="padding-left: 1rem">
+                <li><span class="">Boutique pen testing shop</span></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://www.cobalt.io/">Cobalt</a></th>
             <td>
               <div class="d-flex justify-content-center">
