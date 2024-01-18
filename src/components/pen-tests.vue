@@ -37,6 +37,7 @@
             <td>
               <ul style="padding-left: 1rem">
                 <li><span class="">Boutique pen testing shop</span></li>
+                <li><span class="text-success">Very responsive</span></li>
               </ul>
             </td>
           </tr>
@@ -74,7 +75,7 @@
             <td><danger /></td>
             <td><danger /></td>
             <td><success /></td>
-            <td>Technically savvy and Responsive.</td>
+            <td>Technically savvy and responsive.</td>
           </tr>
 
           <tr>
