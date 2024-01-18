@@ -31,8 +31,14 @@
                 </span>
               </div>
             </td>
-            <td><danger /></td>
-            <td><danger /></td>
+            <td>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="d-flex justify-content-center flex-column">
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                </small>
+              </div>
+            </td>
+            <td><success /></td>
             <td><success /></td>
             <td>
               <ul style="padding-left: 1rem">
