@@ -34,7 +34,10 @@
             <a :id="item.id || item.name" target="_blank" :href="item.link">{{ item.name }}</a>
           </template>
           <template #item-totalCost="item">
-            <div v-if="typeof item.automationPlatformCost === 'string'">
+            <div v-if="item.automationPlatformCost === true">
+              <span class="text-success">Free</span> {{ calculateTotalCost(item) }}
+            </div>
+            <div v-else-if="typeof item.automationPlatformCost === 'string'">
               {{ calculateTotalCost(item) }}
             </div>
             <div v-else><warning /></div>
@@ -55,7 +58,7 @@
             <div v-if="item.auditCost === null"><warning /></div>
             <div v-else-if="item.auditCost === false"><danger /></div>
             <div v-else-if="item.auditCost === true"><span class="text-success">Free</span></div>
-            <div v-else>{{ item.auditCost }}</div>
+            <div v-else>+ {{ item.auditCost }}</div>
           </template>
           <template #item-hasAutomationPlatform="item">
             <div v-if="item.hasAutomationPlatform === null"><warning /></div>
@@ -117,7 +120,7 @@ const companies = [
     name: 'A-LIGN (A-SCEND)',
     automationPlatformCost: '€5.8k',
     licensed: true,
-    auditCost: '+ €21k',
+    auditCost: '€21k',
     integrationCount: null,
     note: '<span class="text-danger">Very unresponsive (multiple months with no response)</span>' },
   { link: 'https://akitra.com/',
@@ -147,7 +150,7 @@ const companies = [
     name: 'RealCISO',
     automationPlatformCost: '$6k',
     licensed: 'PARTNERS',
-    auditCost: '+ $24k',
+    auditCost: '$24k',
     integrationCount: 10,
     note: 'Only works with <a href="https://www.bonadio.com/">Bonadio CPA</a>.'
   },
@@ -181,7 +184,7 @@ const companies = [
     name: 'Secureframe',
     automationPlatformCost: '$7.5k',
     licensed: true,
-    auditCost: '+ $6.5k',
+    auditCost: '$6.5k',
     integrationCount: 100,
     note: 'Provides an in house audit or works with third party auditors. Includes automated answers to vendor questionnaires.' },
 
@@ -197,7 +200,7 @@ const companies = [
     name: 'Thoropass (Laika)',
     automationPlatformCost: '$7k',
     licensed: true,
-    auditCost: '+ $5k',
+    auditCost: '$5k',
     integrationCount: null,
     note: 'Audit only done in house.' },
 
@@ -230,7 +233,7 @@ const companies = [
     name: 'Vanta',
     automationPlatformCost: '$15k',
     licensed: 'PARTNERS',
-    auditCost: '+ $10k',
+    auditCost: '$10k',
     integrationCount: 1000,
     note: 'Has list of Audit Partners, and always charges a fixed price. However generally considered expensive.',
     callout: `
@@ -242,13 +245,15 @@ const items = ref(companies);
 
 const calculateTotalCost = company => {
   const symbol = company.automationPlatformCost[0];
-  
-  const automationCost = Number(company.automationPlatformCost.replace(/[^\d.]/gi, ''));
-  
+
   if (!company.auditCost) {
-    return `${company.automationPlatformCost} + Audit`;
+    if (company.automationPlatformCost === true) {
+      return '+ Audit';
+    }
+    return `${company.automationPlatformCost || ''} + Audit`;
   }
 
+  const automationCost = Number(company.automationPlatformCost.replace(/[^\d.]/gi, ''));
   if (company.auditCost === true) {
     return `${symbol}${automationCost}k`;
   }

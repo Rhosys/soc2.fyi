@@ -171,7 +171,7 @@ const companies = [
     name: 'Prescient Assurance',
     totalCost: '$8k',
     hasAutomationPlatform: false,
-    note: '' },
+    note: '<span class="text-success">Works with TrustCloud.</span>' },
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
@@ -185,7 +185,7 @@ const companies = [
     totalCost: '$12k',
     includesPlatform: true,
     hasAutomationPlatform: true,
-    note: 'Also includes <a href="#automation-platforms">automation platform</a>' }
+    note: 'Includes the cost of an <a href="#automation-platforms">automation platform</a>.' }
 ];
 const items = ref(companies);
 
