@@ -280,6 +280,25 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@floating-ui/core@^1.1.0":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.5.3.tgz#b6aa0827708d70971c8679a16cf680a515b8a52a"
+  integrity sha512-O0WKDOo0yhJuugCx6trZQj5jVJ9yR0ystG2JaNAemYUWce+pmM6WUEFIibnWyEJKdrDxhm75NoSRME35FNaM/Q==
+  dependencies:
+    "@floating-ui/utils" "^0.2.0"
+
+"@floating-ui/dom@~1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.1.1.tgz#66aa747e15894910869bf9144fc54fc7d6e9f975"
+  integrity sha512-TpIO93+DIujg3g7SykEAGZMDtbJRrmnYRCNYSjJlvIbGhBjRSNTLVbNeDQBrzy9qDgUbiWdc7KA0uZHZ2tJmiw==
+  dependencies:
+    "@floating-ui/core" "^1.1.0"
+
+"@floating-ui/utils@^0.2.0":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.1.tgz#16308cea045f0fc777b6ff20a9f25474dd8293d2"
+  integrity sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==
+
 "@fortawesome/fontawesome-common-types@^0.2.36":
   version "0.2.36"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.36.tgz#b44e52db3b6b20523e0c57ef8c42d315532cb903"
@@ -328,10 +347,10 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
   integrity sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==
 
-"@popperjs/core@^2.11.6":
-  version "2.11.6"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
-  integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
+"@popperjs/core@^2.11.8":
+  version "2.11.8"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
 "@rollup/plugin-inject@^5.0.1":
   version "5.0.3"
@@ -1828,6 +1847,14 @@ flatted@^3.1.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.2.tgz#64bfed5cb68fe3ca78b3eb214ad97b63bedce561"
   integrity sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==
+
+floating-vue@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/floating-vue/-/floating-vue-5.2.0.tgz#8f5ffa40f7eb15c31d7ca7f19d753f6155d387ec"
+  integrity sha512-CeApC0dUU8Mye6mjH3ZB7FXoUjIRduNuz8QW4nj3ZUweaFqv7PwxfN9klTuRQe9MeZXxbIHJHBTNl9t/bv+SUA==
+  dependencies:
+    "@floating-ui/dom" "~1.1.1"
+    vue-resize "^2.0.0-alpha.1"
 
 follow-redirects@^1.14.0:
   version "1.15.2"
@@ -3704,6 +3731,11 @@ vue-multiselect@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/vue-multiselect/-/vue-multiselect-2.1.6.tgz#5be5d811a224804a15c43a4edbb7485028a89c7f"
   integrity sha512-s7jmZPlm9FeueJg1RwJtnE9KNPtME/7C8uRWSfp9/yEN4M8XcS/d+bddoyVwVnvFyRh9msFo0HWeW0vTL8Qv+w==
+
+vue-resize@^2.0.0-alpha.1:
+  version "2.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/vue-resize/-/vue-resize-2.0.0-alpha.1.tgz#43eeb79e74febe932b9b20c5c57e0ebc14e2df3a"
+  integrity sha512-7+iqOueLU7uc9NrMfrzbG8hwMqchfVfSzpVlCMeJQe4pyibqyoifDNbKTZvwxZKDvGkB+PdFeKvnGZMoEb8esg==
 
 vue3-clipboard@^1.0.0:
   version "1.0.0"

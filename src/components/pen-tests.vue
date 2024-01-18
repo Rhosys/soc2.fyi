@@ -122,9 +122,14 @@
             <th scope="row"><a target="_blank" href="https://kobalt.io/pentest/">Kobalt</a></th>
             <td>
               <div class="d-flex justify-content-center">
-                <span class="d-flex align-items-center justify-content-center">
-                  $32.5k
-                </span>
+                <VTooltip>
+                  <span class="d-flex align-items-center justify-content-center pointer">
+                    $32.5k <i class="ms-1 fa fa-info-circle" />
+                  </span>
+                  <template #popper>
+                    $25k Pen Test + $7.5k Vulnerability Scan
+                  </template>
+                </VTooltip>
               </div>
             </td>
             <td>
@@ -137,6 +142,19 @@
             <td><danger /></td>
             <td><success /></td>
             <td class="text-warning">Retests cost 20% of total spend</td>
+          </tr>
+
+          <tr>
+            <th scope="row"><a target="_blank" href="https://www.leviathansecurity.com/">Leviathan Security Group</a></th>
+            <td>  
+              <span class="d-flex align-items-center justify-content-center pointer">
+                > $10k
+              </span>
+            </td>
+            <td><danger /></td>
+            <td><danger /></td>
+            <td><success /></td>
+            <td class="text-warning"></td>
           </tr>
 
           <tr>
