@@ -146,7 +146,7 @@
 
           <tr>
             <th scope="row"><a target="_blank" href="https://www.leviathansecurity.com/">Leviathan Security Group</a></th>
-            <td>  
+            <td>
               <span class="d-flex align-items-center justify-content-center pointer">
                 > $10k
               </span>
