@@ -45,7 +45,7 @@
             <td><success /></td>
             <td><success /></td>
             <td>
-              <ul style="padding-left: 1rem">
+              <ul>
                 <li><span class="">Boutique pen testing shop</span></li>
                 <li><span class="text-success">Very responsive</span></li>
               </ul>
@@ -72,7 +72,7 @@
             <td><warning /></td>
             <td><warning /></td>
             <td>
-              <ul style="padding-left: 1rem">
+              <ul>
                 <li><span class="text-success">Free retests within 6 months</span></li>
                 <li><span class="text-danger">Toxic marketing strategies</span></li>
               </ul>

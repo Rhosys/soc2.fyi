@@ -114,6 +114,7 @@
                   <br>
                   <li><strong>An attestation icon and url</strong>: Additionally you'll get a link to put on your website. This proves they did the audit.</li>
                 </ul>
+                <br>
               </p>
 
               <div class="mt-3">You define your policies. You determine what is in scope or not. What you include will be audited and then appear in your report.</div>
