@@ -117,6 +117,29 @@
             <td><success /></td>
             <td class="text-success">Free retests within 12 months</td>
           </tr>
+            
+          <tr>
+            <th scope="row"><a target="_blank" href="https://www.includesecurity.com/">IncludeSec</a></th>
+            <td>
+              <div class="d-flex justify-content-center">
+                <span class="d-flex align-items-center justify-content-center">
+                  $10k+
+                </span>
+              </div>
+            </td>
+            <td>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="d-flex justify-content-center flex-column">
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                  <span><i class="fa-solid fa-check text-success" /> Custom tailored methodologies</span>
+                </small>
+              </div>
+            </td>
+            <td><success /></td>
+            <td><success /></td>
+            <td class="text-success">Retests included and can be used within 12 months</td>
+            <td class="text-success">All senior team and thorough</td>
+          </tr>
 
           <tr>
             <th scope="row"><a target="_blank" href="https://kobalt.io/pentest/">Kobalt</a></th>
