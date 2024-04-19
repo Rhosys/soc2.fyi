@@ -51,7 +51,7 @@
           <template #item-licensed="item">
             <div v-if="item.licensed === null"><warning /></div>
             <div v-else-if="item.licensed === false"><danger /></div>
-            <div v-else-if="item.licensed === 'PARTNERS'"><small class="text-success">Contracted Partners</small></div>
+            <div v-else-if="item.licensed === 'PARTNERS'"><small class="">Contracted Partners</small></div>
             <div v-else><success /></div>
           </template>
           <template #item-auditCost="item">
@@ -66,10 +66,10 @@
             <div v-else><success /></div>
           </template>
           <template #item-integrationCount="item">
-            <div v-if="item.integrationCount === null"><warning /></div>
-            <div v-else-if="item.integrationCount >= 1000"><span class="text-success">Many</span></div>
-            <div v-else-if="item.integrationCount >= 100"><span class="text-warning">Some</span></div>
-            <div v-else-if="item.integrationCount >= 10"><span class="text-danger">Few</span></div>
+            <div v-if="!item.integrationCount"><warning /></div>
+            <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 3"><span class="text-success">{{ item.integrationCount }}</span></div>
+            <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 2"><span class="text-warning">{{ item.integrationCount }}</span></div>
+            <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 1"><span class="text-danger">{{ item.integrationCount }}</span></div>
             <div v-else><danger /></div>
           </template>
           <template #item-note="item">
@@ -142,7 +142,7 @@ const companies = [
     automationPlatformCost: '$15k',
     licensed: false,
     auditCost: false,
-    integrationCount: 100,
+    integrationCount: '100+',
     note: 'Forward focused on being agile.' },
 
   {
@@ -151,7 +151,7 @@ const companies = [
     automationPlatformCost: '$6k',
     licensed: 'PARTNERS',
     auditCost: '$24k',
-    integrationCount: 10,
+    integrationCount: '10',
     note: 'Only works with <a href="https://www.bonadio.com/">Bonadio CPA</a>.'
   },
 
@@ -183,18 +183,18 @@ const companies = [
   { link: 'https://secureframe.com/',
     name: 'Secureframe',
     automationPlatformCost: '$7.5k',
-    licensed: true,
+    licensed: null,
     auditCost: '$6.5k',
-    integrationCount: 100,
+    integrationCount: '100+',
     note: 'Provides an in house audit or works with third party auditors. Includes automated answers to vendor questionnaires.' },
 
   { link: 'https://sprinto.com/ignite/',
     name: 'Sprinto Ignite',
-    automationPlatformCost: '$6k',
-    licensed: true,
-    auditCost: true,
-    integrationCount: 100,
-    note: '<span class="text-danger">Requires 3 year contract, frequently requires manual actions. Aggressive Marketing</span>' },
+    automationPlatformCost: '$7k',
+    licensed: 'PARTNERS',
+    auditCost: null,
+    integrationCount: '200+',
+    note: '<span class="text-danger">Aggressive Marketing</span>' },
 
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
@@ -209,7 +209,7 @@ const companies = [
     automationPlatformCost: true,
     licensed: false,
     auditCost: false,
-    integrationCount: 10,
+    integrationCount: '10',
     note: 'Poor UX. <span class="text-danger">No OAuth</span>.' },
 
   { link: 'https://trustero.com/',
@@ -217,7 +217,7 @@ const companies = [
     automationPlatformCost: null,
     licensed: null,
     auditCost: null,
-    integrationCount: 10,
+    integrationCount: '10',
     note: 'Can we difficult to work with.' },
   
   { link: 'https://tugboatlogic.com/',
@@ -234,7 +234,7 @@ const companies = [
     automationPlatformCost: '$15k',
     licensed: 'PARTNERS',
     auditCost: '$10k',
-    integrationCount: 1000,
+    integrationCount: '1000+',
     note: 'Has list of Audit Partners, and always charges a fixed price. However generally considered expensive.',
     callout: `
       <span>Standardize pricing through third party auditors:</span>

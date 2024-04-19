@@ -173,13 +173,6 @@ const companies = [
     hasAutomationPlatform: false,
     note: '<span class="text-success">Works with TrustCloud.</span>' },
 
-  { link: 'https://sprinto.com/ignite/',
-    name: 'Sprinto Ignite',
-    totalCost: '$6k',
-    includesPlatform: true,
-    hasAutomationPlatform: true,
-    note: 'Requires 3 year contract, <span class="text-danger">Aggressive Marketing</span>.' },
-
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
     totalCost: '$12k',
