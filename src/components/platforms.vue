@@ -189,10 +189,10 @@ const companies = [
     note: 'Provides an in house audit or works with third party auditors. Includes automated answers to vendor questionnaires.' },
 
   { link: 'https://sprinto.com/ignite/',
-    name: 'Sprinto Ignite',
+    name: 'Sprinto',
     automationPlatformCost: '$7k',
     licensed: 'PARTNERS',
-    auditCost: null,
+    auditCost: '$2k+',
     integrationCount: '200+',
     note: '<span class="text-danger">Aggressive Marketing</span>' },
 
