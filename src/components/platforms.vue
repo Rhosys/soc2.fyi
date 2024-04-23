@@ -26,6 +26,8 @@
           @click="showRow"
           :alternating="true"
           :headers="headers"
+          v-model:serverOptions="sortOptions"
+          :serverItemsLength="items.length"
           :items="items">
           <template #header="header">
             <span style="font-size: 16px">{{ header.text }}</span>
@@ -103,26 +105,19 @@ import Danger from './danger.vue';
 import Warning from './warning.vue';
 import Success from './success.vue';
 
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const headers = [
-  { text: 'Company', value: 'name' },
-  { text: 'Total Cost (per year)', value: 'totalCost' },
-  { text: 'Automation Platform Cost', value: 'automationPlatformCost' },
-  { text: 'Also Performs Audit', value: 'licensed' },
-  { text: 'Additional Audit Cost', value: 'auditCost' },
-  { text: 'Total integrations', value: 'integrationCount' },
+  { text: 'Company', value: 'name', sortable: true },
+  { text: 'Total Cost (per year)', value: 'totalCost', sortable: true },
+  { text: 'Automation Platform Cost', value: 'automationPlatformCost', sortable: true },
+  { text: 'Also Performs Audit', value: 'licensed', sortable: true },
+  { text: 'Additional Audit Cost', value: 'auditCost', sortable: true },
+  { text: 'Total integrations', value: 'integrationCount', sortable: true },
   { text: 'Note', value: 'note' }
 ];
 
 const companies = [
-  { link: 'https://www.a-lign.com/',
-    name: 'A-LIGN (A-SCEND)',
-    automationPlatformCost: '€5.8k',
-    licensed: true,
-    auditCost: '€21k',
-    integrationCount: null,
-    note: '<span class="text-danger">Very unresponsive (multiple months with no response)</span>' },
   { link: 'https://akitra.com/',
     name: 'Akitra',
     automationPlatformCost: null,
@@ -130,13 +125,26 @@ const companies = [
     auditCost: null,
     integrationCount: null,
     note: '' },
+  { link: 'https://www.a-lign.com/',
+    name: 'A-LIGN (A-SCEND)',
+    automationPlatformCost: '€5.8k',
+    licensed: true,
+    auditCost: '€21k',
+    integrationCount: null,
+    note: '<span class="text-danger">Very unresponsive (multiple months with no response)</span>' },
   { link: 'https://www.anecdotes.ai/',
     name: 'anecdotes',
     automationPlatformCost: '$50k',
     licensed: false,
     auditCost: false,
     note: '' },
-
+  { link: 'https://aws.amazon.com/audit-manager/',
+    name: 'AWS Audit Manager',
+    automationPlatformCost: 'USAGE',
+    licensed: false,
+    auditCost: false,
+    integrationCount: null,
+    note: '<ul><li><span class="text-warning">Does any auditor accept evidence from AWS?</span></li><li><span>$1.25 / 1k resources</span></li></ul>' },
   { link: 'https://drata.com/',
     name: 'Drata',
     automationPlatformCost: '$15k',
@@ -242,15 +250,26 @@ const companies = [
   }
 ];
 const items = ref(companies);
+const sortOptions = ref({
+  sortBy: 'name',
+  sortType: 'desc'
+});
 
 const calculateTotalCost = company => {
+  if (!company.automationPlatformCost) {
+    return null;
+  }
   const symbol = company.automationPlatformCost[0];
 
   if (!company.auditCost) {
     if (company.automationPlatformCost === true) {
       return '+ Audit';
     }
-    return `${company.automationPlatformCost || ''} + Audit`;
+
+    const keyMapping = {
+      USAGE: 'Usage Based'
+    };
+    return `${keyMapping[company.automationPlatformCost] || company.automationPlatformCost || ''} + Audit`;
   }
 
   const automationCost = Number(company.automationPlatformCost.replace(/[^\d.]/gi, ''));
@@ -261,6 +280,50 @@ const calculateTotalCost = company => {
   const auditCost = Number(company.auditCost.replace(/[^\d.]/gi, ''));
   return `~ ${symbol}${automationCost + auditCost}k`;
 };
+
+const convertStringNumberToActualNumber = vStr => {
+  return Number(vStr.replace(/[^\d.]/gi, '')) * (vStr.match(/k[+]?$/) ? 1000 : 1);
+};
+
+watch(sortOptions, ({ sortBy, sortType }) => {
+  const initialSortOrder = companies.sort((aResource, bResource) => {
+    const a = aResource[sortBy];
+    const b = bResource[sortBy];
+
+    if (sortBy === 'licensed') {
+      const sortOrder = [true, 'PARTNERS', null, false];
+      return sortOrder.findIndex(v => v === a) - sortOrder.findIndex(v => v === b);
+    }
+
+    if (sortBy === 'integrationCount') {
+      return Number(`${a}`.replace(/[^\d]/g, '') || 0) - Number(`${b}`.replace(/[^\d]/i, '') || 0);
+    }
+
+    if (sortBy === 'automationPlatformCost') {
+      const calcSortValue = v => v === true && 0.00001 || v === 'USAGE' && 1 || !v && Infinity || convertStringNumberToActualNumber(v);
+      return calcSortValue(a) - calcSortValue(b);
+    }
+
+    if (sortBy === 'auditCost') {
+      const calcSortValue = v => (['NUMBER', true, null, false].findIndex(i => i === v) + 1) || convertStringNumberToActualNumber(v);
+      return calcSortValue(a) - calcSortValue(b);
+    }
+
+    if (sortBy === 'totalCost') {
+      const aCost = calculateTotalCost(aResource);
+      const bCost = calculateTotalCost(bResource);
+
+      const calcSortValue = v => v === true && 0.00001 || v === 'USAGE' && 1 || !v && Infinity || convertStringNumberToActualNumber(v);
+      return calcSortValue(aCost) - calcSortValue(bCost);
+    }
+
+    return !!a - !!b
+      || !a ? 1
+      : a.match(/[~.\dk]/) ? a.replace(/[^\d.]/gi, '') - b.replace(/[^\d.]/gi, '') : a.localeCompare(b);
+  });
+
+  items.value = sortType === 'desc' ? initialSortOrder.reverse() : initialSortOrder;
+});
 
 const showRow = clickedElement => {
   const target = clickedElement.target.closest('tr');
@@ -322,5 +385,11 @@ table.auditors th a {
   :deep(td) {
     border-top: 1px solid rgb(55, 59, 62);
   }
+}
+
+:deep(.sortable.none .sortType-icon) {
+  transform: rotate(90deg) !important;
+  position: relative;
+  left: 3px;
 }
 </style>
