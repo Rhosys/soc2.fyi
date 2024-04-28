@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-bottom: 4rem;">
+  <div style="margin-bottom: 59px;">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark border-bottom">
       <div class="container-fluid">
         <a class="navbar-brand pointer" @click.prevent="navigateTo()">The SOC2 FYI</a>

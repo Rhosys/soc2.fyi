@@ -57,5 +57,9 @@ import Home from './components/home.vue';
     color: unset;
     text-decoration: none;
   }
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
 }
 </style>

@@ -14,6 +14,17 @@ html, body {
   cursor: pointer;
 }
 
+#app {
+  background-image: repeating-linear-gradient(
+    /* 28deg, */
+    10deg,
+    map-get($theme-colors, "primary") 100px,
+    map-get($theme-colors, "primary") 1000px,
+    darken(map-get($theme-colors, "primary"), 5%) 1000px,
+    darken(map-get($theme-colors, "primary"), 5%) 1150px
+  );
+}
+
 // Overrides
 
 @include media-breakpoint-down(md) {
