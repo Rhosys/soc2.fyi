@@ -218,8 +218,7 @@ const companies = [
     licensed: false,
     auditCost: false,
     integrationCount: '10',
-    note: 'Poor UX. <span class="text-danger">No OAuth</span>.' },
-
+    note: 'Improving UX.',
   { link: 'https://trustero.com/',
     name: 'Trustero',
     automationPlatformCost: null,
