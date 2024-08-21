@@ -1,0 +1,7 @@
+User-Agent: GPTBot
+Disallow: /app/
+
+User-Agent: *
+Disallow: /documents/
+
+# Sitemap: https://soc2.fyi/sitemap.xml
