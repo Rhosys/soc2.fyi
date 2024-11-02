@@ -98,6 +98,34 @@
           </tr>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://footholdsecurity.com">Foothold Security</a></th>
+            <td>
+              <div class="d-flex justify-content-center">
+                <span class="d-flex align-items-center justify-content-center">
+                  €$5k ~ €8k
+                </span>
+              </div>
+            </td>
+            <td>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="d-flex justify-content-center flex-column">
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                  <span><i class="fa-solid fa-check text-success" /> OSSTMM</span>
+                  <span><i class="fa-solid fa-check text-success" /> PTES</span>
+                </small>
+              </div>
+            </td>
+            <td><success /></td>
+            <td><success /></td>
+            <td>
+              <ul>
+                <li class="text-success">Free retests within 90 days</li>
+                <li>Trainings available</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://glitchsecure.com/">GlitchSecure</a></th>
             <td>
               <div class="d-flex justify-content-center">
