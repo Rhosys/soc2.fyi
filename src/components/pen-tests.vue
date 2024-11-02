@@ -102,7 +102,7 @@
             <td>
               <div class="d-flex justify-content-center">
                 <span class="d-flex align-items-center justify-content-center">
-                  €$5k ~ €8k
+                  €5k ~ €8k
                 </span>
               </div>
             </td>
