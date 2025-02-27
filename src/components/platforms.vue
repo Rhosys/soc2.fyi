@@ -152,7 +152,17 @@ const companies = [
     auditCost: false,
     integrationCount: '100+',
     note: 'Forward focused on being agile.' },
-
+  { link: 'https://www.getprobo.com/',
+    name: 'Probo',
+    automationPlatformCost: true,
+    licensed: 'PARTNERS',
+    auditCost: '$8k',
+    integrationCount: false,
+    note: '<li>Open source platform, than can be self hosted.</li><li>Possible to go with third party auditors.</li>',
+    callout: `
+      <span>Standardize pricing through an independent US auditors:</span>
+      <ul><li>Type I Pricing: $6.5k</li><li>Type II Pricing: $8k</li></ul>
+  `},
   {
     link: 'https://realciso.io/',
     name: 'RealCISO',
@@ -258,6 +268,14 @@ const calculateTotalCost = company => {
   if (!company.automationPlatformCost) {
     return null;
   }
+
+  if (typeof company.automationPlatformCost !== 'string') {
+    if (company.automationPlatformCost === true) {
+      return '+ Audit';
+    }
+    return `${company.automationPlatformCost} + Audit`;
+  }
+
   const symbol = company.automationPlatformCost[0];
 
   if (!company.auditCost) {
@@ -276,11 +294,18 @@ const calculateTotalCost = company => {
     return `${symbol}${automationCost}k`;
   }
 
-  const auditCost = Number(company.auditCost.replace(/[^\d.]/gi, ''));
+  let auditCost = 0;
+  if (typeof company.auditCost === 'string') {
+    auditCost = Number(company.auditCost.replace(/[^\d.]/gi, ''));
+  }
+
   return `~ ${symbol}${automationCost + auditCost}k`;
 };
 
 const convertStringNumberToActualNumber = vStr => {
+  if (typeof vStr !== 'string') {
+    return vStr === true ? 0 : Infinity;
+  }
   return Number(vStr.replace(/[^\d.]/gi, '')) * (vStr.match(/k[+]?$/) ? 1000 : 1);
 };
 
