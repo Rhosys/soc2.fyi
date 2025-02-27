@@ -152,7 +152,17 @@ const companies = [
     auditCost: false,
     integrationCount: '100+',
     note: 'Forward focused on being agile.' },
-
+  { link: 'https://www.getprobo.com/',
+    name: 'Probo',
+    automationPlatformCost: true,
+    licensed: 'PARTNERS',
+    auditCost: '$8k',
+    integrationCount: false,
+    note: '<li>Open source platform, than can be self hosted.</li><li>Possible to go with third party auditors.</li>',
+    callout: `
+      <span>Standardize pricing through an independent US auditors:</span>
+      <ul><li>Type I Pricing: $6.5k</li><li>Type II Pricing: $8k</li></ul>
+  `},
   {
     link: 'https://realciso.io/',
     name: 'RealCISO',
