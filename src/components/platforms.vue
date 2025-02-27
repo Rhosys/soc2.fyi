@@ -225,7 +225,7 @@ const companies = [
     licensed: null,
     auditCost: null,
     integrationCount: '10',
-    note: 'Can we difficult to work with.' },
+    note: 'Can be difficult to work with.' },
   
   { link: 'https://tugboatlogic.com/',
     name: 'Tugboat (onetrust)',
