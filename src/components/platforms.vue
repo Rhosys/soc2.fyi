@@ -268,6 +268,14 @@ const calculateTotalCost = company => {
   if (!company.automationPlatformCost) {
     return null;
   }
+
+  if (typeof company.automationPlatformCost !== 'string') {
+    if (company.automationPlatformCost === true) {
+      return '+ Audit';
+    }
+    return `${company.automationPlatformCost} + Audit`;
+  }
+
   const symbol = company.automationPlatformCost[0];
 
   if (!company.auditCost) {
@@ -286,11 +294,18 @@ const calculateTotalCost = company => {
     return `${symbol}${automationCost}k`;
   }
 
-  const auditCost = Number(company.auditCost.replace(/[^\d.]/gi, ''));
+  let auditCost = 0;
+  if (typeof company.auditCost === 'string') {
+    auditCost = Number(company.auditCost.replace(/[^\d.]/gi, ''));
+  }
+
   return `~ ${symbol}${automationCost + auditCost}k`;
 };
 
 const convertStringNumberToActualNumber = vStr => {
+  if (typeof vStr !== 'string') {
+    return vStr === true ? 0 : Infinity;
+  }
   return Number(vStr.replace(/[^\d.]/gi, '')) * (vStr.match(/k[+]?$/) ? 1000 : 1);
 };
 
