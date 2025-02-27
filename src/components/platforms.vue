@@ -37,10 +37,10 @@
           </template>
           <template #item-totalCost="item">
             <div v-if="item.automationPlatformCost === true">
-              <span class="text-success">Free</span> {{ calculateTotalCost(item) }}
+              <span class="text-success">Free</span> {{ item.automationPlusAuditCost }}
             </div>
             <div v-else-if="typeof item.automationPlatformCost === 'string'">
-              {{ calculateTotalCost(item) }}
+              {{ item.automationPlusAuditCost }}
             </div>
             <div v-else><warning /></div>
           </template>
@@ -80,14 +80,13 @@
               <span v-html="item.note" />
             </div>
           </template>
-          <template #expand="item">
+          <!-- <template #expand="item">
             <template v-if="item.callout">
               <div class="ms-5">
-                <!-- eslint-disable-next-line vue/no-v-html -->
                 <div v-html="item.callout" />
               </div>
             </template>
-          </template>
+          </template> -->
         </EasyDataTable>
       </div>
 
@@ -123,6 +122,7 @@ const companies = [
     automationPlatformCost: null,
     licensed: null,
     auditCost: null,
+    automationPlusAuditCost: null,
     integrationCount: null,
     note: '' },
   { link: 'https://www.a-lign.com/',
@@ -130,6 +130,7 @@ const companies = [
     automationPlatformCost: '€5.8k',
     licensed: true,
     auditCost: '€21k',
+    automationPlusAuditCost: '~ €26.8k',
     integrationCount: null,
     note: '<span class="text-danger">Very unresponsive (multiple months with no response)</span>' },
   { link: 'https://www.anecdotes.ai/',
@@ -137,38 +138,40 @@ const companies = [
     automationPlatformCost: '$50k',
     licensed: false,
     auditCost: false,
+    automationPlusAuditCost: '$50k + Audit',
     note: '' },
   { link: 'https://aws.amazon.com/audit-manager/',
     name: 'AWS Audit Manager',
     automationPlatformCost: 'USAGE',
     licensed: false,
     auditCost: false,
+    automationPlusAuditCost: 'Usage Based + $8k Audit',
     integrationCount: null,
-    note: '<ul><li><span class="text-warning">Does any auditor accept evidence from AWS?</span></li><li><span>$1.25 / 1k resources</span></li></ul>' },
+    note: '<li><span class="text-warning">Does any auditor accept evidence from AWS?</span></li><li><span>$1.25 / 1k resources</span></li>' },
   { link: 'https://drata.com/',
     name: 'Drata',
     automationPlatformCost: '$15k',
     licensed: false,
     auditCost: false,
+    automationPlusAuditCost: '$15k + Audit',
     integrationCount: '100+',
     note: 'Forward focused on being agile.' },
   { link: 'https://www.getprobo.com/',
     name: 'Probo',
-    automationPlatformCost: true,
+    automationPlatformCost: 'INFRA',
     licensed: 'PARTNERS',
     auditCost: '$8k',
+    automationPlusAuditCost: 'Infra + $8k Audit',
     integrationCount: false,
-    note: '<li>Open source platform, than can be self hosted.</li><li>Possible to go with third party auditors.</li>',
-    callout: `
-      <span>Standardize pricing through an independent US auditors:</span>
-      <ul><li>Type I Pricing: $6.5k</li><li>Type II Pricing: $8k</li></ul>
-  `},
+    note: '<li>Self hosted</li><li>Some third party auditors supported</li>'
+  },
   {
     link: 'https://realciso.io/',
     name: 'RealCISO',
     automationPlatformCost: '$6k',
     licensed: 'PARTNERS',
     auditCost: '$24k',
+    automationPlusAuditCost: '~ $30k',
     integrationCount: '10',
     note: 'Only works with <a href="https://www.bonadio.com/">Bonadio CPA</a>.'
   },
@@ -179,6 +182,7 @@ const companies = [
     automationPlatformCost: null,
     licensed: null,
     auditCost: null,
+    automationPlusAuditCost: null,
     integrationCount: null,
     note: '' },
 
@@ -187,6 +191,7 @@ const companies = [
     automationPlatformCost: null,
     licensed: false,
     auditCost: false,
+    automationPlusAuditCost: null,
     integrationCount: null,
     note: '' },
 
@@ -195,6 +200,7 @@ const companies = [
     automationPlatformCost: null,
     licensed: null,
     auditCost: null,
+    automationPlusAuditCost: null,
     integrationCount: null,
     note: '' },
 
@@ -203,6 +209,7 @@ const companies = [
     automationPlatformCost: '$7.5k',
     licensed: null,
     auditCost: '$6.5k',
+    automationPlusAuditCost: '~ $14k',
     integrationCount: '100+',
     note: 'Provides an in house audit or works with third party auditors. Includes automated answers to vendor questionnaires.' },
 
@@ -211,6 +218,7 @@ const companies = [
     automationPlatformCost: '$7k',
     licensed: 'PARTNERS',
     auditCost: '$2k+',
+    automationPlusAuditCost: '~ $9k',
     integrationCount: '200+',
     note: '<span class="text-danger">Aggressive Marketing</span>' },
 
@@ -219,6 +227,7 @@ const companies = [
     automationPlatformCost: '$7k',
     licensed: true,
     auditCost: '$5k',
+    automationPlusAuditCost: '~ $12k',
     integrationCount: null,
     note: 'Audit only done in house.' },
 
@@ -227,6 +236,7 @@ const companies = [
     automationPlatformCost: true,
     licensed: false,
     auditCost: false,
+    automationPlusAuditCost: '+ $8k Audit',
     integrationCount: '10',
     note: 'Improving UX.' },
   { link: 'https://trustero.com/',
@@ -234,6 +244,7 @@ const companies = [
     automationPlatformCost: null,
     licensed: null,
     auditCost: null,
+    automationPlusAuditCost: null,
     integrationCount: '10',
     note: 'Can be difficult to work with.' },
   
@@ -242,6 +253,7 @@ const companies = [
     automationPlatformCost: null,
     licensed: null,
     auditCost: null,
+    automationPlusAuditCost: null,
     integrationCount: false,
     note: 'Verify limited platform' },
 
@@ -251,11 +263,9 @@ const companies = [
     automationPlatformCost: '$15k',
     licensed: 'PARTNERS',
     auditCost: '$10k',
+    automationPlusAuditCost: '~ $25k',
     integrationCount: '1000+',
-    note: 'Has list of Audit Partners, and always charges a fixed price. However generally considered expensive.',
-    callout: `
-      <span>Standardize pricing through third party auditors:</span>
-      <ul><li>Type I Pricing: $7k</li><li>Type II Pricing: $10k</li>`
+    note: 'Has list of Audit Partners, and always charges a fixed price. However generally considered expensive.'
   }
 ];
 const items = ref(companies);
@@ -263,44 +273,6 @@ const sortOptions = ref({
   sortBy: 'name',
   sortType: 'desc'
 });
-
-const calculateTotalCost = company => {
-  if (!company.automationPlatformCost) {
-    return null;
-  }
-
-  if (typeof company.automationPlatformCost !== 'string') {
-    if (company.automationPlatformCost === true) {
-      return '+ Audit';
-    }
-    return `${company.automationPlatformCost} + Audit`;
-  }
-
-  const symbol = company.automationPlatformCost[0];
-
-  if (!company.auditCost) {
-    if (company.automationPlatformCost === true) {
-      return '+ Audit';
-    }
-
-    const keyMapping = {
-      USAGE: 'Usage Based'
-    };
-    return `${keyMapping[company.automationPlatformCost] || company.automationPlatformCost || ''} + Audit`;
-  }
-
-  const automationCost = Number(company.automationPlatformCost.replace(/[^\d.]/gi, ''));
-  if (company.auditCost === true) {
-    return `${symbol}${automationCost}k`;
-  }
-
-  let auditCost = 0;
-  if (typeof company.auditCost === 'string') {
-    auditCost = Number(company.auditCost.replace(/[^\d.]/gi, ''));
-  }
-
-  return `~ ${symbol}${automationCost + auditCost}k`;
-};
 
 const convertStringNumberToActualNumber = vStr => {
   if (typeof vStr !== 'string') {
@@ -334,10 +306,10 @@ watch(sortOptions, ({ sortBy, sortType }) => {
     }
 
     if (sortBy === 'totalCost') {
-      const aCost = calculateTotalCost(aResource);
-      const bCost = calculateTotalCost(bResource);
+      const aCost = aResource.automationPlusAuditCost;
+      const bCost = bResource.automationPlusAuditCost;
 
-      const calcSortValue = v => v === true && 0.00001 || v === 'USAGE' && 1 || !v && Infinity || convertStringNumberToActualNumber(v);
+      const calcSortValue = v => v === '+ Audit' && 0.00001 || v === 'USAGE' && 1 || !v && Infinity || convertStringNumberToActualNumber(v);
       return calcSortValue(aCost) - calcSortValue(bCost);
     }
 
@@ -349,12 +321,13 @@ watch(sortOptions, ({ sortBy, sortType }) => {
   items.value = sortType === 'desc' ? initialSortOrder.reverse() : initialSortOrder;
 });
 
+// eslint-disable-next-line no-unused-vars
 const showRow = clickedElement => {
-  const target = clickedElement.target.closest('tr');
-  const companyId = target?.children?.[1]?.children?.[0]?.id;
-  if (companies.find(c => c.id === companyId)?.callout) {
-    target.children[0].click();
-  }
+  // const target = clickedElement.target.closest('tr');
+  // const companyId = target?.children?.[1]?.children?.[0]?.id;
+  // if (companies.find(c => c.id === companyId)?.callout) {
+  //   target.children[0].click();
+  // }
 };
 
 </script>
@@ -400,7 +373,7 @@ table.auditors th a {
   }
 
   :deep(tr) {
-    cursor: pointer;
+    // cursor: pointer;
     .expand-icon {
       opacity: 0;
     }

@@ -13,7 +13,6 @@
       <div class="table-responsive-md">
         <EasyDataTable id="auditorTable"
           :hide-footer="true"
-          no-hover
           table-class-name="customize-table"
           header-text-direction="center"
           body-text-direction="center"
