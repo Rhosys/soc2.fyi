@@ -27,6 +27,24 @@
         <tbody>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://www.atredis.com/">Atredis</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <th scope="row"><a target="_blank" href="https://bishopfox.com/">Bishop Fox</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://bsk-security.com/">BSK Security</a></th>
             <td>
               <div class="d-flex justify-content-center">
@@ -168,6 +186,15 @@
           </tr>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://ioactive.com/">IOActive</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://kobalt.io/pentest/">Kobalt</a></th>
             <td>
               <div class="d-flex justify-content-center">
@@ -203,7 +230,25 @@
             <td><danger /></td>
             <td><danger /></td>
             <td><success /></td>
-            <td class="text-warning"></td>
+            <td class="text-warning">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <th scope="row"><a target="_blank" href="https://www.nccgroup.com/">NCC Group</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <th scope="row"><a target="_blank" href="https://www.netspi.com/">NetSPI</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
           </tr>
 
           <tr>
@@ -219,6 +264,24 @@
               </div>
             </td>
             <td><success /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <th scope="row"><a target="_blank" href="https://www.optiv.com/">Optiv</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <th scope="row"><a target="_blank" href="https://www.praetorian.com/">Praetorian</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><warning /></td>
             <td><success /></td>
             <td>&nbsp;</td>
           </tr>
