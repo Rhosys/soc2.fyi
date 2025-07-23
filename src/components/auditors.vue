@@ -116,23 +116,15 @@
             </tr>
 
             <tr>
+              <th scope="row"><a target="_blank" href="https://www.bdemerson.com/">BD Emerson</a></th>
+              <td><success /></td>
+              <td><success /></td>
+              <td><success /></td>
+              <td>BD Emerson is part of the consulting giant Andersen. Primarily works with Vanta.</td>
+            </tr>
+
+            <tr>
               <th scope="row"><a target="_blank" href="https://rhymetec.com/vciso/">Rhymetic</a></th>
-              <td><warning /></td>
-              <td><warning /></td>
-              <td><warning /></td>
-              <td class="text-danger">&nbsp;</td>
-            </tr>
-
-            <tr>
-              <th scope="row"><a target="_blank" href="https://sidechannel.com/">SideChannel</a></th>
-              <td><success /></td>
-              <td><success /></td>
-              <td><success /></td>
-              <td class="text-danger">&nbsp;</td>
-            </tr>
-
-            <tr>
-              <th scope="row"><a target="_blank" href="https://www.violetx.com/">Violetx</a></th>
               <td><warning /></td>
               <td><warning /></td>
               <td><warning /></td>
@@ -177,7 +169,13 @@ const companies = [
     totalCost: '$12k',
     includesPlatform: true,
     hasAutomationPlatform: true,
-    note: 'Includes the cost of an <a href="#automation-platforms">automation platform</a>.' }
+    note: 'Includes the cost of an <a href="#automation-platforms">automation platform</a>.' },
+
+  { link: 'https://www.bdemerson.cpa/service/soc-audit',
+    name: 'BD Emerson CPA',
+    totalCost: '$10k',
+    hasAutomationPlatform: false,
+    note: '<span class="text-success">Works with Vanta, Drata, Secureframe, and handles manual audits off platform.</span>' }
 ];
 const items = ref(companies);
 
