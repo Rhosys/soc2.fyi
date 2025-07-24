@@ -138,6 +138,14 @@
               <td><warning /></td>
               <td class="text-danger">&nbsp;</td>
             </tr>
+
+            <tr>
+              <th scope="row"><a target="_blank" href="https://www.bdemerson.com/">BD Emerson</a></th>
+              <td><success /></td>
+              <td><success /></td>
+              <td><success /></td>
+              <td>BD Emerson is part of the consulting giant Andersen. Supports on any automation platform and supports customers who manage off platform.</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -177,7 +185,13 @@ const companies = [
     totalCost: '$12k',
     includesPlatform: true,
     hasAutomationPlatform: true,
-    note: 'Includes the cost of an <a href="#automation-platforms">automation platform</a>.' }
+    note: 'Includes the cost of an <a href="#automation-platforms">automation platform</a>.' },
+    
+  { link: 'https://www.bdemerson.cpa/service/soc-audit',
+    name: 'BD Emerson CPA',
+    totalCost: '$10k',
+    hasAutomationPlatform: false,
+    note: '<span class="text-success">Works with Vanta, Drata, Secureframe, and handles manual audits off platform.</span>'}, 
 ];
 const items = ref(companies);
 
