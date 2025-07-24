@@ -144,7 +144,7 @@
               <td><success /></td>
               <td><success /></td>
               <td><success /></td>
-              <td>BD Emerson is part of the consulting giant Andersen. Supports on any automation platform and supports customers who manage off platform.</td>
+              <td>Supports any automation platform and customers off platform.</td>
             </tr>
           </tbody>
         </table>
