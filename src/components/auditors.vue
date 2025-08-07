@@ -182,7 +182,7 @@ const companies = [
 
   { link: 'https://thoropass.com/',
     name: 'Thoropass (Laika)',
-    totalCost: '$12k',
+    totalCost: '$127k',
     includesPlatform: true,
     hasAutomationPlatform: true,
     note: 'Includes the cost of an <a href="#automation-platforms">automation platform</a>.' },
@@ -191,7 +191,7 @@ const companies = [
     name: 'BD Emerson CPA',
     totalCost: '$10k',
     hasAutomationPlatform: false,
-    note: '<span class="text-success">Works with Vanta, Drata, Secureframe, and handles manual audits off platform.</span>'}, 
+    note: '<span class="text-success">Works with Vanta, Drata, Secureframe, and handles manual audits off platform.</span>' }
 ];
 const items = ref(companies);
 
