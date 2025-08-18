@@ -59,7 +59,7 @@
           <template #item-auditCost="item">
             <div v-if="item.auditCost === null"><warning /></div>
             <div v-else-if="item.auditCost === false"><danger /></div>
-            <div v-else-if="item.auditCost === true"><span class="text-success">Free</span></div>
+            <div v-else-if="item.auditCost === true"><span class="text-success">Included</span></div>
             <div v-else>+ {{ item.auditCost }}</div>
           </template>
           <template #item-hasAutomationPlatform="item">
@@ -196,10 +196,10 @@ const companies = [
 
   { link: 'https://www.scrut.io/',
     name: 'Scrut',
-    automationPlatformCost: null,
+    automationPlatformCost: '$4.5k',
     licensed: false,
-    auditCost: false,
-    automationPlusAuditCost: null,
+    auditCost: true,
+    automationPlusAuditCost: '$4.5k',
     integrationCount: null,
     note: '' },
 
