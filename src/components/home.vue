@@ -136,7 +136,7 @@
           <div class="h-100 p-4 p-md-5 bg-dark text-light" style="border-radius: 0.5rem;">
             <h2>The SOC 2 Process</h2>
             <p>
-              Earning a SOC 2 requires a Company to undergo a third-party examination by a Certified Public Accountant (CPA). The CPA is required to follow a set of AICPA standards to perform the audit and issue the report. Most companies follow a logical process to earning their SOC 2:
+              Earning a SOC 2 requires a Company to undergo a third-party examination by a Certified Public Accountant (CPA). The CPA is required to follow a <a href="https://assets.ctfassets.net/rb9cdnjh59cm/72xv4p67HVXKp6CjWmjkPk/1cdbfa19f6307e2720396b66a6194dc9/trust-services-criteria-updated-copyright.pdf" target="_blank" rel="noopener">set of AICPA standards</a> to perform the audit and issue the report. Most companies follow a logical process to earning their SOC 2:
             </p>
             <br>
             <p>

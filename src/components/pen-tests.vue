@@ -27,6 +27,21 @@
         <tbody>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://www.adversis.io/">Adversis</a></th>
+            <td><warning /></td>
+            <td>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="d-flex justify-content-center flex-column">
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                </small>
+              </div>
+            </td>
+            <td><success /></td>
+            <td><success /></td>
+            <td>Flexible and responsive</td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://www.atredis.com/">Atredis</a></th>
             <td><warning /></td>
             <td><warning /></td>
