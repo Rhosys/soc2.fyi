@@ -100,6 +100,13 @@
           </thead>
           <tbody>
             <tr>
+              <th scope="row"><a target="_blank" href="https://www.adversis.io/">Adversis</a></th>
+              <td><success /></td>
+              <td><success /></td>
+              <td><success /></td>
+              <td>Flexible and responsive</td>
+            </tr>
+            <tr>
               <th scope="row"><a target="_blank" href="https://www.compassitc.com/">Compass ITC</a></th>
               <td><success /></td>
               <td><danger /></td>
