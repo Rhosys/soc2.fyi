@@ -174,7 +174,7 @@
     <div class="w-100">
       <div class="m-0 p-4 p-md-5 bg-dark text-light">
         <h2 class="pb-2 border-bottom header-link" @click="() => navigateTo('guide')">Pass the SOC 2 Type II Audit</h2>
-        <div>The system description must be presented in accordance with the AICPA's description criteria (DC 200). Each of the description criteria (DC) are described below:</div>
+        <div>The system description must be presented in accordance with the AICPA's <a href="https://assets.ctfassets.net/rb9cdnjh59cm/1vCduR1U2OnhIvFFaDBjMv/836050054707e9afb65adeb30d2e95d8/92317096_dc_section_200_clean_version.pdf">description criteria (DC 200)</a>. Each of the description criteria (DC) are described below:</div>
         <div class="row g-4 my-2 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
             <div class="flex-shrink-0 me-3">
