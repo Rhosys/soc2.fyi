@@ -38,7 +38,7 @@
             </td>
             <td><success /></td>
             <td><success /></td>
-            <td>Flexible and responsive</td>
+            <td>&nbsp;</td>
           </tr>
 
           <tr>

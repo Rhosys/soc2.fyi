@@ -43,8 +43,8 @@
   },
   "scripts": {
     "build": "vite build",
-    "start": "vite --port=8080",
-    "serve": "vite preview --port=8080",
+    "start": "vite --port=8080 --host",
+    "serve": "vite preview --port=8080 --host",
     "lint": "eslint --ext .js src make.js",
     "setup": "node make.js setup",
     "test": "babel src -d lib && mocha -r esm tests/*.test.js"
@@ -81,6 +81,6 @@
     "vite": "^4.1.2"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=22"
   }
 }

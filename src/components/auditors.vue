@@ -104,7 +104,7 @@
               <td><success /></td>
               <td><success /></td>
               <td><success /></td>
-              <td>Flexible and responsive</td>
+              <td>&nbsp;</td>
             </tr>
             <tr>
               <th scope="row"><a target="_blank" href="https://www.compassitc.com/">Compass ITC</a></th>

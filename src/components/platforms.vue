@@ -36,8 +36,8 @@
             <a :id="item.id || item.name" target="_blank" :href="item.link">{{ item.name }}</a>
           </template>
           <template #item-totalCost="item">
-            <div v-if="item.automationPlatformCost === true">
-              <span class="text-success">Free</span> {{ item.automationPlusAuditCost }}
+            <div v-if="item.automationPlatformCost === true || item.automationPlatformCost === 'INFRA'">
+              <span class="text-success">{{ item.automationPlusAuditCost }}</span>
             </div>
             <div v-else-if="typeof item.automationPlatformCost === 'string'">
               {{ item.automationPlusAuditCost }}
@@ -47,7 +47,7 @@
           <template #item-automationPlatformCost="item">
             <div v-if="item.automationPlatformCost === null"><warning /></div>
             <div v-else-if="item.automationPlatformCost === false"><danger /></div>
-            <div v-else-if="item.automationPlatformCost === true"><span class="text-success">Free</span></div>
+            <div v-else-if="item.automationPlatformCost === 'INFRA'"><span class="text-success">Your Infrastructure</span></div>
             <div v-else>{{ item.automationPlatformCost }}</div>
           </template>
           <template #item-licensed="item">
@@ -68,7 +68,7 @@
             <div v-else><success /></div>
           </template>
           <template #item-integrationCount="item">
-            <div v-if="!item.integrationCount"><warning /></div>
+            <div v-if="!item.integrationCount"><warning :colorize="false" /></div>
             <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 3"><span class="text-success">{{ item.integrationCount }}</span></div>
             <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 2"><span class="text-warning">{{ item.integrationCount }}</span></div>
             <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 1"><span class="text-danger">{{ item.integrationCount }}</span></div>
@@ -148,6 +148,14 @@ const companies = [
     automationPlusAuditCost: 'Usage Based + $8k Audit',
     integrationCount: null,
     note: '<li><span class="text-warning">Does any auditor accept evidence from AWS?</span></li><li><span>$1.25 / 1k resources</span></li>' },
+  { link: 'https://go.trycomp.ai/soc2',
+    name: 'Comp AI',
+    automationPlatformCost: 'INFRA',
+    licensed: false,
+    auditCost: null,
+    automationPlusAuditCost: 'Infra + Audit',
+    integrationCount: false,
+    note: '<li class="text-success"><a style="color: unset" href="https://github.com/trycompai/comp">Open Source</a></li>' },
   { link: 'https://drata.com/',
     name: 'Drata',
     automationPlatformCost: '$15k',
@@ -155,7 +163,7 @@ const companies = [
     auditCost: false,
     automationPlusAuditCost: '$15k + Audit',
     integrationCount: '100+',
-    note: 'Forward focused on being agile.' },
+    note: '' },
   { link: 'https://delve.co/',
     name: 'Delve',
     automationPlatformCost: '$12k',
@@ -241,7 +249,7 @@ const companies = [
 
   { link: 'https://www.trustcloud.ai/',
     name: 'TrustCloud (Kintent)',
-    automationPlatformCost: true,
+    automationPlatformCost: 'INFRA',
     licensed: false,
     auditCost: false,
     automationPlusAuditCost: '+ $8k Audit',
