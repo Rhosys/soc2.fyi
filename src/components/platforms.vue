@@ -178,7 +178,7 @@ const companies = [
     automationPlatformCost: '$5k',
     licensed: 'PARTNERS',
     auditCost: '$8k+',
-    automationPlusAuditCost: '~$10k',
+    automationPlusAuditCost: '$13k+',
     integrationCount: '200+',
     note: '' },
   { link: 'https://www.getprobo.com/',
