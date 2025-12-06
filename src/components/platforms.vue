@@ -177,7 +177,7 @@ const companies = [
     name: 'LowerPlane',
     automationPlatformCost: '$5k',
     licensed: 'PARTNERS',
-    auditCost: '$5k+',
+    auditCost: '$8k+',
     automationPlusAuditCost: '~$10k',
     integrationCount: '200+',
     note: '' },
