@@ -180,7 +180,7 @@ const companies = [
     auditCost: '$5k+',
     automationPlusAuditCost: '~$10k',
     integrationCount: '200+',
-    note: '<li class="text-success">Emerging SOC2 automation platform</li>' },
+    note: '' },
   { link: 'https://www.getprobo.com/',
     name: 'Probo',
     automationPlatformCost: 'INFRA',
