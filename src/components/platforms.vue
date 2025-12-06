@@ -172,6 +172,15 @@ const companies = [
     automationPlusAuditCost: '$22k',
     integrationCount: null,
     note: '<li>AI everything</li><li>Also handles the audit.</li>' },
+  {
+    link: 'https://lowerplane.com/',
+    name: 'LowerPlane',
+    automationPlatformCost: '$5k',
+    licensed: 'PARTNERS',
+    auditCost: '$5k+',
+    automationPlusAuditCost: '~$10k',
+    integrationCount: '200+',
+    note: '<li class="text-success">Emerging SOC2 automation platform</li>' },
   { link: 'https://www.getprobo.com/',
     name: 'Probo',
     automationPlatformCost: 'INFRA',
@@ -263,7 +272,7 @@ const companies = [
     automationPlusAuditCost: null,
     integrationCount: '10',
     note: 'Can be difficult to work with.' },
-  
+
   { link: 'https://tugboatlogic.com/',
     name: 'Tugboat (onetrust)',
     automationPlatformCost: null,
