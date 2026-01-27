@@ -131,6 +131,15 @@
           </tr>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/vapt-pen-test">DuploCloud</a></th>
+            <td><warning /></td>
+            <td><warning /></td>
+            <td><success /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://footholdsecurity.com">Foothold Security</a></th>
             <td>
               <div class="d-flex justify-content-center">
