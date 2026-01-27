@@ -98,7 +98,7 @@
               <div class="d-flex justify-content-center align-items-center">
                 <small class="d-flex justify-content-center flex-column">
                   <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
-                  <span><i class="fa-solid fa-check text-success" /> OSSTMM</span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://www.isecom.org/OSSTMM.3.pdf" target="_blank" rel="noopener">OSSTMM</a></span>
                 </small>
               </div>
             </td>
@@ -131,6 +131,35 @@
           </tr>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/vapt-pen-test">DuploCloud</a></th>
+            <td>
+              <div class="d-flex justify-content-center">
+                <VTooltip>
+                  <span class="d-flex align-items-center justify-content-center pointer">
+                    $4.8k <i class="ms-1 fa fa-info-circle" />
+                  </span>
+                  <template #popper>
+                    Yearly pen test services are available to DuploCloud customers as an add-on service.
+                  </template>
+                </VTooltip>
+              </div>
+            </td>
+
+            <td>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="d-flex justify-content-center flex-column">
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf" target="_blank" rel="noopener">NIST</a></span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://www.isecom.org/OSSTMM.3.pdf" target="_blank" rel="noopener">OSSTMM</a></span>
+                </small>
+              </div>
+            </td>
+            <td><success /></td>
+            <td><success /></td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://footholdsecurity.com">Foothold Security</a></th>
             <td>
               <div class="d-flex justify-content-center">
@@ -143,7 +172,7 @@
               <div class="d-flex justify-content-center align-items-center">
                 <small class="d-flex justify-content-center flex-column">
                   <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
-                  <span><i class="fa-solid fa-check text-success" /> OSSTMM</span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://www.isecom.org/OSSTMM.3.pdf" target="_blank" rel="noopener">OSSTMM</a></span>
                   <span><i class="fa-solid fa-check text-success" /> PTES</span>
                 </small>
               </div>
@@ -274,7 +303,7 @@
                 <small class="d-flex justify-content-center flex-column">
                   <span><i class="fa-solid fa-check text-success" /> <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf" target="_blank" rel="noopener">NIST</a></span>
                   <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
-                  <span><i class="fa-solid fa-check text-success" /> OSSTMM</span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://www.isecom.org/OSSTMM.3.pdf" target="_blank" rel="noopener">OSSTMM</a></span>
                 </small>
               </div>
             </td>
@@ -308,7 +337,7 @@
               <div class="d-flex justify-content-center align-items-center">
                 <small class="d-flex justify-content-center flex-column">
                   <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
-                  <span><i class="fa-solid fa-check text-success" /> OSSTMM</span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://www.isecom.org/OSSTMM.3.pdf" target="_blank" rel="noopener">OSSTMM</a></span>
                   <span><i class="fa-solid fa-check text-success" /> PTES</span>
                 </small>
               </div>
