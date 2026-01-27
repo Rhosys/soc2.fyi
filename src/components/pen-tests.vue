@@ -156,7 +156,7 @@
             </td>
             <td><success /></td>
             <td><success /></td>
-            <td><a target="_blank" href="https://duplocloud.com/pricing">Learn more</a> about services and pricing for DuploCloud customers.</td>
+            <td>&nbsp;</td>
           </tr>
 
           <tr>
