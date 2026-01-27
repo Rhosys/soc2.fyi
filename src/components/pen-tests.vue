@@ -132,7 +132,19 @@
 
           <tr>
             <th scope="row"><a target="_blank" href="https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/vapt-pen-test">DuploCloud</a></th>
-            <td><warning /></td>
+            <td>
+              <div class="d-flex justify-content-center">
+                <VTooltip>
+                  <span class="d-flex align-items-center justify-content-center pointer">
+                    $4.8k <i class="ms-1 fa fa-info-circle" />
+                  </span>
+                  <template #popper>
+                    Yearly pen test services are available to DuploCloud customers as an add-on service.
+                  </template>
+                </VTooltip>
+              </div>
+            </td>
+
             <td>
               <div class="d-flex justify-content-center align-items-center">
                 <small class="d-flex justify-content-center flex-column">
@@ -144,7 +156,7 @@
             </td>
             <td><success /></td>
             <td><success /></td>
-            <td>&nbsp;</td>
+            <td><a target="_blank" href="https://duplocloud.com/pricing">Learn more</a> about services and pricing for DuploCloud customers.</td>
           </tr>
 
           <tr>
