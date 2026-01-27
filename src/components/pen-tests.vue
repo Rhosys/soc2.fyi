@@ -133,7 +133,15 @@
           <tr>
             <th scope="row"><a target="_blank" href="https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/vapt-pen-test">DuploCloud</a></th>
             <td><warning /></td>
-            <td><warning /></td>
+            <td>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="d-flex justify-content-center flex-column">
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf" target="_blank" rel="noopener">NIST</a></span>
+                  <span><i class="fa-solid fa-check text-success" /> OSSTMM</span>
+                </small>
+              </div>
+            </td>
             <td><success /></td>
             <td><success /></td>
             <td>&nbsp;</td>
