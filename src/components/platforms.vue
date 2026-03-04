@@ -218,7 +218,7 @@ const companies = [
     auditCost: true,
     automationPlusAuditCost: '$4.5k',
     integrationCount: null,
-    note: '' },
+    note: '<span class="text-danger">Aggressive Marketing Spam</span>' },
 
   { link: 'https://scytale.ai/soc-2/',
     name: 'Scytale',
