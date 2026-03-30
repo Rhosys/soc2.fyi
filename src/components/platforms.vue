@@ -179,7 +179,7 @@ const companies = [
     auditCost: false,
     automationPlusAuditCost: '$3k + Audit',
     integrationCount: '5',
-    note: '<li>AI-powered compliance platform (SOC 2 & ISO 27001)</li><li>Flat rate, no per-user fees</li>' },
+    note: '<li>SOC 2 & ISO 27001</li><li>Flat rate</li>' },
   {
     link: 'https://lowerplane.com/',
     name: 'LowerPlane',
