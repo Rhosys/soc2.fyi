@@ -69,10 +69,10 @@
           </template>
           <template #item-integrationCount="item">
             <div v-if="!item.integrationCount"><warning :colorize="false" /></div>
-            <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 3"><span class="text-success">{{ item.integrationCount }}</span></div>
-            <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 2"><span class="text-warning">{{ item.integrationCount }}</span></div>
-            <div v-else-if="item.integrationCount.match(/0+/)[0].length >= 1"><span class="text-danger">{{ item.integrationCount }}</span></div>
-            <div v-else><danger /></div>
+            <div v-else-if="item.integrationCount.match(/0+/) && item.integrationCount.match(/0+/)[0].length >= 3"><span class="text-success">{{ item.integrationCount }}</span></div>
+            <div v-else-if="item.integrationCount.match(/0+/) && item.integrationCount.match(/0+/)[0].length >= 2"><span class="text-warning">{{ item.integrationCount }}</span></div>
+            <div v-else-if="item.integrationCount.match(/0+/) && item.integrationCount.match(/0+/)[0].length >= 1"><span class="text-danger">{{ item.integrationCount }}</span></div>
+            <div v-else><span class="text-danger">{{ item.integrationCount }}</span></div>
           </template>
           <template #item-note="item">
             <div style="text-align: left; width: 100%; max-width: 300px; justify-content: start">
@@ -172,6 +172,14 @@ const companies = [
     automationPlusAuditCost: '$22k',
     integrationCount: null,
     note: '<li>AI everything</li><li>Also handles the audit.</li>' },
+  { link: 'https://humadroid.io/',
+    name: 'Humadroid',
+    automationPlatformCost: '$3k',
+    licensed: false,
+    auditCost: false,
+    automationPlusAuditCost: '$3k + Audit',
+    integrationCount: '5',
+    note: '<li>AI-powered compliance platform (SOC 2 & ISO 27001)</li><li>Flat rate, no per-user fees</li>' },
   {
     link: 'https://lowerplane.com/',
     name: 'LowerPlane',
