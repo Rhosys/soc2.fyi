@@ -171,7 +171,7 @@ const companies = [
     auditCost: '$12k',
     automationPlusAuditCost: '$22k',
     integrationCount: null,
-    note: '<li>AI everything</li><li>Also handles the audit.</li>' },
+    note: '<li class="text-danger">Do not use: <a href="https://x.com/amitpgupta/status/2035584092239179966">NOT SOC2 Certified</a></li><li class="text-danger">Fakes evidence: <a href="https://deepdelver.substack.com/p/delve-fake-compliance-as-a-service">Potential Scam</a></li>' },
   { link: 'https://humadroid.io/',
     name: 'Humadroid',
     automationPlatformCost: '$3k',
