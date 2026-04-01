@@ -171,7 +171,7 @@ const companies = [
     auditCost: '$12k',
     automationPlusAuditCost: '$22k',
     integrationCount: null,
-    note: '<li class="text-danger">Do not use: <a href="https://x.com/amitpgupta/status/2035584092239179966">NOT SOC2 Certified</a></li><li class="text-danger">Fakes evidence: <a href="https://deepdelver.substack.com/p/delve-fake-compliance-as-a-service">Potential Scam</a></li>' },
+    note: '<li class="text-danger">Do not use: <a href="https://www.linkedin.com/posts/accorp-partners_it-has-recently-come-to-our-attention-that-activity-7440816892375838720-OEsM">NOT SOC2 Certified</a></li><li class="text-danger">Fakes evidence: <a href="https://deepdelver.substack.com/p/delve-fake-compliance-as-a-service">Potential Scam</a></li>' },
   { link: 'https://humadroid.io/',
     name: 'Humadroid',
     automationPlatformCost: '$3k',
