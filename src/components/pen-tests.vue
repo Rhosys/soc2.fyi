@@ -301,6 +301,45 @@
             <td>&nbsp;</td>
           </tr>
 
+<tr>
+  <th scope="row">
+    <a target="_blank" href="https://port-zero.com/">Port-Zero</a>
+  </th>
+  <td>
+    <div class="d-flex justify-content-center">
+      <span class="d-flex align-items-center justify-content-center">
+        €8k – €20k
+      </span>
+    </div>
+  </td>
+  <td>
+    <div class="d-flex justify-content-center align-items-center">
+      <small class="d-flex justify-content-center flex-column">
+        <span>
+          <i class="fa-solid fa-check text-success" />
+          <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">
+            OWASP ASVS
+          </a>
+        </span>
+        <span>
+          <i class="fa-solid fa-check text-success" /> PTES
+        </span>
+        <span>
+          <i class="fa-solid fa-check text-success" /> OSSTMM
+        </span>
+      </small>
+    </div>
+  </td>
+  <td><success /></td>
+  <td><success /></td>
+  <td>
+    <ul>
+      <li>Flexible scoping (good for startups & scaleups)</li>
+    </ul>
+  </td>
+</tr>
+
+            
           <tr>
             <th scope="row"><a target="_blank" href="https://www.rapid7.com/">Rapid7</a></th>
             <td><warning /></td>
