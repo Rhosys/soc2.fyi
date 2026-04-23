@@ -334,8 +334,6 @@
   <td><success /></td>
   <td>
     <ul>
-      <li>Modern offensive security approach (focus on real-world attack paths)</li>
-      <li class="text-success">Strong communication & reporting quality</li>
       <li>Flexible scoping (good for startups & scaleups)</li>
     </ul>
   </td>
