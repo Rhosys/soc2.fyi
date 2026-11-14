@@ -86,6 +86,36 @@
           </tr>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://www.centralinfosec.com">Central InfoSec</a></th>
+            <td>
+              <div class="d-flex justify-content-center">
+                <span class="d-flex align-items-center justify-content-center">
+                  $3k+
+                </span>
+              </div>
+            </td>
+            <td>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="d-flex justify-content-center flex-column">
+                  <span><i class="fa-solid fa-check text-success" />MITRE ATT&CK</span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf" target="_blank" rel="noopener">NIST</a></span>
+                  <span><i class="fa-solid fa-check text-success" />OSSTMM</span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener">OWASP ASVS</a></span>
+                  <span><i class="fa-solid fa-check text-success" />PCI DSS</span>
+                  <span><i class="fa-solid fa-check text-success" />PTES</span>
+                </small>
+              </div>
+            </td>
+            <td><success /></td>
+            <td><success /></td>
+            <td>
+              <ul>
+                <li><span class="text-success">Free retests within 90 days</span></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://www.cobalt.io/">Cobalt</a></th>
             <td>
               <div class="d-flex justify-content-center">
