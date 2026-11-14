@@ -112,8 +112,6 @@
               <ul>
                 <li><span class="">Boutique pen test company</span></li>
                 <li><span class="text-success">Free retests within 90 days</span></li>
-                <li><span class="text-success">Very responsive</span></li>
-                <li><span class="text-success">Quote delivered within hours, not days/weeks</span></li>
               </ul>
             </td>
           </tr>
