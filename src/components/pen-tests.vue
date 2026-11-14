@@ -110,7 +110,6 @@
             <td><success /></td>
             <td>
               <ul>
-                <li><span class="">Boutique pen test company</span></li>
                 <li><span class="text-success">Free retests within 90 days</span></li>
               </ul>
             </td>
