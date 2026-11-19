@@ -231,6 +231,32 @@
           </tr>
 
           <tr>
+            <th scope="row"><a target="_blank" href="https://invadel.com/">Invadel</a></th>
+            <td>
+              <div class="d-flex justify-content-center">
+                <span class="d-flex align-items-center justify-content-center">
+                  $5.2k+
+                </span>
+              </div>
+            </td>
+            <td>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="d-flex justify-content-center flex-column">
+                  <span><i class="fa-solid fa-check text-success" />PTES</span>
+                  <span><i class="fa-solid fa-check text-success" /> <a href="https://owasp.org/www-project-web-security-testing-guide/" target="_blank" rel="noopener">OWASP Testing Guides</a></span>
+                </small>
+              </div>
+            </td>
+            <td><success /></td>
+            <td><success /></td>
+            <td>
+              <ul>
+                <li>Free retests within 2 months</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
             <th scope="row"><a target="_blank" href="https://ioactive.com/">IOActive</a></th>
             <td><warning /></td>
             <td><warning /></td>
