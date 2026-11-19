@@ -251,8 +251,7 @@
             <td><success /></td>
             <td>
               <ul>
-                <li><span class="text-success">Free retests within 2 months</span></li>
-                <li>Fixed price and scope agreed in writing up front</li>
+                <li>Free retests within 2 months</li>
               </ul>
             </td>
           </tr>
