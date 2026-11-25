@@ -299,7 +299,16 @@ const companies = [
     automationPlusAuditCost: '~ $25k',
     integrationCount: '1000+',
     note: 'Has list of Audit Partners, and always charges a fixed price. However generally considered expensive.'
-  }
+  },
+
+  { link: 'https://www.zerotb.ai/',
+    name: 'ZeroTB',
+    automationPlatformCost: null,
+    licensed: false,
+    auditCost: false,
+    automationPlusAuditCost: null,
+    integrationCount: '4',
+    note: '<li>For companies already past their first audit</li><li>Checks GitHub, AWS, Google Workspace and Okta daily; gaps are repaired through changes your team approves, usually pull requests</li><li>Paid 8-week Pilot, price not public</li>' }
 ];
 const items = ref(companies);
 const sortOptions = ref({
